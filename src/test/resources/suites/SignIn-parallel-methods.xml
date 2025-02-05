@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Tests ">
+
+    <listeners>
+        <listener class-name="com.assured.listeners.AnnotationTransformer"/>
+        <listener class-name="com.assured.listeners.TestListener"/>
+    </listeners>
+
+    <test name="SignIn Test" parallel="methods">
+        <parameter name="BROWSER" value="chrome"/>
+        <classes>
+            <class name="com.assured.tests.T01_LoginTest"/>
+        </classes>
+    </test>
+
+</suite>

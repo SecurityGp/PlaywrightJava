@@ -1,0 +1,198 @@
+[INFO] 05-02-2025 23:25:34 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 05-02-2025 23:25:34 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 05-02-2025 23:25:34 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 05-02-2025 23:25:34 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 05-02-2025 23:25:35 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 05-02-2025 23:25:35 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\Migration\reports/ExtentReports\05_02_2025_23_25_35_ExtentReports.html
+[INFO] 05-02-2025 23:25:36 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 05-02-2025 23:25:36 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 05-02-2025 23:25:36 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 05-02-2025 23:25:36 [TestNG-test-SignIn Test-1] [LogUtils] - Excel File: C:\Users\Gnana\Migration\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:25:36 [TestNG-test-SignIn Test-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:25:39 [TestNG-test-SignIn Test-1] [LogUtils] - Row: 10 - Column: 2
+[INFO] 05-02-2025 23:25:39 [TestNG-test-SignIn Test-1] [LogUtils] - StartRow: 1 - EndRow: 6
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:13 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-6] [LogUtils] - Sheet Name: SignIn
+[WARN] 05-02-2025 23:27:14 [TestNG-PoolService-3] [LogUtils] - WARNING: Test case: loginWithValidCredentials is skipped.
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-3] [LogUtils] - Log message with status Skip: Test case: loginWithValidCredentials is skipped.
+[WARN] 05-02-2025 23:27:14 [TestNG-PoolService-1] [LogUtils] - WARNING: Test case: loginWithValidCredentials is skipped.
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-1] [LogUtils] - Log message with status Skip: Test case: loginWithValidCredentials is skipped.
+[WARN] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - WARNING: Test case: loginWithValidCredentials is skipped.
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-2] [LogUtils] - Log message with status Skip: Test case: loginWithValidCredentials is skipped.
+[WARN] 05-02-2025 23:27:14 [TestNG-PoolService-5] [LogUtils] - WARNING: Test case: loginWithValidCredentials is skipped.
+[INFO] 05-02-2025 23:27:14 [TestNG-PoolService-5] [LogUtils] - Log message with status Skip: Test case: loginWithValidCredentials is skipped.
+[ERROR] 05-02-2025 23:27:19 [TestNG-PoolService-6] [LogUtils] - FAILED: Test case loginWithValidCredentials failed.
+[ERROR] 05-02-2025 23:27:19 [TestNG-PoolService-6] [LogUtils] - com.microsoft.playwright.PlaywrightException: Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//input[@id='normal_login_email']")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//input[@id='normal_login_email']")
+============================================================
+    at C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\chromium\crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\chromium\crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\javascript.js:61:61)
+    at evaluateExpression (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\javascript.js:219:26)
+    at async C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\frames.js:965:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\frames.js:922:24)
+    at async C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\frames.js:1063:29
+    at async ProgressController.run (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\progress.js:92:22)
+}
+[INFO] 05-02-2025 23:27:19 [TestNG-PoolService-6] [LogUtils] - No Folder: C:\Users\Gnana\Migration\ExportData/Images
+[INFO] 05-02-2025 23:27:19 [TestNG-PoolService-6] [LogUtils] - Folder created: C:\Users\Gnana\Migration\ExportData\Images
+[INFO] 05-02-2025 23:27:19 [TestNG-PoolService-6] [LogUtils] - Screenshot taken: loginWithValidCredentials_05-02-2025 23-27-19.png
+[INFO] 05-02-2025 23:27:19 [TestNG-PoolService-6] [LogUtils] - Screenshot URL: about:blank
+[INFO] 05-02-2025 23:27:19 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //input[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 05-02-2025 23:27:20 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //input[@id='normal_login_password'] with text: abc32
+[INFO] 05-02-2025 23:27:20 [TestNG-PoolService-6] [LogUtils] - Screenshot added with status Fail and friendly locator name: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:20 [TestNG-PoolService-6] [LogUtils] - Log message with status Fail: com.microsoft.playwright.PlaywrightException: Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//input[@id='normal_login_email']")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//input[@id='normal_login_email']")
+============================================================
+    at C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\chromium\crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\chromium\crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\javascript.js:61:61)
+    at evaluateExpression (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\javascript.js:219:26)
+    at async C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\frames.js:965:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\frames.js:922:24)
+    at async C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\frames.js:1063:29
+    at async ProgressController.run (C:\Users\Gnana\AppData\Local\Temp\playwright-java-12002333528904960210\package\lib\server\progress.js:92:22)
+}
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:23 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:26 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //input[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 05-02-2025 23:27:26 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //input[@id='normal_login_password'] with text: abc32
+[INFO] 05-02-2025 23:27:26 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //input[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 05-02-2025 23:27:27 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //input[@id='normal_login_password'] with text: abc32
+[INFO] 05-02-2025 23:27:32 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //span[normalize-space()='Log in']
+[INFO] 05-02-2025 23:27:32 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //span[normalize-space()='Log in']
+[INFO] 05-02-2025 23:27:39 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:27:40 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //span[normalize-space()='Log in']
+[INFO] 05-02-2025 23:27:40 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:27:43 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //input[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 05-02-2025 23:27:43 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //input[@id='normal_login_password'] with text: abc32
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-4] [LogUtils] - Screenshot taken: loginWithValidCredentials_05-02-2025 23-27-32.png
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-4] [LogUtils] - Screenshot URL: https://staging.withassured.com/sign-in
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 05-02-2025 23:27:44 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 05-02-2025 23:27:46 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status Pass and friendly locator name: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:46 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:27:47 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //input[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 05-02-2025 23:27:47 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //input[@id='normal_login_password'] with text: abc32
+[INFO] 05-02-2025 23:27:51 [TestNG-PoolService-1] [LogUtils] - Screenshot taken: loginWithValidCredentials_05-02-2025 23-27-39.png
+[INFO] 05-02-2025 23:27:51 [TestNG-PoolService-1] [LogUtils] - Screenshot URL: https://staging.withassured.com/sign-in
+[INFO] 05-02-2025 23:27:52 [TestNG-PoolService-5] [LogUtils] - Screenshot taken: loginWithValidCredentials_05-02-2025 23-27-40.png
+[INFO] 05-02-2025 23:27:52 [TestNG-PoolService-5] [LogUtils] - Screenshot URL: https://staging.withassured.com/sign-in
+[INFO] 05-02-2025 23:27:53 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status Pass and friendly locator name: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:53 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:27:53 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status Pass and friendly locator name: loginWithValidCredentials
+[INFO] 05-02-2025 23:27:53 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:27:55 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //span[normalize-space()='Log in']
+[INFO] 05-02-2025 23:27:55 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:27:56 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //span[normalize-space()='Log in']
+[INFO] 05-02-2025 23:27:56 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:28:00 [TestNG-PoolService-2] [LogUtils] - Screenshot taken: loginWithValidCredentials_05-02-2025 23-27-55.png
+[INFO] 05-02-2025 23:28:00 [TestNG-PoolService-2] [LogUtils] - Screenshot URL: https://staging.withassured.com/sign-in
+[INFO] 05-02-2025 23:28:01 [TestNG-PoolService-3] [LogUtils] - Screenshot taken: loginWithValidCredentials_05-02-2025 23-27-56.png
+[INFO] 05-02-2025 23:28:01 [TestNG-PoolService-3] [LogUtils] - Screenshot URL: https://staging.withassured.com/sign-in
+[INFO] 05-02-2025 23:28:01 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status Pass and friendly locator name: loginWithValidCredentials
+[INFO] 05-02-2025 23:28:01 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:28:02 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status Pass and friendly locator name: loginWithValidCredentials
+[INFO] 05-02-2025 23:28:02 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 05-02-2025 23:28:03 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 05-02-2025 23:28:03 [main] [LogUtils] - =====> Ending Suite: Regression Tests 
+[INFO] 05-02-2025 23:28:06 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 05-02-2025 23:28:06 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 05-02-2025 23:28:06 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 05-02-2025 23:28:06 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 05-02-2025 23:28:06 [main] [LogUtils] - =====> Starting Suite: Regression Test1
+[INFO] 05-02-2025 23:28:06 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 05-02-2025 23:28:06 [main] [LogUtils] - =====> Ending Suite: Regression Test1
