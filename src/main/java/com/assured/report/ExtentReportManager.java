@@ -104,20 +104,41 @@ public class ExtentReportManager {
      * Adds a screenshot with a specified status to the report.
      * The 'message' parameter is used as the friendly name for the locator/step.
      */
-    public static void addScreenShot(Status status, String friendlyLocatorName) {
+    public static void addScreenShot(Status status, String screenshotName) {
+        Page page = PlaywrightDriverManager.getPage();
+        if (page == null) {
+            LogUtils.error("Cannot capture screenshot because the Page is not initialized.");
+            return;
+        }
+
         try {
-            Page page = PlaywrightDriverManager.getPage();
-            byte[] screenshotBytes = page.screenshot(new Page.ScreenshotOptions());
-            // Convert the byte array to Base64 string
+            // Optionally, create a more unique screenshot name (e.g., appending a timestamp)
+            // or iteration detail to differentiate multiple screenshots in the same test.
+            String uniqueScreenshotName = screenshotName + " - " + System.currentTimeMillis();
+
+            // Capture the screenshot
+            byte[] screenshotBytes = page.screenshot(new Page.ScreenshotOptions()
+                    // Uncomment if you want the full page or specify other screenshot settings
+                    // .setFullPage(true)
+            );
+
+            // Convert the byte array to a Base64 string
             String base64Image = "data:image/png;base64," +
                     Base64.getEncoder().encodeToString(screenshotBytes);
-            ExtentTestManager.getExtentTest().log(status, friendlyLocatorName,
-                    MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
-            LogUtils.info("Screenshot added with status " + status + " and friendly locator name: " + friendlyLocatorName);
+
+            // Log the screenshot in Extent with a Base64 string
+            ExtentTestManager.getExtentTest()
+                    .log(status, uniqueScreenshotName,
+                            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image)
+                                    .build());
+
+            LogUtils.info("Screenshot added with status: " + status
+                    + " | Name: " + uniqueScreenshotName);
         } catch (Exception e) {
             LogUtils.error("Error capturing screenshot: " + e.getMessage(), e);
         }
     }
+
 
     public static synchronized void addAuthors(AuthorType[] authors) {
         if (authors == null) {

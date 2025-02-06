@@ -3,11 +3,7 @@ package com.assured.driver;
 import com.microsoft.playwright.Page;
 
 /**
- * PlaywrightDriverManager manages the Playwright Page instance in a thread-safe way.
- * <p>
- * It is similar in purpose to the Selenium DriverManager; however, instead of managing a WebDriver,
- * it manages a Playwright Page (which you typically get from a BrowserContext).
- * </p>
+ * PlaywrightDriverManager manages the Playwright Page instance in a thread-safe manner.
  */
 public final class PlaywrightDriverManager {
 
@@ -43,16 +39,11 @@ public final class PlaywrightDriverManager {
     }
 
     /**
-     * Quits the browser session for the current thread.
-     * <p>
-     * This method closes the BrowserContext (which, in turn, closes the Page) and then clears the ThreadLocal.
-     * Adjust this logic if your design requires closing the entire Browser.
-     * </p>
+     * Closes the BrowserContext (which in turn closes the Page) and clears the ThreadLocal.
      */
     public static void quit() {
         Page page = getPage();
         if (page != null) {
-            // Close the BrowserContext which will close the associated Page.
             page.context().close();
             removePage();
         }

@@ -6,7 +6,6 @@ import com.assured.dataprovider.DataProviderManager;
 import com.assured.enums.AuthorType;
 import com.assured.enums.CategoryType;
 import com.assured.pages.P01_LoginPage;
-import com.assured.services.PageActionsService;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
@@ -23,14 +22,23 @@ public class T01_LoginTest extends BaseTest {
             dataProvider = "getSignInDataHashTable", dataProviderClass = DataProviderManager.class)
     public void loginWithValidCredentials(Hashtable<String, String> data) {
         // Create an instance of PageActionsService using the Page created in BaseTest.
-        PageActionsService actionsService = new PageActionsService(page);
 
         // Instantiate the login page with the actions service.
-        loginPage = new P01_LoginPage(actionsService);
-
-        // Execute the login method (which uses the service to interact with the page).
+        loginPage = new P01_LoginPage();
+        // Execute the login method.
         loginPage.loginWithValidCredentials(data);
+        // Optionally, add assertions to verify successful login.
+    }
 
-        // Optionally, add assertions here to verify successful login.
+    @FrameworkAnnotation(author = {AuthorType.Gnanapandithan}, category = {CategoryType.REGRESSION})
+    @Test(priority = 1, description = "TC02_signInWithDataProvider",
+            dataProvider = "getSignInDataHashTable", dataProviderClass = DataProviderManager.class)
+    public void loginWithInValidCredentials(Hashtable<String, String> data) {
+        // Create an instance of PageActionsService using the Page created in BaseTest.
+        // Instantiate the login page with the actions service.
+        loginPage = new P01_LoginPage();
+        // Execute the login method.
+        loginPage.loginWithValidCredentials(data);
+        // Optionally, add assertions to verify behavior for invalid credentials.
     }
 }

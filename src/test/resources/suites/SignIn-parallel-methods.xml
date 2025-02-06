@@ -7,10 +7,11 @@
         <listener class-name="com.assured.listeners.TestListener"/>
     </listeners>
 
-    <test name="SignIn Test" parallel="methods">
+    <test name="SignIn Test" parallel="methods" thread-count="4">
         <parameter name="BROWSER" value="chrome"/>
         <classes>
             <class name="com.assured.tests.T01_LoginTest"/>
+            <class name="com.assured.tests.T02_InviteProvider"/>
         </classes>
     </test>
 
