@@ -9,8 +9,12 @@ import com.assured.pages.P01_LoginPage;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
+
 import java.util.Hashtable;
 
+/**
+ * T01_LoginTest contains the login test methods.
+ */
 @Epic("Regression Test CRM")
 @Feature("Sign In Test")
 public class T01_LoginTest extends BaseTest {
@@ -21,24 +25,21 @@ public class T01_LoginTest extends BaseTest {
     @Test(priority = 1, description = "TC01_signInWithDataProvider",
             dataProvider = "getSignInDataHashTable", dataProviderClass = DataProviderManager.class)
     public void loginWithValidCredentials(Hashtable<String, String> data) {
-        // Create an instance of PageActionsService using the Page created in BaseTest.
-
-        // Instantiate the login page with the actions service.
+        // Instantiate the login page.
         loginPage = new P01_LoginPage();
-        // Execute the login method.
+        // Perform login with valid credentials.
         loginPage.loginWithValidCredentials(data);
-        // Optionally, add assertions to verify successful login.
+        // Add assertions to verify successful login.
     }
 
     @FrameworkAnnotation(author = {AuthorType.Gnanapandithan}, category = {CategoryType.REGRESSION})
-    @Test(priority = 1, description = "TC02_signInWithDataProvider",
+    @Test(priority = 2, description = "TC02_signInWithDataProvider",
             dataProvider = "getSignInDataHashTable", dataProviderClass = DataProviderManager.class)
     public void loginWithInValidCredentials(Hashtable<String, String> data) {
-        // Create an instance of PageActionsService using the Page created in BaseTest.
-        // Instantiate the login page with the actions service.
+        // Instantiate the login page.
         loginPage = new P01_LoginPage();
-        // Execute the login method.
+        // Perform login with the supplied (invalid) credentials.
         loginPage.loginWithValidCredentials(data);
-        // Optionally, add assertions to verify behavior for invalid credentials.
+        // Add assertions to verify behavior for invalid credentials.
     }
 }

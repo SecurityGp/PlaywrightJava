@@ -35,16 +35,20 @@ public class PageActions{
      */
     @Step("Navigate to URL: {0}")
     public static void navigate(String url) {
-        Page page = getPage();
+        Page page = PlaywrightDriverManager.getPage();
+        if (page == null) {
+            throw new IllegalStateException("Page instance is null. Ensure the driver is initialized.");
+        }
+        page.setDefaultNavigationTimeout(60000);
+        LogUtils.info("Navigating to URL: " + url);
         try {
-            // Set a 60-second timeout and wait until DOM content is loaded.
-            NavigateOptions options = new NavigateOptions()
-                    .setTimeout(150000)
-                    .setWaitUntil(WaitUntilState.DOMCONTENTLOADED);
-            page.navigate(url, options);
-            LogUtils.info("Navigated to URL: " + url);
+            NavigateOptions options = new NavigateOptions();
+            options.setWaitUntil(WaitUntilState.DOMCONTENTLOADED);
+            options.setWaitUntil(WaitUntilState.LOAD);
+            options.setWaitUntil(WaitUntilState.NETWORKIDLE);
+            page.navigate(url,options);
         } catch (Exception e) {
-            LogUtils.error("Navigation failed for URL: " + url + " with error: " + e.getMessage(), e);
+            LogUtils.error("Navigation failed with error: " + e.getMessage());
             throw e;
         }
     }
