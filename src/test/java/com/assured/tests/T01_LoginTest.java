@@ -45,9 +45,10 @@ public class T01_LoginTest extends BaseTest {
         // Add assertions to verify behavior for invalid credentials.
     }
     @Test(priority = 3, description = "TC03_urlTest")
-    public void urlTest() {
+    public void urlTest() throws InterruptedException {
         loginPage = new P01_LoginPage();
         loginPage.login();
+        sleep(80000);
 
     }
 }

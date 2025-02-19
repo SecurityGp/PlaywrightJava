@@ -72,11 +72,10 @@ public class P01_LoginPage extends CommonPageCRM {
 
     public P01_LoginPage login() {
         String domain = "private";
-        String mailbox = "abc";
-        String messageId = "abc-1738505275-0961552951903";
+        String mailbox = "abc1";
 
         // Retrieve URL from email
-        String mailUrl = PageActions.getMailUrl(domain, mailbox, messageId);
+        String mailUrl = PageActions.getMailUrl(domain, mailbox);
 
         // Navigate to the staging URL.
         PageActions.navigate(mailUrl);

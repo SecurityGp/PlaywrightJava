@@ -1,4 +1,9 @@
-package com.assured.pages;//package com.assured.pages;
+package com.assured.pages;
+
+import com.manybrain.mailinator.client.MailinatorClient;
+import com.manybrain.mailinator.client.message.*;
+
+//package com.assured.pages;
 //
 //import com.manybrain.mailinator.client.MailinatorClient;
 //import com.manybrain.mailinator.client.message.*;
@@ -49,16 +54,25 @@ package com.assured.pages;//package com.assured.pages;
 //}
 
 import com.assured.services.PageActions;
+import com.manybrain.mailinator.client.message.GetLinksRequest;
+import com.manybrain.mailinator.client.message.Links;
+
+import java.util.Collections;
+import java.util.List;
 
 public class test {
     public static void main(String[] args) {
-        // Example parameters
+        MailinatorClient mailinatorClient = new MailinatorClient("947fc29e9d3b4c4b80be0e65f27fd8db");
+        List<Links> links = Collections.singletonList(mailinatorClient.request(
+                new GetLinksRequest("private", "abc1", "testinbox-1570635306-12914603")));
+        System.out.println(links);
+
         String domain = "private";
-        String mailbox = "abc";
+        String mailbox = "abc1";
         String messageId = "abc-1738505275-0961552951903";
 
-        // Retrieve URL from email
-        String mailUrl = PageActions.getMailUrl(domain, mailbox, messageId);
+
+        String mailUrl = PageActions.getMailUrl(domain, mailbox);
         System.out.println("Retrieved Mail URL: " + mailUrl);
     }
 }

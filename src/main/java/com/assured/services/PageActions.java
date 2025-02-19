@@ -61,11 +61,13 @@ public class PageActions {
         if (page == null) {
             throw new IllegalStateException("Page instance is null. Ensure the driver is initialized.");
         }
-        page.setDefaultNavigationTimeout(60000);
+        page.setDefaultNavigationTimeout(80000);
         LogUtils.info("Navigating to URL: " + url);
         try {
             Page.NavigateOptions options = new Page.NavigateOptions();
             options.setWaitUntil(WaitUntilState.DOMCONTENTLOADED);
+            options.setWaitUntil(WaitUntilState.LOAD);
+            options.setWaitUntil(WaitUntilState.NETWORKIDLE);
             page.navigate(url, options);
             AllureManager.saveTextLog("Navigated to URL: " + url);
             addScreenshotToReport("navigate_" + DateUtils.getCurrentDateTime());
@@ -467,63 +469,59 @@ public class PageActions {
      * @param messageId the unique message ID.
      * @return the extracted URL, or null if not found.
      */
-    @Step("Retrieve mail URL for domain: {0}, mailbox: {1}, messageId: {2}")
-    public static String getMailUrl(String domain, String mailbox, String messageId) {
+    @Step("Retrieve mail URL for domain: {0}, mailbox: {1}")
+    public static String getMailUrl(String domain, String mailbox) {
         String url = null;
         // Update or externalize your API key as needed
         String apiKey = "947fc29e9d3b4c4b80be0e65f27fd8db";
         try {
             LogUtils.info("Requesting inbox for domain: " + domain);
-
             AllureManager.saveTextLog("Requesting inbox for domain: " + domain);
 
             MailinatorClient mailinatorClient = new MailinatorClient(apiKey);
             Inbox inbox = mailinatorClient.request(new GetInboxRequest(domain));
             List<Message> messages = inbox.getMsgs();
             LogUtils.info("Inbox received with " + messages.size() + " messages");
-
             AllureManager.saveTextLog("Inbox received with " + messages.size() + " messages");
 
-            // Loop through messages to find the one with the matching messageId
-            for (Message message : messages) {
-                if (message.getId().equals(messageId)) {
-                    String subject = message.getSubject();
-                    LogUtils.info("Found message with id: " + messageId + " and subject: " + subject);
+            // Check if there is at least one message
+            if (messages.isEmpty()) {
+                LogUtils.warn("No messages found in inbox for domain: " + domain);
+                AllureManager.saveTextLog("No messages found in inbox for domain: " + domain);
+                return null;
+            }
 
-                    AllureManager.saveTextLog("Found message with id: " + messageId + " and subject: " + subject);
+            // Assume the first message is the latest one
+            Message latestMessage = messages.get(0);
+            String messageId = latestMessage.getId();
+            String subject = latestMessage.getSubject();
+            LogUtils.info("Using latest message with id: " + messageId + " and subject: " + subject);
+            AllureManager.saveTextLog("Using latest message with id: " + messageId + " and subject: " + subject);
 
-                    // First, try to extract the URL from the subject
-                    url = extractUrlFromSubject(subject);
-                    if (url != null) {
-                        LogUtils.info("Extracted URL from subject: " + url);
+            // First, try to extract the URL from the subject
+            url = extractUrlFromSubject(subject);
+            if (url != null) {
+                LogUtils.info("Extracted URL from subject: " + url);
+                AllureManager.saveTextLog("Extracted URL from subject: " + url);
+                return url;
+            } else {
+                LogUtils.warn("No URL found in subject. Trying links API for message id: " + messageId);
+                AllureManager.saveTextLog("No URL found in subject. Trying links API for message id: " + messageId);
 
-                        AllureManager.saveTextLog("Extracted URL from subject: " + url);
-                        return url;
-                    } else {
-                        LogUtils.warn("No URL found in subject. Trying links API for message id: " + messageId);
-
-                        AllureManager.saveTextLog("No URL found in subject. Trying links API for message id: " + messageId);
-
-                        // Retrieve URL using the links API
-                        Links linksResponse = mailinatorClient.request(new GetLinksRequest(domain, mailbox, messageId));
-                        List<String> links = linksResponse.getLinks();
-                        if (links != null && !links.isEmpty()) {
-                            url = links.get(0);
-                            LogUtils.info("Retrieved URL from links API: " + url);
-
-                            AllureManager.saveTextLog("Retrieved URL from links API: " + url);
-                        } else {
-                            LogUtils.error("No URL found from links API for message id: " + messageId);
-
-                            AllureManager.saveTextLog("No URL found from links API for message id: " + messageId);
-                        }
-                    }
-                    break; // Message found; exit loop.
+                // Retrieve URL using the links API
+                Links linksResponse = mailinatorClient.request(new GetLinksRequest(domain, mailbox, messageId));
+                List<String> links = linksResponse.getLinks();
+                if (links != null && !links.isEmpty()) {
+                    url = links.get(0);
+                    LogUtils.info("Retrieved URL from links API: " + url);
+                    AllureManager.saveTextLog("Retrieved URL from links API: " + url);
+                } else {
+                    LogUtils.error("No URL found from links API for message id: " + messageId);
+                    AllureManager.saveTextLog("No URL found from links API for message id: " + messageId);
                 }
             }
         } catch (Exception e) {
             LogUtils.error("Exception occurred while retrieving mail URL: " + e.getMessage(), e);
-
             AllureManager.saveTextLog("Exception occurred while retrieving mail URL: " + e.getMessage());
             throw e;
         }
