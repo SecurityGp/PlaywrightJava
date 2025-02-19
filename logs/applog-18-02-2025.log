@@ -1,0 +1,60 @@
+[INFO] 18-02-2025 14:55:05 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 18-02-2025 14:55:05 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 18-02-2025 14:55:05 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 18-02-2025 14:55:08 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 18-02-2025 14:55:08 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 18-02-2025 14:55:08 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 18-02-2025 14:55:08 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 18-02-2025 14:55:08 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 18-02-2025 14:55:08 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 18-02-2025 14:55:08 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 18-02-2025 14:55:39 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@34daac8
+[INFO] 18-02-2025 14:55:39 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@3c0762d1
+[INFO] 18-02-2025 14:55:39 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 18-02-2025 14:55:39 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 18-02-2025 14:55:39 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 18-02-2025 14:55:39 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 18-02-2025 14:55:41 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 18-02-2025 14:55:41 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 18-02-2025 14:55:42 [TestNG-PoolService-5] [LogUtils] - Filling in email: hjkl@ik.com
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@49da0f82
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@21122124
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4cb0f5f6
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 18-02-2025 14:55:44 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 18-02-2025 14:55:45 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 18-02-2025 14:55:45 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 18-02-2025 14:55:46 [TestNG-PoolService-3] [LogUtils] - Filling in email: bbcd@lk.com
+[INFO] 18-02-2025 14:55:46 [TestNG-PoolService-2] [LogUtils] - Filling in email: abc@abc.com
+[INFO] 18-02-2025 14:55:47 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashierngan023@gmail.com
+[INFO] 18-02-2025 14:55:48 [TestNG-PoolService-4] [LogUtils] - Filling in email: qazdqsd@lk.com
+[INFO] 18-02-2025 14:55:51 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: hjkl@ik.com
+[INFO] 18-02-2025 14:55:51 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 18-02-2025 14:55:54 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: sdkjf1231
+[INFO] 18-02-2025 14:55:54 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@abc.com
+[INFO] 18-02-2025 14:55:54 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 12Bcd
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashierngan023@gmail.com
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: qazdqsd@lk.com
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: bbcd@lk.com
+[INFO] 18-02-2025 14:55:55 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 18-02-2025 14:55:56 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 18-02-2025 14:55:56 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 18-02-2025 14:55:57 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc12
+[INFO] 18-02-2025 14:55:57 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 789ght
+[INFO] 18-02-2025 14:55:57 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 18-02-2025 14:55:58 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 18-02-2025 14:55:59 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 18-02-2025 14:55:59 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 18-02-2025 14:55:59 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 18-02-2025 14:56:00 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 18-02-2025 14:56:01 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 18-02-2025 14:56:02 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...

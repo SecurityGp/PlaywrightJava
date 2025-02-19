@@ -1,0 +1,973 @@
+[INFO] 08-02-2025 14:06:37 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 14:06:37 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 14:06:37 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:06:38 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:06:38 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 08-02-2025 14:06:38 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\08_02_2025_14_06_38_ExtentReports.html
+[INFO] 08-02-2025 14:06:39 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 08-02-2025 14:06:39 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 14:06:39 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 08-02-2025 14:06:39 [TestNG-test-SignIn Test-1] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:06:39 [TestNG-test-SignIn Test-2] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:06:39 [TestNG-test-SignIn Test-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:06:39 [TestNG-test-SignIn Test-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:06:41 [TestNG-test-SignIn Test-2] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 14:06:41 [TestNG-test-SignIn Test-1] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 14:06:41 [TestNG-test-SignIn Test-2] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 14:06:41 [TestNG-test-SignIn Test-1] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:06:42 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:07:03 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@5438d7c4
+[INFO] 08-02-2025 14:07:04 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@17658cf3
+[INFO] 08-02-2025 14:07:04 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@258595f4
+[INFO] 08-02-2025 14:07:04 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@565da1dd
+[INFO] 08-02-2025 14:07:04 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@7bb2d0a1
+[INFO] 08-02-2025 14:07:04 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@443cf996
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@608c2f0f
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@74b806ac
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@7e051346
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:07:05 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:06 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4d7d3378
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:07:07 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:07:08 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:07:10 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:10 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:10 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:10 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:11 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:11 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:11 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:11 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:14 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:15 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:16 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:17 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:17 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:17 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:17 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:17 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:17 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:17 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:18 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:19 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:19 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:19 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:19 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:20 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:20 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739003838625
+[INFO] 08-02-2025 14:07:20 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:20 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:20 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739003839943
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739003839633
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739003840152
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:21 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:22 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739003840342
+[INFO] 08-02-2025 14:07:22 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:22 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739003840339
+[INFO] 08-02-2025 14:07:22 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:22 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:22 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:23 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739003841741
+[INFO] 08-02-2025 14:07:23 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:23 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:23 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:23 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:23 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:24 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:24 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:24 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:24 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:25 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:25 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:07:25 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:07:25 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:07:25 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:07:26 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:07:26 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:26 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739003845767
+[INFO] 08-02-2025 14:07:26 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:07:27 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739003838623
+[INFO] 08-02-2025 14:07:27 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:27 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:07:27 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:28 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:28 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739003847414
+[INFO] 08-02-2025 14:07:28 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:07:29 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:07:30 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 14:07:30 [main] [LogUtils] - =====> Ending Suite: Regression Tests 
+[INFO] 08-02-2025 14:07:32 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 14:07:32 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 14:07:32 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:07:32 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 14:07:32 [main] [LogUtils] - =====> Starting Suite: Regression Test1
+[INFO] 08-02-2025 14:07:32 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 14:07:32 [main] [LogUtils] - =====> Ending Suite: Regression Test1
+[INFO] 08-02-2025 14:17:21 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 14:17:21 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 14:17:21 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:17:21 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:17:22 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 08-02-2025 14:17:22 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\08_02_2025_14_17_22_ExtentReports.html
+[INFO] 08-02-2025 14:17:23 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 08-02-2025 14:17:23 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 14:17:23 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 08-02-2025 14:17:23 [TestNG-test-SignIn Test-2] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:23 [TestNG-test-SignIn Test-1] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:23 [TestNG-test-SignIn Test-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:23 [TestNG-test-SignIn Test-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:25 [TestNG-test-SignIn Test-2] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 14:17:25 [TestNG-test-SignIn Test-1] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 14:17:25 [TestNG-test-SignIn Test-2] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 14:17:25 [TestNG-test-SignIn Test-1] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:25 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:17:47 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@2bb0fd33
+[INFO] 08-02-2025 14:17:48 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@79798ee4
+[INFO] 08-02-2025 14:17:48 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@1b093b52
+[INFO] 08-02-2025 14:17:48 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@3d798f8
+[INFO] 08-02-2025 14:17:48 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@52c2a16
+[INFO] 08-02-2025 14:17:49 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@38254b5
+[INFO] 08-02-2025 14:17:49 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@5975216a
+[INFO] 08-02-2025 14:17:49 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:17:49 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:17:49 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@61d33611
+[INFO] 08-02-2025 14:17:49 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@24d58c6e
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4294b8ed
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:50 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:17:51 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:17:52 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:52 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:52 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:17:54 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:54 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:54 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:54 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:56 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:56 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:57 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:57 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:57 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:17:57 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:17:58 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:58 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:58 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:17:58 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:58 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:17:58 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:17:59 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:00 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:18:01 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:18:01 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:18:01 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:18:01 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:01 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:02 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:18:02 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:18:02 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004481278
+[INFO] 08-02-2025 14:18:02 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:02 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004481723
+[INFO] 08-02-2025 14:18:02 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004481686
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004482043
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:18:03 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:04 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004482646
+[INFO] 08-02-2025 14:18:04 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:04 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:18:04 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:04 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:05 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:05 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:05 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:05 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004483852
+[INFO] 08-02-2025 14:18:05 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:05 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:18:05 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:18:06 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:06 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:07 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:08 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:08 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:08 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004487322
+[INFO] 08-02-2025 14:18:08 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:18:09 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:10 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004489268
+[INFO] 08-02-2025 14:18:10 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:18:10 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:18:10 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004489782
+[INFO] 08-02-2025 14:18:10 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:11 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:11 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004490787
+[INFO] 08-02-2025 14:18:11 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:18:11 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:12 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:18:13 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 14:18:13 [main] [LogUtils] - =====> Ending Suite: Regression Tests 
+[INFO] 08-02-2025 14:18:16 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 14:18:16 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 14:18:16 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:18:16 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 14:18:16 [main] [LogUtils] - =====> Starting Suite: Regression Test1
+[INFO] 08-02-2025 14:18:16 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 14:18:16 [main] [LogUtils] - =====> Ending Suite: Regression Test1
+[INFO] 08-02-2025 14:23:03 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 14:23:03 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 14:23:03 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:23:04 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:23:04 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 08-02-2025 14:23:04 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\08_02_2025_14_23_04_ExtentReports.html
+[INFO] 08-02-2025 14:23:05 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 08-02-2025 14:23:05 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 14:23:05 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 08-02-2025 14:23:05 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:05 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:07 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 14:23:07 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 14:23:07 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:07 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:07 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:07 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:07 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:25 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@6c1da4f0
+[INFO] 08-02-2025 14:23:25 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@1d5719ca
+[INFO] 08-02-2025 14:23:25 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4454a4aa
+[INFO] 08-02-2025 14:23:25 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@12976aa3
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@5d841cba
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:26 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:27 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:28 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:28 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:28 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:28 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:28 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:30 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:31 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:32 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:32 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:32 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:32 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:32 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:33 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:33 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:33 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:33 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004812490
+[INFO] 08-02-2025 14:23:33 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:33 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004813344
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004813366
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004813410
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739004813720
+[INFO] 08-02-2025 14:23:34 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 14:23:35 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:35 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:35 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:35 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:37 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:37 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:37 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 14:23:37 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 14:23:37 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:37 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:37 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:37 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:37 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@76247c2a
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4979fc79
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:43 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@b7aa00b
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@7c79415b
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:44 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@49087cbd
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 14:23:45 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:46 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:46 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:46 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:47 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:48 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:49 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:50 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:50 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:50 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004829620
+[INFO] 08-02-2025 14:23:50 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:50 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004829810
+[INFO] 08-02-2025 14:23:50 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:50 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004830139
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004830498
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739004830793
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 14:23:51 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:52 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:52 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:52 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 14:23:54 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 14:23:54 [main] [LogUtils] - =====> Ending Suite: Regression Tests 
+[INFO] 08-02-2025 14:23:56 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 14:23:56 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 14:23:56 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 14:23:56 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 14:23:56 [main] [LogUtils] - =====> Starting Suite: Regression Test1
+[INFO] 08-02-2025 14:23:56 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 14:23:56 [main] [LogUtils] - =====> Ending Suite: Regression Test1
+[INFO] 08-02-2025 15:31:42 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 15:31:42 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 15:31:42 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 15:31:42 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 15:31:42 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 08-02-2025 15:31:42 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\08_02_2025_15_31_42_ExtentReports.html
+[INFO] 08-02-2025 15:31:43 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 08-02-2025 15:31:43 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 15:31:43 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 08-02-2025 15:31:43 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:31:43 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:31:44 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 15:31:44 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 15:31:44 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:31:44 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:31:44 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:31:44 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:31:44 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:31:53 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:31:53 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:31:53 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:31:53 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:31:53 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[ERROR] 08-02-2025 15:31:53 [main] [LogUtils] - FAILED: Test case loginWithValidCredentials failed.
+[ERROR] 08-02-2025 15:31:53 [main] [LogUtils] - java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "org.testng.ITestResult.getTestContext()" because the return value of "org.testng.Reporter.getCurrentTestResult()" is null
+[WARN] 08-02-2025 15:31:53 [main] [LogUtils] - Page or its context is null; cannot capture screenshot for: loginWithValidCredentials
+[ERROR] 08-02-2025 15:31:53 [main] [LogUtils] - Cannot capture screenshot because the Page is not initialized.
+[INFO] 08-02-2025 15:31:53 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 15:31:53 [main] [LogUtils] - =====> Ending Suite: Regression Tests 
+[INFO] 08-02-2025 15:33:22 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 15:33:22 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 15:33:22 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 15:33:22 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 15:33:23 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 08-02-2025 15:33:23 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\08_02_2025_15_33_23_ExtentReports.html
+[INFO] 08-02-2025 15:33:23 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 08-02-2025 15:33:23 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 15:33:23 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 08-02-2025 15:33:23 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:33:23 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:33:25 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 15:33:25 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 15:33:25 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:33:25 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:33:25 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:33:25 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:33:25 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:33:53 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@70375ebd
+[INFO] 08-02-2025 15:33:53 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4a6e03a2
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:33:54 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@1e967b0a
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:33:56 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@15cc023c
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:33:57 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:33:58 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:33:58 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:33:58 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:33:59 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:33:59 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:33:59 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:33:59 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:33:59 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:00 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 15:34:00 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739009040613
+[INFO] 08-02-2025 15:34:00 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:01 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:02 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:02 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:02 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:02 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:02 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:02 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:02 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:03 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 15:34:03 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:03 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:03 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739009043203
+[INFO] 08-02-2025 15:34:03 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:03 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:04 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:04 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:05 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:05 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:05 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@62e9b0ba
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:34:06 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:34:07 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739009045718
+[INFO] 08-02-2025 15:34:07 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:07 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:09 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:09 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:09 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:09 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:10 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:10 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:10 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 15:34:10 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739009050366
+[INFO] 08-02-2025 15:34:10 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:10 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:11 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:11 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:12 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 08-02-2025 15:34:12 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1739009052024
+[INFO] 08-02-2025 15:34:12 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 08-02-2025 15:34:12 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:15 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:34:15 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:34:15 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 08-02-2025 15:34:15 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 08-02-2025 15:34:15 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:34:15 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:34:15 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:34:15 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:34:15 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@21372d3c
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:34:28 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@2b8d992b
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@6e4bd91
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:34:29 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:34:31 [TestNG-PoolService-5] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@7e7f97ae
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@5ef7ecce
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-4] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:33 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:34 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:34 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:34 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:34 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:35 [TestNG-PoolService-3] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:35 [TestNG-PoolService-2] [LogUtils] - Filling in email: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:35 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739009074801
+[INFO] 08-02-2025 15:34:35 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:35 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:37 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:37 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:37 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:38 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:38 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:38 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:38 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739009078542
+[INFO] 08-02-2025 15:34:38 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:39 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:39 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:39 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:40 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:40 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:40 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:40 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:40 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:40 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:41 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739009080960
+[INFO] 08-02-2025 15:34:41 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:41 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:42 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashiernga01@gmail.com
+[INFO] 08-02-2025 15:34:42 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 08-02-2025 15:34:42 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:42 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[INFO] 08-02-2025 15:34:42 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:42 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:43 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:43 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739009083262
+[INFO] 08-02-2025 15:34:43 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:43 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:44 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[INFO] 08-02-2025 15:34:44 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:44 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 08-02-2025 15:34:45 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1739009084963
+[INFO] 08-02-2025 15:34:45 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 08-02-2025 15:34:45 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 08-02-2025 15:34:47 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 15:34:47 [main] [LogUtils] - =====> Ending Suite: Regression Tests 
+[INFO] 08-02-2025 15:34:50 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 08-02-2025 15:34:50 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 08-02-2025 15:34:50 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 08-02-2025 15:34:50 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 08-02-2025 15:34:50 [main] [LogUtils] - =====> Starting Suite: Regression Test1
+[INFO] 08-02-2025 15:34:50 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 08-02-2025 15:34:50 [main] [LogUtils] - =====> Ending Suite: Regression Test1
