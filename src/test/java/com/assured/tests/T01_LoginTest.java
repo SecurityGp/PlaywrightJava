@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 
 import java.util.Hashtable;
 
+import static java.lang.Thread.sleep;
+
 /**
  * T01_LoginTest contains the login test methods.
  */
@@ -41,5 +43,11 @@ public class T01_LoginTest extends BaseTest {
         // Perform login with the supplied (invalid) credentials.
         loginPage.loginWithValidCredentials(data);
         // Add assertions to verify behavior for invalid credentials.
+    }
+    @Test(priority = 3, description = "TC03_urlTest")
+    public void urlTest() {
+        loginPage = new P01_LoginPage();
+        loginPage.login();
+
     }
 }

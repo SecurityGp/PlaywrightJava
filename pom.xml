@@ -18,7 +18,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java-compiler.version>17</java-compiler.version>
     <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
-    <Playwright.version>1.40.0</Playwright.version>
+    <Playwright.version>1.50.0</Playwright.version>
     <testng.version>7.10.2</testng.version>
     <aspectjweaver.version>1.9.22.1</aspectjweaver.version>
     <allure-testng.version>2.29.0</allure-testng.version>

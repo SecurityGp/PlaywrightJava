@@ -16,9 +16,8 @@ import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.microsoft.playwright.Page;
-import java.util.Base64;
-
 import java.io.File;
+import java.util.Base64;
 import java.util.Objects;
 
 public class ExtentReportManager {
@@ -82,7 +81,7 @@ public class ExtentReportManager {
 
     /**
      * Adds a screenshot to the report.
-     * The provided 'message' parameter is used as the friendly name for the locator/step.
+     * The provided 'friendlyLocatorName' parameter is used as the friendly name for the locator/step.
      */
     public static void addScreenShot(String friendlyLocatorName) {
         try {
@@ -91,9 +90,12 @@ public class ExtentReportManager {
             // Convert the byte array to Base64 string
             String base64Image = "data:image/png;base64," +
                     Base64.getEncoder().encodeToString(screenshotBytes);
-            // Log the screenshot with the provided friendly name
-            ExtentTestManager.getExtentTest().log(Status.INFO, friendlyLocatorName,
-                    MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
+            if (ExtentTestManager.getExtentTest() != null) {
+                ExtentTestManager.getExtentTest().log(Status.INFO, friendlyLocatorName,
+                        MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
+            } else {
+                LogUtils.warn("ExtentTest instance is null. Unable to add screenshot: " + friendlyLocatorName);
+            }
             LogUtils.info("Screenshot added with friendly locator name: " + friendlyLocatorName);
         } catch (Exception e) {
             LogUtils.error("Error capturing screenshot: " + e.getMessage(), e);
@@ -102,7 +104,7 @@ public class ExtentReportManager {
 
     /**
      * Adds a screenshot with a specified status to the report.
-     * The 'message' parameter is used as the friendly name for the locator/step.
+     * The 'screenshotName' parameter is used as the friendly name for the screenshot/step.
      */
     public static void addScreenShot(Status status, String screenshotName) {
         Page page = PlaywrightDriverManager.getPage();
@@ -112,35 +114,29 @@ public class ExtentReportManager {
         }
 
         try {
-            // Optionally, create a more unique screenshot name (e.g., appending a timestamp)
-            // or iteration detail to differentiate multiple screenshots in the same test.
             String uniqueScreenshotName = screenshotName + " - " + System.currentTimeMillis();
-
-            // Capture the screenshot
-            byte[] screenshotBytes = page.screenshot(new Page.ScreenshotOptions()
-                    // Uncomment if you want the full page or specify other screenshot settings
-                    // .setFullPage(true)
-            );
-
-            // Convert the byte array to a Base64 string
+            byte[] screenshotBytes = page.screenshot(new Page.ScreenshotOptions());
             String base64Image = "data:image/png;base64," +
                     Base64.getEncoder().encodeToString(screenshotBytes);
-
-            // Log the screenshot in Extent with a Base64 string
-            ExtentTestManager.getExtentTest()
-                    .log(status, uniqueScreenshotName,
-                            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image)
-                                    .build());
-
-            LogUtils.info("Screenshot added with status: " + status
-                    + " | Name: " + uniqueScreenshotName);
+            if (ExtentTestManager.getExtentTest() != null) {
+                ExtentTestManager.getExtentTest()
+                        .log(status, uniqueScreenshotName,
+                                MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image)
+                                        .build());
+            } else {
+                LogUtils.warn("ExtentTest instance is null. Unable to add screenshot with status: " + status);
+            }
+            LogUtils.info("Screenshot added with status: " + status + " | Name: " + uniqueScreenshotName);
         } catch (Exception e) {
             LogUtils.error("Error capturing screenshot: " + e.getMessage(), e);
         }
     }
 
-
     public static synchronized void addAuthors(AuthorType[] authors) {
+        if (ExtentTestManager.getExtentTest() == null) {
+            LogUtils.warn("ExtentTest instance is null. Cannot assign authors.");
+            return;
+        }
         if (authors == null) {
             ExtentTestManager.getExtentTest().assignAuthor("Gp");
             LogUtils.info("Assigned default author: Gp");
@@ -153,6 +149,10 @@ public class ExtentReportManager {
     }
 
     public static synchronized void addCategories(CategoryType[] categories) {
+        if (ExtentTestManager.getExtentTest() == null) {
+            LogUtils.warn("ExtentTest instance is null. Cannot assign categories.");
+            return;
+        }
         if (categories == null) {
             ExtentTestManager.getExtentTest().assignCategory("REGRESSION");
             LogUtils.info("Assigned default category: REGRESSION");
@@ -165,73 +165,129 @@ public class ExtentReportManager {
     }
 
     public static synchronized void addDevices() {
+        if (ExtentTestManager.getExtentTest() == null) {
+            LogUtils.warn("ExtentTest instance is null. Cannot assign device info.");
+            return;
+        }
         String deviceInfo = BrowserInfoUtils.getBrowserInfo();
         ExtentTestManager.getExtentTest().assignDevice(deviceInfo);
         LogUtils.info("Assigned device info: " + deviceInfo);
     }
 
     public static void logMessage(String message) {
-        ExtentTestManager.getExtentTest().log(Status.INFO, message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().log(Status.INFO, message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Log message: " + message);
+        }
         LogUtils.info("Log message: " + message);
     }
 
     public static void logMessage(Status status, String message) {
-        ExtentTestManager.getExtentTest().log(status, message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().log(status, message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Log message with status " + status + ": " + message);
+        }
         LogUtils.info("Log message with status " + status + ": " + message);
     }
 
     public static void logMessage(Status status, Object message) {
-        ExtentTestManager.getExtentTest().log(status, (Throwable) message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().log(status, (Throwable) message);
+        } else {
+            LogUtils.error("ExtentTest instance is null. Log exception with status " + status + ": " + message);
+        }
         LogUtils.error("Log exception with status " + status + ": " + message);
     }
 
     public static void pass(String message) {
-        ExtentTestManager.getExtentTest().pass(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().pass(message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Test passed: " + message);
+        }
         LogUtils.info("Test passed: " + message);
     }
 
     public static void pass(Markup message) {
-        ExtentTestManager.getExtentTest().pass(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().pass(message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Test passed: " + message.getMarkup());
+        }
         LogUtils.info("Test passed: " + message.getMarkup());
     }
 
     public static void fail(String message) {
-        ExtentTestManager.getExtentTest().fail(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().fail(message);
+        } else {
+            LogUtils.error("ExtentTest instance is null. Test failed: " + message);
+        }
         LogUtils.error("Test failed: " + message);
     }
 
     public static void fail(Object message) {
-        ExtentTestManager.getExtentTest().fail((String) message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().fail((String) message);
+        } else {
+            LogUtils.error("ExtentTest instance is null. Test failed: " + message);
+        }
         LogUtils.error("Test failed: " + message);
     }
 
     public static void fail(Markup message) {
-        ExtentTestManager.getExtentTest().fail(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().fail(message);
+        } else {
+            LogUtils.error("ExtentTest instance is null. Test failed: " + message.getMarkup());
+        }
         LogUtils.error("Test failed: " + message.getMarkup());
     }
 
     public static void skip(String message) {
-        ExtentTestManager.getExtentTest().skip(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().skip(message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Test skipped: " + message);
+        }
         LogUtils.info("Test skipped: " + message);
     }
 
     public static void skip(Markup message) {
-        ExtentTestManager.getExtentTest().skip(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().skip(message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Test skipped: " + message.getMarkup());
+        }
         LogUtils.info("Test skipped: " + message.getMarkup());
     }
 
     public static void info(Markup message) {
-        ExtentTestManager.getExtentTest().info(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().info(message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Test info: " + message.getMarkup());
+        }
         LogUtils.info("Test info: " + message.getMarkup());
     }
 
     public static void info(String message) {
-        ExtentTestManager.getExtentTest().info(message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().info(message);
+        } else {
+            LogUtils.info("ExtentTest instance is null. Test info: " + message);
+        }
         LogUtils.info("Test info: " + message);
     }
 
     public static void warning(String message) {
-        ExtentTestManager.getExtentTest().log(Status.WARNING, message);
+        if (ExtentTestManager.getExtentTest() != null) {
+            ExtentTestManager.getExtentTest().log(Status.WARNING, message);
+        } else {
+            LogUtils.warn("ExtentTest instance is null. Test warning: " + message);
+        }
         LogUtils.warn("Test warning: " + message);
     }
 }

@@ -32,20 +32,12 @@ public final class PlaywrightFactory {
 
         // Select the browser based on FrameworkConstants.
         String browserType = FrameworkConstants.BROWSER; // Expected values: "chromium", "firefox", "webkit"
-        Browser browser;
-        switch (browserType.toLowerCase()) {
-            case "chromium":
-                browser = playwright.chromium().launch(launchOptions);
-                break;
-            case "firefox":
-                browser = playwright.firefox().launch(launchOptions);
-                break;
-            case "webkit":
-                browser = playwright.webkit().launch(launchOptions);
-                break;
-            default:
-                throw new IllegalArgumentException("Unsupported browser type: " + browserType);
-        }
+        Browser browser = switch (browserType.toLowerCase()) {
+            case "chromium" -> playwright.chromium().launch(launchOptions);
+            case "firefox" -> playwright.firefox().launch(launchOptions);
+            case "webkit" -> playwright.webkit().launch(launchOptions);
+            default -> throw new IllegalArgumentException("Unsupported browser type: " + browserType);
+        };
         browserThreadLocal.set(browser);
 
         // Set up context options (for example, ignoring HTTPS errors and setting viewport size).
