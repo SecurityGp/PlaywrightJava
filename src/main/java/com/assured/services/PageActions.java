@@ -74,7 +74,7 @@ public class PageActions {
         } catch (Exception e) {
             LogUtils.error("Navigation failed with error: " + e.getMessage());
             AllureManager.saveTextLog("Navigation failed with error: " + e.getMessage());
-            ExtentReportManager.fail("Navigation failed with error: " + e.getMessage()); // <-- Extent log
+            ExtentReportManager.fail("Navigation failed with error: " + e.getMessage());
             throw e;
         }
     }
@@ -90,7 +90,7 @@ public class PageActions {
         Page page = getPage();
         try {
             ExtentReportManager.info("Filling text into element with selector: " + selector
-                    + " | Value: " + text); // <-- Extent log
+                    + " | Value: " + text);
 
             Locator locator = page.locator(selector);
             locator.fill(text);
@@ -105,7 +105,7 @@ public class PageActions {
             AllureManager.saveTextLog("Failed to fill element with selector: " + selector
                     + " with error: " + e.getMessage());
             ExtentReportManager.fail("Failed to fill text in element (selector: " + selector
-                    + ") | Error: " + e.getMessage()); // <-- Extent log
+                    + ") | Error: " + e.getMessage());
             throw e;
         }
     }
@@ -119,7 +119,7 @@ public class PageActions {
     public static void clickElement(String selector) {
         Page page = getPage();
         try {
-            ExtentReportManager.info("Clicking element with selector: " + selector); // <-- Extent log
+            ExtentReportManager.info("Clicking element with selector: " + selector);
 
             Locator locator = page.locator(selector);
             locator.click();
@@ -134,7 +134,7 @@ public class PageActions {
             AllureManager.saveTextLog("Failed to click element with selector: " + selector
                     + " with error: " + e.getMessage());
             ExtentReportManager.fail("Failed to click element (selector: " + selector
-                    + ") | Error: " + e.getMessage()); // <-- Extent log
+                    + ") | Error: " + e.getMessage());
             throw e;
         }
     }
@@ -148,7 +148,7 @@ public class PageActions {
     public static void waitForElementClickable(String selector) {
         Page page = getPage();
         try {
-            ExtentReportManager.info("Waiting for element to be clickable: " + selector); // <-- Extent log
+            ExtentReportManager.info("Waiting for element to be clickable: " + selector);
 
             Locator locator = page.locator(selector);
             // Wait until the element is visible
@@ -156,7 +156,7 @@ public class PageActions {
                     .setState(WaitForSelectorState.VISIBLE)
                     .setTimeout(60000));
 
-            // Poll until enabled (Playwright does not have a direct "clickable" state)
+            // Poll until enabled
             int retries = 0;
             while (!locator.isEnabled() && retries < 10) {
                 Thread.sleep(500);
@@ -170,8 +170,91 @@ public class PageActions {
             LogUtils.error("Element not clickable: " + selector + " with error: " + e.getMessage());
             AllureManager.saveTextLog("Element not clickable: " + selector + " with error: " + e.getMessage());
             ExtentReportManager.fail("Element not clickable (selector: " + selector
-                    + ") | Error: " + e.getMessage()); // <-- Extent log
+                    + ") | Error: " + e.getMessage());
             throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * Verifies that the element is present (i.e., visible) in the DOM.
+     */
+    @Step("Verify element is present (visible): {0}")
+    public static boolean verifyElementIsPresent(String selector, FailureHandling flowControl) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Verifying element is present (visible): " + selector);
+
+            Locator locator = page.locator(selector);
+            // Wait briefly for it to become visible
+            locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(5000));
+
+            boolean isVisible = locator.isVisible();
+
+            if (isVisible) {
+                ExtentReportManager.pass("Element is present (selector: " + selector + ")");
+                LogUtils.info("Element is present: " + selector);
+            } else {
+                ExtentReportManager.fail("Element is NOT present (selector: " + selector + ")");
+                LogUtils.error("❌ Element is not present: " + selector);
+            }
+
+            // Handle flow control
+            if (flowControl.equals(FailureHandling.STOP_ON_FAILURE)) {
+                Assert.assertTrue(isVisible, "❌ Element with selector '" + selector + "' is not present.");
+            } else if (flowControl.equals(FailureHandling.CONTINUE_ON_FAILURE)) {
+                softAssert.assertTrue(isVisible, "❌ Element with selector '" + selector + "' is not present.");
+            }
+            addScreenshotToReport("verifyElementIsPresent_" + DateUtils.getCurrentDateTime());
+            return isVisible;
+        } catch (Exception e) {
+            ExtentReportManager.fail("Exception in verifyElementIsPresent: " + e.getMessage());
+            LogUtils.error("Exception in verifyElementIsPresent: " + e.getMessage());
+            AllureManager.saveTextLog("Exception in verifyElementIsPresent: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Verifies that the element is NOT present (i.e., not visible).
+     */
+    @Step("Verify element is not present (not visible): {0}")
+    public static boolean verifyElementIsNotPresent(String selector, FailureHandling flowControl) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Verifying element is NOT present (not visible): " + selector);
+
+            Locator locator = page.locator(selector);
+            // If the element might appear briefly, we can do a short wait for it to be hidden
+            boolean notVisible;
+            try {
+                locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.HIDDEN).setTimeout(5000));
+                notVisible = true; // If it successfully waited for hidden, it's not visible
+            } catch (Exception ex) {
+                // If the waitFor hidden times out or fails, check isVisible
+                notVisible = !locator.isVisible();
+            }
+
+            if (notVisible) {
+                ExtentReportManager.pass("Element is not present (selector: " + selector + ")");
+                LogUtils.info("Element is not present: " + selector);
+            } else {
+                ExtentReportManager.fail("Element IS present (selector: " + selector + ")");
+                LogUtils.error("❌ Element is present (should not be): " + selector);
+            }
+
+            // Handle flow control
+            if (flowControl.equals(FailureHandling.STOP_ON_FAILURE)) {
+                Assert.assertTrue(notVisible, "❌ Element with selector '" + selector + "' is present, but shouldn't be.");
+            } else if (flowControl.equals(FailureHandling.CONTINUE_ON_FAILURE)) {
+                softAssert.assertTrue(notVisible, "❌ Element with selector '" + selector + "' is present, but shouldn't be.");
+            }
+            addScreenshotToReport("verifyElementIsNotPresent_" + DateUtils.getCurrentDateTime());
+            return notVisible;
+        } catch (Exception e) {
+            ExtentReportManager.fail("Exception in verifyElementIsNotPresent: " + e.getMessage());
+            LogUtils.error("Exception in verifyElementIsNotPresent: " + e.getMessage());
+            AllureManager.saveTextLog("Exception in verifyElementIsNotPresent: " + e.getMessage());
+            throw e;
         }
     }
 
@@ -183,7 +266,7 @@ public class PageActions {
         Page page = getPage();
         try {
             ExtentReportManager.info("Verifying text of element " + selector
-                    + " equals: " + expectedText); // <-- Extent log
+                    + " equals: " + expectedText);
 
             Locator locator = page.locator(selector);
             locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
@@ -232,7 +315,7 @@ public class PageActions {
         Page page = getPage();
         try {
             ExtentReportManager.info("Verifying text of element " + selector
-                    + " contains: " + expectedText); // <-- Extent log
+                    + " contains: " + expectedText);
 
             Locator locator = page.locator(selector);
             locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
@@ -280,7 +363,7 @@ public class PageActions {
         Page page = getPage();
         try {
             ExtentReportManager.info("Uploading file to selector: " + selector
-                    + " | filePath: " + filePath); // <-- Extent log
+                    + " | filePath: " + filePath);
 
             Locator locator = page.locator(selector);
             locator.setInputFiles(Paths.get(filePath));
@@ -294,7 +377,7 @@ public class PageActions {
             AllureManager.saveTextLog("Failed to upload file using selector: " + selector
                     + " with error: " + e.getMessage());
             ExtentReportManager.fail("Failed to upload file (selector: " + selector
-                    + ") | Error: " + e.getMessage()); // <-- Extent log
+                    + ") | Error: " + e.getMessage());
             throw e;
         }
     }
@@ -307,7 +390,7 @@ public class PageActions {
         Page page = getPage();
         try {
             ExtentReportManager.info("Verifying text of element " + selector
-                    + " does NOT contain: " + notExpectedText); // <-- Extent log
+                    + " does NOT contain: " + notExpectedText);
 
             Locator locator = page.locator(selector);
             locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
@@ -354,7 +437,7 @@ public class PageActions {
     public static boolean verifyElementIsEnabled(String selector, FailureHandling flowControl) {
         Page page = getPage();
         try {
-            ExtentReportManager.info("Verifying element is enabled: " + selector); // <-- Extent log
+            ExtentReportManager.info("Verifying element is enabled: " + selector);
 
             Locator locator = page.locator(selector);
             locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
@@ -391,7 +474,7 @@ public class PageActions {
     public static boolean verifyElementIsDisabled(String selector, FailureHandling flowControl) {
         Page page = getPage();
         try {
-            ExtentReportManager.info("Verifying element is disabled: " + selector); // <-- Extent log
+            ExtentReportManager.info("Verifying element is disabled: " + selector);
 
             Locator locator = page.locator(selector);
             locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
@@ -430,7 +513,7 @@ public class PageActions {
             Page page = getPage();
             BrowserContext context = page.context();
 
-            ExtentReportManager.info("Closing the browser for page: " + page); // <-- Extent log
+            ExtentReportManager.info("Closing the browser for page: " + page);
             LogUtils.info("Closing the browser");
             context.close();
 
@@ -439,7 +522,7 @@ public class PageActions {
         } catch (Exception e) {
             LogUtils.error("Failed to close browser with error: " + e.getMessage());
             AllureManager.saveTextLog("Failed to close browser with error: " + e.getMessage());
-            ExtentReportManager.fail("Failed to close browser | Error: " + e.getMessage()); // <-- Extent log
+            ExtentReportManager.fail("Failed to close browser | Error: " + e.getMessage());
             throw e;
         }
     }
@@ -456,7 +539,7 @@ public class PageActions {
         Page originalPage = PlaywrightDriverManager.getPage();
 
         try {
-            ExtentReportManager.info("Opening a new browser instance to perform additional actions"); // <-- Extent log
+            ExtentReportManager.info("Opening a new browser instance to perform additional actions");
 
             // Create a new browser instance (non-headless mode) and get a new Page.
             Page newPage = PlaywrightFactory.createPage(false);
@@ -473,7 +556,7 @@ public class PageActions {
         } catch (Exception e) {
             LogUtils.error("Error during actions in new browser: " + e.getMessage(), e);
             AllureManager.saveTextLog("Error during actions in new browser: " + e.getMessage());
-            ExtentReportManager.fail("Error during actions in new browser | " + e.getMessage()); // <-- Extent log
+            ExtentReportManager.fail("Error during actions in new browser | " + e.getMessage());
             throw new RuntimeException(e);
         } finally {
             // Close the new browser
@@ -484,7 +567,7 @@ public class PageActions {
 
             LogUtils.info("Returned to original browser instance.");
             AllureManager.saveTextLog("Returned to original browser instance.");
-            ExtentReportManager.info("Returned to original browser instance."); // <-- Extent log
+            ExtentReportManager.info("Returned to original browser instance.");
             addScreenshotToReport("returnedToOriginalBrowser_" + DateUtils.getCurrentDateTime());
         }
     }
@@ -495,7 +578,7 @@ public class PageActions {
     @Step("Switch to newly opened tab, perform action, and return to original tab")
     public static void switchToNewTabAndPerformAction(Runnable action) {
         try {
-            ExtentReportManager.info("Switching to newly opened tab to perform action"); // <-- Extent log
+            ExtentReportManager.info("Switching to newly opened tab to perform action");
 
             Page originalPage = PlaywrightDriverManager.getPage();
             BrowserContext context = originalPage.context();
@@ -528,12 +611,12 @@ public class PageActions {
             PlaywrightDriverManager.setPage(originalPage);
             LogUtils.info("Returned to original tab");
             AllureManager.saveTextLog("Returned to original tab");
-            ExtentReportManager.info("Returned to original tab"); // <-- Extent log
+            ExtentReportManager.info("Returned to original tab");
             addScreenshotToReport("returnToOriginalTab_" + DateUtils.getCurrentDateTime());
         } catch (Exception e) {
             LogUtils.error("Error in switching tabs: " + e.getMessage());
             AllureManager.saveTextLog("Error in switching tabs: " + e.getMessage());
-            ExtentReportManager.fail("Error in switching tabs | " + e.getMessage()); // <-- Extent log
+            ExtentReportManager.fail("Error in switching tabs | " + e.getMessage());
             throw new RuntimeException(e);
         }
     }
@@ -548,7 +631,7 @@ public class PageActions {
         String apiKey = "947fc29e9d3b4c4b80be0e65f27fd8db"; // Example API key
         try {
             ExtentReportManager.info("Retrieving mail URL for domain: " + domain
-                    + ", mailbox: " + mailbox); // <-- Extent log
+                    + ", mailbox: " + mailbox);
 
             LogUtils.info("Requesting inbox for domain: " + domain);
             AllureManager.saveTextLog("Requesting inbox for domain: " + domain);
@@ -563,7 +646,7 @@ public class PageActions {
             if (messages.isEmpty()) {
                 LogUtils.warn("No messages found in inbox for domain: " + domain);
                 AllureManager.saveTextLog("No messages found in inbox for domain: " + domain);
-                ExtentReportManager.info("No messages found in mailbox: " + mailbox); // <-- Extent log
+                ExtentReportManager.info("No messages found in mailbox: " + mailbox);
                 return null;
             }
 
@@ -585,7 +668,7 @@ public class PageActions {
             } else {
                 LogUtils.warn("No URL found in subject. Trying links API for message id: " + messageId);
                 AllureManager.saveTextLog("No URL found in subject. Trying links API for message id: " + messageId);
-                ExtentReportManager.info("No URL in subject, checking links API..."); // <-- Extent log
+                ExtentReportManager.info("No URL in subject, checking links API...");
 
                 // Retrieve URL using the links API
                 Links linksResponse = mailinatorClient.request(new GetLinksRequest(domain, mailbox, messageId));
@@ -604,7 +687,7 @@ public class PageActions {
         } catch (Exception e) {
             LogUtils.error("Exception occurred while retrieving mail URL: " + e.getMessage(), e);
             AllureManager.saveTextLog("Exception occurred while retrieving mail URL: " + e.getMessage());
-            ExtentReportManager.fail("Exception retrieving mail URL: " + e.getMessage()); // <-- Extent log
+            ExtentReportManager.fail("Exception retrieving mail URL: " + e.getMessage());
             throw e;
         }
         return url;
