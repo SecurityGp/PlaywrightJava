@@ -48,7 +48,7 @@ public class T01_LoginTest extends BaseTest {
     public void urlTest() throws InterruptedException {
         loginPage = new P01_LoginPage();
         loginPage.login();
-        sleep(80000);
+
 
     }
 }
