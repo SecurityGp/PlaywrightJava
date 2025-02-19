@@ -1,5 +1,6 @@
 package com.assured.services;
 
+import com.assured.driver.PlaywrightFactory;
 import com.assured.enums.FailureHandling;
 import com.assured.report.AllureManager;
 import com.assured.report.ExtentReportManager;
@@ -411,6 +412,58 @@ public class PageActions {
             throw e;
         }
     }
+    /**
+     * Opens a new browser instance, performs the provided actions, closes that browser,
+     * and then restores the original browser session.
+     *
+     * @param action A Runnable containing the actions to perform on the new browser.
+     */
+    @Step("Open a new browser instance, perform actions, then return to original browser")
+    public static void openNewBrowserAndPerformAction(Runnable action) {
+        // Save the original (current) Page instance so we can return to it later.
+        Page originalPage = PlaywrightDriverManager.getPage();
+
+        try {
+            // Create a new browser instance (non-headless mode in this example) and obtain a new Page.
+            Page newPage = PlaywrightFactory.createPage(false);
+
+            // Set the newly created page as the current active page in the driver manager.
+            PlaywrightDriverManager.setPage(newPage);
+
+            // Log that a new browser instance has been opened.
+            LogUtils.info("Opened new browser instance for additional actions.");
+            AllureManager.saveTextLog("Opened new browser instance for additional actions.");
+
+            // Capture and attach a screenshot indicating that the new browser has been opened.
+            addScreenshotToReport("newBrowserOpened_" + DateUtils.getCurrentDateTime());
+
+            // Execute the provided actions (passed as a lambda) in the context of the new browser.
+            action.run();
+
+            // Capture another screenshot after the actions have been executed.
+            addScreenshotToReport("actionsPerformedInNewBrowser_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            // Log any errors that occur during the actions in the new browser.
+            LogUtils.error("Error during actions in new browser: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Error during actions in new browser: " + e.getMessage());
+            // Wrap and rethrow the exception to signal failure.
+            throw new RuntimeException(e);
+        } finally {
+            // Close the new browser instance and clean up its resources.
+            PlaywrightFactory.quit();
+
+            // Restore the original browser instance in the driver manager.
+            PlaywrightDriverManager.setPage(originalPage);
+
+            // Log that control has returned to the original browser session.
+            LogUtils.info("Returned to original browser instance.");
+            AllureManager.saveTextLog("Returned to original browser instance.");
+
+            // Capture a final screenshot confirming that we've returned to the original browser.
+            addScreenshotToReport("returnedToOriginalBrowser_" + DateUtils.getCurrentDateTime());
+        }
+    }
+
 
     /**
      * Switches to the newly opened tab, performs the provided action, and returns to the original tab.
@@ -466,7 +519,7 @@ public class PageActions {
      *
      * @param domain    the Mailinator domain (e.g., "private").
      * @param mailbox   the mailbox (e.g., "abc").
-     * @param messageId the unique message ID.
+
      * @return the extracted URL, or null if not found.
      */
     @Step("Retrieve mail URL for domain: {0}, mailbox: {1}")

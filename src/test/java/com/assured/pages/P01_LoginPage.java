@@ -9,6 +9,7 @@ import com.assured.pages.test;
 
 import java.util.Hashtable;
 
+import static com.assured.services.PageActions.*;
 import static java.lang.Thread.sleep;
 
 /**
@@ -30,6 +31,10 @@ public class P01_LoginPage extends CommonPageCRM {
     public static final String linkSignUpSelector = "//a[normalize-space()='Sign up']";
     public static final String labelEmailErrorSelector = "//span[@id='email-error']";
     public static final String labelPasswordErrorSelector = "//span[@id='password-error']";
+    public static final String inputNewPassword = "#createProviderAccountForm_password";
+    public static final String inputConfirmPassword = "#createProviderAccountForm_confirmPassword";
+    public static final String buttonCreateAccountSelector = "//*[@id=\"createProviderAccountForm\"]/button";
+
 
     public P01_LoginPage() {
         super();
@@ -48,7 +53,7 @@ public class P01_LoginPage extends CommonPageCRM {
         excelHelpers.setExcelFile(FrameworkConstants.EXCEL_DATA_FILE_PATH, "SignIn");
 
         // Navigate to the staging URL.
-        PageActions.navigate(FrameworkConstants.URL_STAGING);
+        navigate(FrameworkConstants.URL_STAGING);
         String email = data.get(SignInModel.getEmail());
         String password = data.get(SignInModel.getPassword());
 
@@ -70,15 +75,37 @@ public class P01_LoginPage extends CommonPageCRM {
     }
 
 
-    public P01_LoginPage login() {
+    public P01_LoginPage login() throws InterruptedException {
+
+        navigate(FrameworkConstants.URL_STAGING);
+        LogUtils.info("Filling in email: ");
+        PageActions.setText(inputEmailSelector, "abc@gmail.com");
+
+        LogUtils.info("Filling in password.");
+        PageActions.setText(inputPasswordSelector, "abc");
+        sleep(8000);
+
         String domain = "private";
         String mailbox = "abc1";
 
         // Retrieve URL from email
         String mailUrl = PageActions.getMailUrl(domain, mailbox);
 
+        PageActions.openNewBrowserAndPerformAction(() -> {
+            navigate(mailUrl);
+            setText(inputNewPassword, "123456");
+            setText(inputConfirmPassword, "123456");
+            clickElement(buttonCreateAccountSelector);
+            try {
+                sleep(8000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
         // Navigate to the staging URL.
-        PageActions.navigate(mailUrl);
+
+
         try {
             sleep(8000);
         } catch (InterruptedException e) {
