@@ -70,9 +70,11 @@ public class test {
         String domain = "private";
         String mailbox = "abc1";
         String messageId = "abc-1738505275-0961552951903";
+        String expectedFrom = "no-reply@withassured.com";
+        String expectedSubject = "Onboarding Invite";
 
 
-        String mailUrl = PageActions.getMailUrl(domain, mailbox);
+        String mailUrl = PageActions.getMailUrl(domain, mailbox, expectedFrom, expectedSubject);
         System.out.println("Retrieved Mail URL: " + mailUrl);
     }
 }

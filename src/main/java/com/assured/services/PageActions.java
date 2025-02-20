@@ -625,13 +625,27 @@ public class PageActions {
      * Retrieves the URL associated with the first message in the specified Mailinator inbox.
      * If the subject doesn't contain a URL, it uses the Mailinator "links" API to find one.
      */
-    @Step("Retrieve mail URL for domain: {0}, mailbox: {1}")
-    public static String getMailUrl(String domain, String mailbox) {
+    /**
+     * Retrieves the URL associated with the first message in the specified Mailinator inbox.
+     * It validates that the message "From" address and "Subject" match expected values.
+     * If the subject doesn't contain a URL, it uses the Mailinator "links" API to find one.
+     *
+     * @param domain          The Mailinator domain (e.g., "private").
+     * @param mailbox         The mailbox (e.g., "abc").
+     * @param expectedFrom    The expected sender email address (e.g., "no-reply@withassured.com").
+     * @param expectedSubject The expected subject or subject substring (e.g., "Onboarding Invite").
+     * @return The extracted URL, or null if not found.
+     */
+    @Step("Retrieve mail URL for domain: {0}, mailbox: {1}, expectedFrom: {2}, expectedSubject: {3}")
+    public static String getMailUrl(String domain, String mailbox, String expectedFrom, String expectedSubject) {
         String url = null;
-        String apiKey = "947fc29e9d3b4c4b80be0e65f27fd8db"; // Example API key
+        // Example API key
+        String apiKey = "947fc29e9d3b4c4b80be0e65f27fd8db";
         try {
             ExtentReportManager.info("Retrieving mail URL for domain: " + domain
-                    + ", mailbox: " + mailbox);
+                    + ", mailbox: " + mailbox
+                    + ", expectedFrom: " + expectedFrom
+                    + ", expectedSubject: " + expectedSubject);
 
             LogUtils.info("Requesting inbox for domain: " + domain);
             AllureManager.saveTextLog("Requesting inbox for domain: " + domain);
@@ -654,11 +668,50 @@ public class PageActions {
             Message latestMessage = messages.get(0);
             String messageId = latestMessage.getId();
             String subject = latestMessage.getSubject();
+            String from = latestMessage.getFrom();  // "From" address
 
-            LogUtils.info("Using latest message with id: " + messageId + " and subject: " + subject);
-            AllureManager.saveTextLog("Using latest message with id: " + messageId + " and subject: " + subject);
+            LogUtils.info("Using latest message with id: " + messageId
+                    + ", from: " + from
+                    + ", subject: " + subject);
+            AllureManager.saveTextLog("Using latest message with id: " + messageId
+                    + ", from: " + from
+                    + ", subject: " + subject);
+            ExtentReportManager.info("Latest message details -> ID: " + messageId
+                    + ", From: " + from
+                    + ", Subject: " + subject);
 
-            // Try to extract URL from the subject first
+            // Validate the "From" address
+            if (from == null || !from.equalsIgnoreCase(expectedFrom)) {
+                String errMsg = "From address mismatch! Expected: " + expectedFrom + ", but got: " + from;
+                LogUtils.error(errMsg);
+                AllureManager.saveTextLog(errMsg);
+                ExtentReportManager.fail(errMsg);
+                // Depending on your needs, you can throw an exception or return null
+                return null;
+            } else {
+                String passMsg = "From address matches expected: " + expectedFrom;
+                LogUtils.info(passMsg);
+                ExtentReportManager.pass(passMsg);
+                AllureManager.saveTextLog(passMsg);
+            }
+
+            // Validate the subject
+            if (subject == null || !subject.contains(expectedSubject)) {
+                String errMsg = "Subject mismatch! Expected to contain: " + expectedSubject
+                        + ", but got: " + subject;
+                LogUtils.error(errMsg);
+                AllureManager.saveTextLog(errMsg);
+                ExtentReportManager.fail(errMsg);
+                // Depending on your needs, you can throw an exception or return null
+                return null;
+            } else {
+                String passMsg = "Subject matches expected substring: " + expectedSubject;
+                LogUtils.info(passMsg);
+                ExtentReportManager.pass(passMsg);
+                AllureManager.saveTextLog(passMsg);
+            }
+
+            // Try to extract the URL from the subject
             url = extractUrlFromSubject(subject);
             if (url != null) {
                 LogUtils.info("Extracted URL from subject: " + url);
@@ -679,9 +732,10 @@ public class PageActions {
                     AllureManager.saveTextLog("Retrieved URL from links API: " + url);
                     ExtentReportManager.info("Mail invite URL retrieved from links API: " + url);
                 } else {
-                    LogUtils.error("No URL found from links API for message id: " + messageId);
-                    AllureManager.saveTextLog("No URL found from links API for message id: " + messageId);
-                    ExtentReportManager.fail("No URL found from links API for message: " + messageId);
+                    String noUrlErr = "No URL found from links API for message id: " + messageId;
+                    LogUtils.error(noUrlErr);
+                    AllureManager.saveTextLog(noUrlErr);
+                    ExtentReportManager.fail(noUrlErr);
                 }
             }
         } catch (Exception e) {
@@ -705,6 +759,7 @@ public class PageActions {
         }
         return null;
     }
+
 
     /**
      * Utility method to capture a screenshot and attach it to both Allure and Extent.
