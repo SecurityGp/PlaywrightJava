@@ -27,11 +27,10 @@ public class T01_LoginTest extends BaseTest {
     @Test(priority = 1, description = "TC01_signInWithDataProvider",
             dataProvider = "getSignInDataHashTable", dataProviderClass = DataProviderManager.class)
     public void loginWithValidCredentials(Hashtable<String, String> data) {
-        // Instantiate the login page.
-        loginPage = new P01_LoginPage();
-        // Perform login with valid credentials.
+       loginPage = new P01_LoginPage();
+
         loginPage.loginWithValidCredentials(data);
-        // Add assertions to verify successful login.
+
     }
 
     @FrameworkAnnotation(author = {AuthorType.Gnanapandithan}, category = {CategoryType.REGRESSION})
@@ -42,7 +41,7 @@ public class T01_LoginTest extends BaseTest {
         loginPage = new P01_LoginPage();
         // Perform login with the supplied (invalid) credentials.
         loginPage.loginWithValidCredentials(data);
-        // Add assertions to verify behavior for invalid credentials.
+
     }
     @Test(priority = 3, description = "TC03_urlTest")
     public void urlTest() throws InterruptedException {

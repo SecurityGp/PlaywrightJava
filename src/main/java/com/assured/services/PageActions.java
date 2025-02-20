@@ -518,7 +518,7 @@ public class PageActions {
             context.close();
 
             AllureManager.saveTextLog("Browser closed successfully.");
-            // No screenshot as the browser is closing
+
         } catch (Exception e) {
             LogUtils.error("Failed to close browser with error: " + e.getMessage());
             AllureManager.saveTextLog("Failed to close browser with error: " + e.getMessage());
@@ -535,13 +535,12 @@ public class PageActions {
      */
     @Step("Open a new browser instance, perform actions, then return to original browser")
     public static void openNewBrowserAndPerformAction(Runnable action) {
-        // Save the original (current) Page instance
+
         Page originalPage = PlaywrightDriverManager.getPage();
 
         try {
             ExtentReportManager.info("Opening a new browser instance to perform additional actions");
 
-            // Create a new browser instance (non-headless mode) and get a new Page.
             Page newPage = PlaywrightFactory.createPage(false);
             PlaywrightDriverManager.setPage(newPage);
 
@@ -549,7 +548,6 @@ public class PageActions {
             AllureManager.saveTextLog("Opened new browser instance for additional actions.");
             addScreenshotToReport("newBrowserOpened_" + DateUtils.getCurrentDateTime());
 
-            // Execute the provided actions (lambda) in the new browser context
             action.run();
 
             addScreenshotToReport("actionsPerformedInNewBrowser_" + DateUtils.getCurrentDateTime());
@@ -559,10 +557,10 @@ public class PageActions {
             ExtentReportManager.fail("Error during actions in new browser | " + e.getMessage());
             throw new RuntimeException(e);
         } finally {
-            // Close the new browser
+
             PlaywrightFactory.quit();
 
-            // Restore the original browser session
+
             PlaywrightDriverManager.setPage(originalPage);
 
             LogUtils.info("Returned to original browser instance.");
@@ -583,7 +581,7 @@ public class PageActions {
             Page originalPage = PlaywrightDriverManager.getPage();
             BrowserContext context = originalPage.context();
 
-            // Wait briefly for the new page to open (customize as needed)
+
             Thread.sleep(1000);
             List<Page> pages = context.pages();
             Page newPage = null;
@@ -597,17 +595,16 @@ public class PageActions {
                 throw new RuntimeException("No new tab found");
             }
 
-            // Switch to new page
             PlaywrightDriverManager.setPage(newPage);
             LogUtils.info("Switched to new tab");
             AllureManager.saveTextLog("Switched to new tab");
             addScreenshotToReport("switchToNewTab_" + DateUtils.getCurrentDateTime());
 
-            // Perform action on the new tab
+
             action.run();
             addScreenshotToReport("actionOnNewTab_" + DateUtils.getCurrentDateTime());
 
-            // Return to original page
+
             PlaywrightDriverManager.setPage(originalPage);
             LogUtils.info("Returned to original tab");
             AllureManager.saveTextLog("Returned to original tab");
@@ -622,13 +619,9 @@ public class PageActions {
     }
 
     /**
-     * Retrieves the URL associated with the first message in the specified Mailinator inbox.
-     * If the subject doesn't contain a URL, it uses the Mailinator "links" API to find one.
-     */
-    /**
-     * Retrieves the URL associated with the first message in the specified Mailinator inbox.
-     * It validates that the message "From" address and "Subject" match expected values.
-     * If the subject doesn't contain a URL, it uses the Mailinator "links" API to find one.
+     * Retrieves the URL from a matching message in the specified Mailinator inbox.
+     * It looks for a message whose "From" address and "Subject" match the expected values.
+     * If found, it attempts to extract the invite URL from the subject or the links API.
      *
      * @param domain          The Mailinator domain (e.g., "private").
      * @param mailbox         The mailbox (e.g., "abc").
@@ -639,8 +632,7 @@ public class PageActions {
     @Step("Retrieve mail URL for domain: {0}, mailbox: {1}, expectedFrom: {2}, expectedSubject: {3}")
     public static String getMailUrl(String domain, String mailbox, String expectedFrom, String expectedSubject) {
         String url = null;
-        // Example API key
-        String apiKey = "947fc29e9d3b4c4b80be0e65f27fd8db";
+        String apiKey = "947fc29e9d3b4c4b80be0e65f27fd8db"; // Example API key
         try {
             ExtentReportManager.info("Retrieving mail URL for domain: " + domain
                     + ", mailbox: " + mailbox
@@ -664,54 +656,50 @@ public class PageActions {
                 return null;
             }
 
-            // Assume the first message is the latest
-            Message latestMessage = messages.get(0);
-            String messageId = latestMessage.getId();
-            String subject = latestMessage.getSubject();
-            String from = latestMessage.getFrom();  // "From" address
 
-            LogUtils.info("Using latest message with id: " + messageId
-                    + ", from: " + from
-                    + ", subject: " + subject);
-            AllureManager.saveTextLog("Using latest message with id: " + messageId
-                    + ", from: " + from
-                    + ", subject: " + subject);
-            ExtentReportManager.info("Latest message details -> ID: " + messageId
+            Message matchingMessage = null;
+            for (Message msg : messages) {
+                String from = msg.getFrom();
+                String subject = msg.getSubject();
+                // If "from" and "subject" both match your expected criteria
+                if (from != null
+                        && from.equalsIgnoreCase(expectedFrom)
+                        && subject != null
+                        && subject.contains(expectedSubject)) {
+
+                    matchingMessage = msg;
+                    break;
+                }
+            }
+
+
+            if (matchingMessage == null) {
+                String warnMsg = String.format(
+                        "No matching email found. Expected from='%s', subject containing='%s'",
+                        expectedFrom, expectedSubject
+                );
+                LogUtils.warn(warnMsg);
+                AllureManager.saveTextLog(warnMsg);
+                ExtentReportManager.fail(warnMsg);
+                return null;
+            }
+
+
+            String messageId = matchingMessage.getId();
+            String subject = matchingMessage.getSubject();
+            String from = matchingMessage.getFrom();
+
+            LogUtils.info("Matched message -> ID: " + messageId
+                    + ", From: " + from
+                    + ", Subject: " + subject);
+            AllureManager.saveTextLog("Matched message -> ID: " + messageId
+                    + ", From: " + from
+                    + ", Subject: " + subject);
+            ExtentReportManager.info("Matched message details -> ID: " + messageId
                     + ", From: " + from
                     + ", Subject: " + subject);
 
-            // Validate the "From" address
-            if (from == null || !from.equalsIgnoreCase(expectedFrom)) {
-                String errMsg = "From address mismatch! Expected: " + expectedFrom + ", but got: " + from;
-                LogUtils.error(errMsg);
-                AllureManager.saveTextLog(errMsg);
-                ExtentReportManager.fail(errMsg);
-                // Depending on your needs, you can throw an exception or return null
-                return null;
-            } else {
-                String passMsg = "From address matches expected: " + expectedFrom;
-                LogUtils.info(passMsg);
-                ExtentReportManager.pass(passMsg);
-                AllureManager.saveTextLog(passMsg);
-            }
 
-            // Validate the subject
-            if (subject == null || !subject.contains(expectedSubject)) {
-                String errMsg = "Subject mismatch! Expected to contain: " + expectedSubject
-                        + ", but got: " + subject;
-                LogUtils.error(errMsg);
-                AllureManager.saveTextLog(errMsg);
-                ExtentReportManager.fail(errMsg);
-                // Depending on your needs, you can throw an exception or return null
-                return null;
-            } else {
-                String passMsg = "Subject matches expected substring: " + expectedSubject;
-                LogUtils.info(passMsg);
-                ExtentReportManager.pass(passMsg);
-                AllureManager.saveTextLog(passMsg);
-            }
-
-            // Try to extract the URL from the subject
             url = extractUrlFromSubject(subject);
             if (url != null) {
                 LogUtils.info("Extracted URL from subject: " + url);
@@ -719,11 +707,11 @@ public class PageActions {
                 ExtentReportManager.info("Mail invite URL extracted from subject: " + url);
                 return url;
             } else {
+
                 LogUtils.warn("No URL found in subject. Trying links API for message id: " + messageId);
                 AllureManager.saveTextLog("No URL found in subject. Trying links API for message id: " + messageId);
                 ExtentReportManager.info("No URL in subject, checking links API...");
 
-                // Retrieve URL using the links API
                 Links linksResponse = mailinatorClient.request(new GetLinksRequest(domain, mailbox, messageId));
                 List<String> links = linksResponse.getLinks();
                 if (links != null && !links.isEmpty()) {
@@ -755,7 +743,7 @@ public class PageActions {
         Pattern pattern = Pattern.compile(urlRegex);
         Matcher matcher = pattern.matcher(subject);
         if (matcher.find()) {
-            return matcher.group(0); // Return the first matched URL
+            return matcher.group(0);
         }
         return null;
     }
