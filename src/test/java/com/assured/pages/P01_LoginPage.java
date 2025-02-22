@@ -31,9 +31,9 @@ public class P01_LoginPage extends CommonPageCRM {
     public static final String linkSignUpSelector = "//a[normalize-space()='Sign up']";
     public static final String labelEmailErrorSelector = "//span[@id='email-error']";
     public static final String labelPasswordErrorSelector = "//span[@id='password-error']";
-    public static final String inputNewPassword = "#createProviderAccountForm_password";
-    public static final String inputConfirmPassword = "#createProviderAccountForm_confirmPassword";
-    public static final String buttonCreateAccountSelector = "//*[@id=\"createProviderAccountForm\"]/button";
+    public static final String inputNewPassword = "input[placeholder=\"New Password\"]";
+    public static final String inputConfirmPassword = "input[placeholder=\"Confirm Password\"]";
+    public static final String buttonCreateAccountSelector = "#createAdminAccountForm > button > span";
 
 
     public P01_LoginPage() {

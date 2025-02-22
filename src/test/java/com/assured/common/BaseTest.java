@@ -1,5 +1,6 @@
 package com.assured.common;
 
+import com.assured.constants.FrameworkConstants;
 import com.assured.driver.PlaywrightDriverManager;
 import com.assured.driver.PlaywrightFactory;
 import com.microsoft.playwright.Page;
@@ -22,7 +23,7 @@ public class BaseTest {
         LogUtils.info("Creating Playwright instance using factory method...");
         // Create a Page instance using our factory.
         // You can pass true for headless mode if needed (here we use false).
-        page = PlaywrightFactory.createPage(false);
+        page = PlaywrightFactory.createPage(FrameworkConstants.HEADLESS);
         LogUtils.info("Page instance created: " + page);
     }
 

@@ -22,13 +22,13 @@ public final class PlaywrightFactory {
      * @param headless whether to run the browser in headless mode.
      * @return a new Page instance.
      */
-    public static Page createPage(boolean headless) {
+    public static Page createPage(String headless) {
         // Create the Playwright instance.
         Playwright playwright = Playwright.create();
         playwrightThreadLocal.set(playwright);
 
         // Configure launch options.
-        BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions().setHeadless(headless);
+        BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless));
 
         // Select the browser based on FrameworkConstants.
         String browserType = FrameworkConstants.BROWSER; // Expected values: "chromium", "firefox", "webkit"
@@ -61,7 +61,7 @@ public final class PlaywrightFactory {
      * @return a new Page instance.
      */
     public static Page createPage() {
-        return createPage(false);
+        return createPage(FrameworkConstants.HEADLESS);
     }
 
     /**

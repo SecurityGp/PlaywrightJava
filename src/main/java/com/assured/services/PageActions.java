@@ -1,5 +1,6 @@
 package com.assured.services;
 
+import com.assured.constants.FrameworkConstants;
 import com.assured.driver.PlaywrightDriverManager;
 import com.assured.driver.PlaywrightFactory;
 import com.assured.enums.FailureHandling;
@@ -541,7 +542,7 @@ public class PageActions {
         try {
             ExtentReportManager.info("Opening a new browser instance to perform additional actions");
 
-            Page newPage = PlaywrightFactory.createPage(false);
+            Page newPage = PlaywrightFactory.createPage(FrameworkConstants.HEADLESS);
             PlaywrightDriverManager.setPage(newPage);
 
             LogUtils.info("Opened new browser instance for additional actions.");

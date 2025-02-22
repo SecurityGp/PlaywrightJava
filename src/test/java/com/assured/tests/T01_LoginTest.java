@@ -14,9 +14,7 @@ import java.util.Hashtable;
 
 import static java.lang.Thread.sleep;
 
-/**
- * T01_LoginTest contains the login test methods.
- */
+
 @Epic("Regression Test CRM")
 @Feature("Sign In Test")
 public class T01_LoginTest extends BaseTest {

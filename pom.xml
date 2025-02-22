@@ -1,16 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Migration</artifactId>
+  <artifactId>mailnator</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Migration</name>
+  <name>mailnator</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -250,6 +247,8 @@
 
   <build>
     <pluginManagement>
+
+
       <plugins>
         <!-- Maven Compiler Plugin -->
         <plugin>
@@ -287,6 +286,21 @@
             </systemPropertyVariables>
           </configuration>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.2</version>
+          <configuration>
+            <!-- Redirect test output to a file (set to false if you want to stream to the console) -->
+            <redirectTestOutputToFile>true</redirectTestOutputToFile>
+            <!-- Run tests in a single fork to avoid concurrency issues -->
+            <forkCount>2</forkCount>
+            <reuseForks>true</reuseForks>
+            <!-- Optionally, disable the use of the system class loader -->
+            <useSystemClassLoader>false</useSystemClassLoader>
+          </configuration>
+        </plugin>
+
 
         <!-- Allure Maven Plugin -->
         <plugin>
