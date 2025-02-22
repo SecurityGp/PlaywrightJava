@@ -17,7 +17,8 @@
     <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
     <Playwright.version>1.50.0</Playwright.version>
     <testng.version>7.10.2</testng.version>
-    <aspectjweaver.version>1.9.22.1</aspectjweaver.version>
+    <!-- AspectJ Weaver property removed -->
+    <!-- <aspectjweaver.version>1.9.22.1</aspectjweaver.version> -->
     <allure-testng.version>2.29.0</allure-testng.version>
     <allure-plugin-api.version>2.32.0</allure-plugin-api.version>
     <allure-maven.version>2.15.2</allure-maven.version>
@@ -247,8 +248,6 @@
 
   <build>
     <pluginManagement>
-
-
       <plugins>
         <!-- Maven Compiler Plugin -->
         <plugin>
@@ -276,9 +275,8 @@
             <suiteXmlFiles>
               <suiteXmlFile>src/test/resources/suites/SuiteAll.xml</suiteXmlFile>
             </suiteXmlFiles>
-            <argLine>
-              -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
-            </argLine>
+            <!-- AspectJ Weaver agent removed -->
+            <argLine></argLine>
             <redirectTestOutputToFile>true</redirectTestOutputToFile>
             <testFailureIgnore>${maven.test.failure.ignore}</testFailureIgnore>
             <systemPropertyVariables>
@@ -286,7 +284,6 @@
             </systemPropertyVariables>
           </configuration>
         </plugin>
-
         <!-- Allure Maven Plugin -->
         <plugin>
           <groupId>io.qameta.allure</groupId>
