@@ -1477,3 +1477,371 @@ Call log:
 [INFO] 22-02-2025 20:06:31 [main] [LogUtils] - Test info: Returned to original browser instance.
 [ERROR] 22-02-2025 20:06:31 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 51: screenshots\returnedToOriginalBrowser_22/02/2025 20:06:31.png
 [INFO] 22-02-2025 20:06:39 [main] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:12:21 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-02-2025 20:12:21 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-02-2025 20:12:21 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 22-02-2025 20:12:21 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 22-02-2025 20:12:22 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 22-02-2025 20:12:22 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\22_02_2025_20_12_22_ExtentReports.html
+[INFO] 22-02-2025 20:12:23 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 22-02-2025 20:12:23 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 22-02-2025 20:12:23 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 22-02-2025 20:12:23 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:12:23 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:12:25 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 22-02-2025 20:12:25 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 22-02-2025 20:12:25 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:25 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:25 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:25 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:25 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:40 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@39dc2741
+[INFO] 22-02-2025 20:12:40 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:41 [TestNG-PoolService-1] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@11d6d613
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:12:42 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:12:43 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:43 [TestNG-PoolService-3] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 22-02-2025 20:12:43 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:12:43.png
+[INFO] 22-02-2025 20:12:43 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashierngan023@gmail.com
+[INFO] 22-02-2025 20:12:43 [TestNG-PoolService-1] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: cashierngan023@gmail.com
+[ERROR] 22-02-2025 20:12:45 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:12:45.png
+[INFO] 22-02-2025 20:12:45 [TestNG-PoolService-3] [LogUtils] - Filling in email: bbcd@lk.com
+[INFO] 22-02-2025 20:12:45 [TestNG-PoolService-3] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: bbcd@lk.com
+[INFO] 22-02-2025 20:12:45 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashierngan023@gmail.com
+[ERROR] 22-02-2025 20:12:45 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:45.png
+[INFO] 22-02-2025 20:12:45 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:12:45 [TestNG-PoolService-1] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc12
+[INFO] 22-02-2025 20:12:45 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc12
+[ERROR] 22-02-2025 20:12:45 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:45.png
+[INFO] 22-02-2025 20:12:45 [TestNG-PoolService-1] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@256b2248
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-5] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:12:46 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:12:46.png
+[INFO] 22-02-2025 20:12:46 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:47 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:47 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740235367263
+[INFO] 22-02-2025 20:12:47 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:47 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: bbcd@lk.com
+[ERROR] 22-02-2025 20:12:47 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:47.png
+[INFO] 22-02-2025 20:12:47 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:12:47 [TestNG-PoolService-3] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 789ght
+[INFO] 22-02-2025 20:12:48 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 789ght
+[ERROR] 22-02-2025 20:12:48 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:48.png
+[INFO] 22-02-2025 20:12:48 [TestNG-PoolService-3] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:12:48 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[ERROR] 22-02-2025 20:12:48 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:12:48.png
+[INFO] 22-02-2025 20:12:48 [TestNG-PoolService-5] [LogUtils] - Filling in email: hjkl@ik.com
+[INFO] 22-02-2025 20:12:48 [TestNG-PoolService-5] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: hjkl@ik.com
+[INFO] 22-02-2025 20:12:48 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:12:48 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:12:48.png
+[INFO] 22-02-2025 20:12:48 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@5bc4e094
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-2] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740235369400
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:49 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4f1ab18b
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:50 [TestNG-PoolService-4] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:12:51 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: hjkl@ik.com
+[ERROR] 22-02-2025 20:12:51 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:51.png
+[INFO] 22-02-2025 20:12:51 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:12:51 [TestNG-PoolService-5] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: sdkjf1231
+[INFO] 22-02-2025 20:12:51 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: sdkjf1231
+[ERROR] 22-02-2025 20:12:51 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:51.png
+[INFO] 22-02-2025 20:12:51 [TestNG-PoolService-5] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:12:51 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:12:51.png
+[INFO] 22-02-2025 20:12:51 [TestNG-PoolService-2] [LogUtils] - Filling in email: abc@abc.com
+[INFO] 22-02-2025 20:12:51 [TestNG-PoolService-2] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@abc.com
+[INFO] 22-02-2025 20:12:52 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:12:52 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:12:52.png
+[INFO] 22-02-2025 20:12:52 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials passed.
+[ERROR] 22-02-2025 20:12:52 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:12:52.png
+[INFO] 22-02-2025 20:12:52 [TestNG-PoolService-4] [LogUtils] - Filling in email: qazdqsd@lk.com
+[INFO] 22-02-2025 20:12:52 [TestNG-PoolService-4] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: qazdqsd@lk.com
+[INFO] 22-02-2025 20:12:52 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:53 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740235372934
+[INFO] 22-02-2025 20:12:53 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:53 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@abc.com
+[ERROR] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:54.png
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 12Bcd
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 12Bcd
+[ERROR] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:54.png
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:12:54.png
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: qazdqsd@lk.com
+[ERROR] 22-02-2025 20:12:54 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:54.png
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:12:54 [TestNG-PoolService-4] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc32
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[ERROR] 22-02-2025 20:12:55 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:12:55.png
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-4] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:12:55 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:12:55.png
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740235375343
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 22-02-2025 20:12:55 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:12:56 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740235375815
+[INFO] 22-02-2025 20:12:56 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 22-02-2025 20:12:56 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:12:58 [main] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:12:58 [main] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:12:58 [main] [LogUtils] - Row: 10 - Column: 2
+[INFO] 22-02-2025 20:12:58 [main] [LogUtils] - StartRow: 2 - EndRow: 6
+[INFO] 22-02-2025 20:12:58 [TestNG-PoolService-1] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:58 [TestNG-PoolService-2] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:58 [TestNG-PoolService-3] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:58 [TestNG-PoolService-4] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:12:58 [TestNG-PoolService-5] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@62384fd7
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:03 [TestNG-PoolService-3] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 22-02-2025 20:13:05 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:13:05.png
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-3] [LogUtils] - Filling in email: bbcd@lk.com
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-3] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: bbcd@lk.com
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@55cc4ad9
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:05 [TestNG-PoolService-2] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:07 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: bbcd@lk.com
+[ERROR] 22-02-2025 20:13:07 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:07.png
+[INFO] 22-02-2025 20:13:07 [TestNG-PoolService-3] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:13:07 [TestNG-PoolService-3] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 789ght
+[INFO] 22-02-2025 20:13:07 [TestNG-PoolService-3] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 789ght
+[ERROR] 22-02-2025 20:13:07 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:07.png
+[INFO] 22-02-2025 20:13:07 [TestNG-PoolService-3] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:13:07 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:13:07.png
+[INFO] 22-02-2025 20:13:07 [TestNG-PoolService-2] [LogUtils] - Filling in email: abc@abc.com
+[INFO] 22-02-2025 20:13:07 [TestNG-PoolService-2] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@abc.com
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-3] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:13:08 [TestNG-PoolService-3] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:13:08.png
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-3] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@7d8445f1
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-5] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-3] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740235388540
+[INFO] 22-02-2025 20:13:08 [TestNG-PoolService-3] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:09 [TestNG-PoolService-3] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:13:09 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@abc.com
+[ERROR] 22-02-2025 20:13:09 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:09.png
+[INFO] 22-02-2025 20:13:09 [TestNG-PoolService-2] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:13:09 [TestNG-PoolService-2] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 12Bcd
+[INFO] 22-02-2025 20:13:10 [TestNG-PoolService-2] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 12Bcd
+[ERROR] 22-02-2025 20:13:10 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:10.png
+[INFO] 22-02-2025 20:13:10 [TestNG-PoolService-2] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:13:10 [TestNG-PoolService-2] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:13:10 [TestNG-PoolService-2] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:13:10.png
+[INFO] 22-02-2025 20:13:10 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:10 [TestNG-PoolService-2] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[ERROR] 22-02-2025 20:13:10 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:13:10.png
+[INFO] 22-02-2025 20:13:10 [TestNG-PoolService-5] [LogUtils] - Filling in email: hjkl@ik.com
+[INFO] 22-02-2025 20:13:10 [TestNG-PoolService-5] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: hjkl@ik.com
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-2] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740235390879
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-2] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@35b1adeb
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-2] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:11 [TestNG-PoolService-4] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: hjkl@ik.com
+[ERROR] 22-02-2025 20:13:13 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:13.png
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-5] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-5] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: sdkjf1231
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@ae46da3
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Assigned category: REGRESSION
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-1] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 22-02-2025 20:13:13 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:13:13.png
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-4] [LogUtils] - Filling in email: qazdqsd@lk.com
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-4] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: qazdqsd@lk.com
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-5] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: sdkjf1231
+[ERROR] 22-02-2025 20:13:13 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:13.png
+[INFO] 22-02-2025 20:13:13 [TestNG-PoolService-5] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:13:14 [TestNG-PoolService-5] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:13:14 [TestNG-PoolService-5] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:13:14.png
+[INFO] 22-02-2025 20:13:14 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:14 [TestNG-PoolService-5] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-5] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740235394679
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-5] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-5] [LogUtils] - Closing browser and cleaning up...
+[ERROR] 22-02-2025 20:13:15 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:13:15.png
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-1] [LogUtils] - Filling in email: cashierngan023@gmail.com
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-1] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: cashierngan023@gmail.com
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: qazdqsd@lk.com
+[ERROR] 22-02-2025 20:13:15 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:15.png
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-4] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:13:15 [TestNG-PoolService-4] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc32
+[INFO] 22-02-2025 20:13:16 [TestNG-PoolService-4] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[ERROR] 22-02-2025 20:13:16 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:16.png
+[INFO] 22-02-2025 20:13:16 [TestNG-PoolService-4] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:13:16 [TestNG-PoolService-4] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:13:16 [TestNG-PoolService-4] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:13:16.png
+[INFO] 22-02-2025 20:13:16 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:16 [TestNG-PoolService-4] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-4] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740235396881
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-4] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-4] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashierngan023@gmail.com
+[ERROR] 22-02-2025 20:13:17 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:17.png
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-1] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-1] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc12
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-1] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc12
+[ERROR] 22-02-2025 20:13:17 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:17.png
+[INFO] 22-02-2025 20:13:17 [TestNG-PoolService-1] [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 22-02-2025 20:13:18 [TestNG-PoolService-1] [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 22-02-2025 20:13:18 [TestNG-PoolService-1] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:13:18.png
+[INFO] 22-02-2025 20:13:18 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:18 [TestNG-PoolService-1] [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 22-02-2025 20:13:18 [TestNG-PoolService-1] [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740235398459
+[INFO] 22-02-2025 20:13:18 [TestNG-PoolService-1] [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 22-02-2025 20:13:18 [TestNG-PoolService-1] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:13:20 [main] [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@71d78cac
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Test case: urlTest is starting...
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Created test: urlTest
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Assigned default author: Gp
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Assigned default category: REGRESSION
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Assigned device info: CHROME
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Test info: Windows 10
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 22-02-2025 20:13:24 [main] [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 22-02-2025 20:13:26 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:13:26.png
+[INFO] 22-02-2025 20:13:26 [main] [LogUtils] - Filling in email: 
+[INFO] 22-02-2025 20:13:26 [main] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@gmail.com
+[INFO] 22-02-2025 20:13:26 [main] [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@gmail.com
+[ERROR] 22-02-2025 20:13:26 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:26.png
+[INFO] 22-02-2025 20:13:26 [main] [LogUtils] - Filling in password.
+[INFO] 22-02-2025 20:13:26 [main] [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc
+[INFO] 22-02-2025 20:13:26 [main] [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc
+[ERROR] 22-02-2025 20:13:26 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:26.png
+[INFO] 22-02-2025 20:13:34 [main] [LogUtils] - Test info: Retrieving mail URL for domain: private, mailbox: abc1, expectedFrom: no-reply@withassured.com, expectedSubject: Onboarding Invite
+[INFO] 22-02-2025 20:13:34 [main] [LogUtils] - Requesting inbox for domain: private
+[INFO] 22-02-2025 20:13:38 [main] [LogUtils] - Inbox received with 3 messages
+[INFO] 22-02-2025 20:13:38 [main] [LogUtils] - Matched message -> ID: abc-1740222182-09715539105903, From: no-reply@withassured.com, Subject: Onboarding Invite
+[INFO] 22-02-2025 20:13:38 [main] [LogUtils] - Test info: Matched message details -> ID: abc-1740222182-09715539105903, From: no-reply@withassured.com, Subject: Onboarding Invite
+[WARN] 22-02-2025 20:13:38 [main] [LogUtils] - No URL found in subject. Trying links API for message id: abc-1740222182-09715539105903
+[INFO] 22-02-2025 20:13:38 [main] [LogUtils] - Test info: No URL in subject, checking links API...
+[INFO] 22-02-2025 20:13:39 [main] [LogUtils] - Retrieved URL from links API: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
+[INFO] 22-02-2025 20:13:39 [main] [LogUtils] - Test info: Mail invite URL retrieved from links API: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
+[INFO] 22-02-2025 20:13:39 [main] [LogUtils] - Test info: Opening a new browser instance to perform additional actions
+[INFO] 22-02-2025 20:13:43 [main] [LogUtils] - Opened new browser instance for additional actions.
+[ERROR] 22-02-2025 20:13:43 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 42: screenshots\newBrowserOpened_22/02/2025 20:13:43.png
+[INFO] 22-02-2025 20:13:43 [main] [LogUtils] - Navigating to URL: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
+[INFO] 22-02-2025 20:13:43 [main] [LogUtils] - Test info: Navigating to URL: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
+[ERROR] 22-02-2025 20:13:46 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:13:46.png
+[INFO] 22-02-2025 20:13:46 [main] [LogUtils] - Test info: Filling text into element with selector: input[placeholder="New Password"] | Value: 123456
+[INFO] 22-02-2025 20:13:46 [main] [LogUtils] - Filled element with selector: input[placeholder="New Password"] with text: 123456
+[ERROR] 22-02-2025 20:13:46 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:46.png
+[INFO] 22-02-2025 20:13:46 [main] [LogUtils] - Test info: Filling text into element with selector: input[placeholder="Confirm Password"] | Value: 123456
+[INFO] 22-02-2025 20:13:46 [main] [LogUtils] - Filled element with selector: input[placeholder="Confirm Password"] with text: 123456
+[ERROR] 22-02-2025 20:13:46 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:13:46.png
+[INFO] 22-02-2025 20:13:46 [main] [LogUtils] - Test info: Clicking element with selector: #createAdminAccountForm > button > span
+[INFO] 22-02-2025 20:13:47 [main] [LogUtils] - Clicked element with selector: #createAdminAccountForm > button > span
+[ERROR] 22-02-2025 20:13:47 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:13:47.png
+[ERROR] 22-02-2025 20:13:55 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 54: screenshots\actionsPerformedInNewBrowser_22/02/2025 20:13:55.png
+[INFO] 22-02-2025 20:13:56 [main] [LogUtils] - Returned to original browser instance.
+[INFO] 22-02-2025 20:13:56 [main] [LogUtils] - Test info: Returned to original browser instance.
+[ERROR] 22-02-2025 20:13:56 [main] [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 51: screenshots\returnedToOriginalBrowser_22/02/2025 20:13:56.png
+[INFO] 22-02-2025 20:14:04 [main] [LogUtils] - Test case: urlTest passed.
+[INFO] 22-02-2025 20:14:04 [main] [LogUtils] - Screenshot captured and saved for: urlTest
+[INFO] 22-02-2025 20:14:04 [main] [LogUtils] - Screenshot added with status: Pass | Name: urlTest - 1740235444667
+[INFO] 22-02-2025 20:14:04 [main] [LogUtils] - Log message with status Pass: Test case: urlTest passed.
+[INFO] 22-02-2025 20:14:04 [main] [LogUtils] - Closing browser and cleaning up...
+[INFO] 22-02-2025 20:14:05 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-02-2025 20:14:05 [main] [LogUtils] - =====> Ending Suite: Regression Tests 
+[INFO] 22-02-2025 20:14:06 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 22-02-2025 20:14:06 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 22-02-2025 20:14:06 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 22-02-2025 20:14:06 [main] [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 22-02-2025 20:14:06 [main] [LogUtils] - =====> Starting Suite: Regression Test1
+[INFO] 22-02-2025 20:14:06 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 22-02-2025 20:14:06 [main] [LogUtils] - =====> Ending Suite: Regression Test1

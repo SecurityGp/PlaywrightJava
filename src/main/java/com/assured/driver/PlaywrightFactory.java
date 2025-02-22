@@ -3,90 +3,97 @@ package com.assured.driver;
 import com.assured.constants.FrameworkConstants;
 import com.microsoft.playwright.*;
 
-/**
- * PlaywrightFactory creates and manages Playwright objects using the browser type
- * defined in FrameworkConstants. It uses a switch-case to select the browser.
- */
 public final class PlaywrightFactory {
 
-    // ThreadLocal storage for Playwright and Browser instances to manage per–thread resources.
     private static final ThreadLocal<Playwright> playwrightThreadLocal = new ThreadLocal<>();
     private static final ThreadLocal<Browser> browserThreadLocal = new ThreadLocal<>();
 
-    // Private constructor to prevent instantiation.
     private PlaywrightFactory() { }
 
-    /**
-     * Creates a new Playwright Page instance with the given headless option.
-     *
-     * @param headless whether to run the browser in headless mode.
-     * @return a new Page instance.
-     */
     public static Page createPage(String headless) {
-        // Create the Playwright instance.
-        Playwright playwright = Playwright.create();
-        playwrightThreadLocal.set(playwright);
+        Playwright playwright = null;
+        Browser browser = null;
+        try {
+            // Create Playwright instance and store it in the thread-local
+            playwright = Playwright.create();
+            playwrightThreadLocal.set(playwright);
 
-        // Configure launch options.
-        BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless));
+            // Configure browser launch options
+            BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions()
+                    .setHeadless(Boolean.parseBoolean(headless));
 
-        // Select the browser based on FrameworkConstants.
-        String browserType = FrameworkConstants.BROWSER; // Expected values: "chromium", "firefox", "webkit"
-        Browser browser = switch (browserType.toLowerCase()) {
-            case "chromium" -> playwright.chromium().launch(launchOptions);
-            case "firefox" -> playwright.firefox().launch(launchOptions);
-            case "webkit" -> playwright.webkit().launch(launchOptions);
-            default -> throw new IllegalArgumentException("Unsupported browser type: " + browserType);
-        };
-        browserThreadLocal.set(browser);
+            // Choose the browser type based on FrameworkConstants
+            String browserType = FrameworkConstants.BROWSER.toLowerCase();
+            switch (browserType) {
+                case "chromium":
+                    browser = playwright.chromium().launch(launchOptions);
+                    break;
+                case "firefox":
+                    browser = playwright.firefox().launch(launchOptions);
+                    break;
+                case "webkit":
+                    browser = playwright.webkit().launch(launchOptions);
+                    break;
+                default:
+                    throw new IllegalArgumentException("Unsupported browser type: " + browserType);
+            }
+            browserThreadLocal.set(browser);
 
-        // Set up context options (for example, ignoring HTTPS errors and setting viewport size).
-        Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                .setIgnoreHTTPSErrors(true)
-                .setViewportSize(1880, 1000);
+            // Set up context options and create a new page
+            Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
+                    .setIgnoreHTTPSErrors(true)
+                    .setViewportSize(1880, 1000);
+            BrowserContext context = browser.newContext(contextOptions);
+            Page page = context.newPage();
 
-        // Create a new browser context and then a new page.
-        BrowserContext context = browser.newContext(contextOptions);
-        Page page = context.newPage();
+            // Store the Page instance
+            PlaywrightDriverManager.setPage(page);
 
-        // Store the Page instance in your driver manager.
-        PlaywrightDriverManager.setPage(page);
-
-        return page;
+            return page;
+        } catch (Exception e) {
+            // Ensure cleanup if something goes wrong during creation
+            quit();
+            throw e;
+        }
     }
 
-    /**
-     * Convenience method that defaults to non-headless mode.
-     *
-     * @return a new Page instance.
-     */
     public static Page createPage() {
         return createPage(FrameworkConstants.HEADLESS);
     }
 
-    /**
-     * Closes the Playwright-related resources for the current thread.
-     */
     public static void quit() {
-        // Close the Page's context.
+        // Close the page context and remove the page
         Page page = PlaywrightDriverManager.getPage();
         if (page != null) {
-            page.context().close();
-            PlaywrightDriverManager.removePage();
+            try {
+                page.context().close();
+            } catch (Exception e) {
+                // Optionally log the exception
+            } finally {
+                PlaywrightDriverManager.removePage();
+            }
         }
-
-        // Close the Browser.
+        // Close the browser
         Browser browser = browserThreadLocal.get();
         if (browser != null) {
-            browser.close();
-            browserThreadLocal.remove();
+            try {
+                browser.close();
+            } catch (Exception e) {
+                // Optionally log the exception
+            } finally {
+                browserThreadLocal.remove();
+            }
         }
-
-        // Close the Playwright instance.
+        // Close the Playwright instance
         Playwright playwright = playwrightThreadLocal.get();
         if (playwright != null) {
-            playwright.close();
-            playwrightThreadLocal.remove();
+            try {
+                playwright.close();
+            } catch (Exception e) {
+                // Optionally log the exception
+            } finally {
+                playwrightThreadLocal.remove();
+            }
         }
     }
 }

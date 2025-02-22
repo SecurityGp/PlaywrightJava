@@ -1,0 +1,9 @@
+{
+   "name": "Jenkins",
+   "type": "jenkins",
+   "url": "https://staging.withassured.com/",
+   "buildOrder": 1,
+   "buildName": " Assured Health | Gnanapandithan",
+   "reportName": " Assured Health | Gnanapandithan",
+   "reportUrl": "https://staging.withassured.com/allure-docker-service/projects/Assured%20Health%20%7C%20Gnanapandithan/reports/latest/index.html?proxy=true"
+}

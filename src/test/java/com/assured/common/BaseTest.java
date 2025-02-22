@@ -45,4 +45,9 @@ public class BaseTest {
         }
         return PlaywrightDriverManager.getPage();
     }
+    @AfterMethod
+    public void tearDown() {
+        PlaywrightFactory.quit();
+    }
+
 }

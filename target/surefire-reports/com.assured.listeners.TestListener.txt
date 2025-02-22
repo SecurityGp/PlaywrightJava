@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.assured.listeners.TestListener
--------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.727 s -- in com.assured.listeners.TestListener
