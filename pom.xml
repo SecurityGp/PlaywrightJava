@@ -286,21 +286,6 @@
             </systemPropertyVariables>
           </configuration>
         </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.5.2</version>
-          <configuration>
-            <!-- Redirect test output to a file (set to false if you want to stream to the console) -->
-            <redirectTestOutputToFile>true</redirectTestOutputToFile>
-            <!-- Run tests in a single fork to avoid concurrency issues -->
-            <forkCount>2</forkCount>
-            <reuseForks>true</reuseForks>
-            <!-- Optionally, disable the use of the system class loader -->
-            <useSystemClassLoader>false</useSystemClassLoader>
-          </configuration>
-        </plugin>
-
 
         <!-- Allure Maven Plugin -->
         <plugin>
