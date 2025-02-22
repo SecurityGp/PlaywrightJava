@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build and Test with Maven
-        run: mvn clean install
+        run: mvn clean test
         # or "mvn clean test" if you only want tests without install
 
       #
