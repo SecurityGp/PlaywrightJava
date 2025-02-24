@@ -17,6 +17,7 @@ import com.manybrain.mailinator.client.message.Message;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
@@ -771,4 +772,202 @@ public class PageActions {
             LogUtils.error("Failed to capture screenshot: " + e.getMessage());
         }
     }
+
+    /**
+     * Clicks an element by its ARIA role and accessible name.
+     *
+     * @param role the ARIA role of the element.
+     * @param name the accessible name of the element.
+     *  Ex:  page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Cancel")).click();
+     */
+    @Step("Click element by role: {0} with name: {1}")
+    public static void clickElementByRole(AriaRole role, String name) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Clicking element with role: " + role + " and name: " + name);
+            Locator locator = page.getByRole(role, new Page.GetByRoleOptions().setName(name));
+            locator.click();
+            LogUtils.info("Clicked element with role: " + role + " and name: " + name);
+            AllureManager.saveTextLog("Clicked element with role: " + role + " and name: " + name);
+            addScreenshotToReport("clickElementByRole_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to click element with role: " + role + " and name: " + name + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to click element with role: " + role + " and name: " + name + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to click element by role (role: " + role + ", name: " + name + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Clicks an element identified by its label.
+     *
+     * @param label the label of the element.
+     */
+    @Step("Click element by label: {0}")
+    public static void clickElementByLabel(String label) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Clicking element with label: " + label);
+            Locator locator = page.getByLabel(label);
+            locator.click();
+            LogUtils.info("Clicked element with label: " + label);
+            AllureManager.saveTextLog("Clicked element with label: " + label);
+            addScreenshotToReport("clickElementByLabel_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to click element with label: " + label + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to click element with label: " + label + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to click element by label (label: " + label + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Clicks a nested element where a parent element is identified by its label and the child element by its text.
+     *
+     * @param parentLabel the label of the parent element.
+     * @param childText   the text of the child element.
+     *          Exe:     page.getByLabel("Add Existing Enrollment").getByText("Provider").click();
+     */
+    @Step("Click nested element with parent label: {0} and child text: {1}")
+    public static void clickNestedElement(String parentLabel, String childText) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Clicking nested element with parent label: " + parentLabel + " and child text: " + childText);
+            Locator parentLocator = page.getByLabel(parentLabel);
+            Locator childLocator = parentLocator.getByText(childText);
+            childLocator.click();
+            LogUtils.info("Clicked nested element with parent label: " + parentLabel + " and child text: " + childText);
+            AllureManager.saveTextLog("Clicked nested element with parent label: " + parentLabel + " and child text: " + childText);
+            addScreenshotToReport("clickNestedElement_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to click nested element with parent label: " + parentLabel + " and child text: " + childText + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to click nested element with parent label: " + parentLabel + " and child text: " + childText + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to click nested element (parent label: " + parentLabel + ", child text: " + childText + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Checks (selects) a checkbox or similar element identified by its label.
+     *
+     * @param label the label of the element.
+     *              Exe: page.getByLabel("No Health Plan ID").check();
+     */
+    @Step("Check element by label: {0}")
+    public static void checkElementByLabel(String label) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Checking element with label: " + label);
+            Locator locator = page.getByLabel(label);
+            locator.check();
+            LogUtils.info("Checked element with label: " + label);
+            AllureManager.saveTextLog("Checked element with label: " + label);
+            addScreenshotToReport("checkElementByLabel_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to check element with label: " + label + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to check element with label: " + label + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to check element by label (label: " + label + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Clicks the element identified by its visible text.
+     *
+     * @param text the visible text of the element.
+     *             Exe: page.getByText("Click Me").click();
+     */
+    @Step("Click element by text: {0}")
+    public static void clickElementByText(String text) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Clicking element with text: " + text);
+            Locator locator = page.getByText(text);
+            locator.click();
+            LogUtils.info("Clicked element with text: " + text);
+            AllureManager.saveTextLog("Clicked element with text: " + text);
+            addScreenshotToReport("clickElementByText_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to click element with text: " + text + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to click element with text: " + text + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to click element by text (text: " + text + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Clicks an element identified by its title attribute.
+     *
+     * @param title the title attribute of the element.
+     */
+    @Step("Click element by title: {0}")
+    public static void clickElementByTitle(String title) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Clicking element with title: " + title);
+            Locator locator = page.getByTitle(title);
+            locator.click();
+            LogUtils.info("Clicked element with title: " + title);
+            AllureManager.saveTextLog("Clicked element with title: " + title);
+            addScreenshotToReport("clickElementByTitle_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to click element with title: " + title + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to click element with title: " + title + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to click element by title (title: " + title + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    /**
+     * Clicks a nested child element within a parent identified by its title.
+     *
+     * @param title         the title attribute of the parent element.
+     * @param childSelector the CSS selector for the child element.
+     *         Exe:         page.getByTitle("-02-28").locator("div").click();
+     */
+    @Step("Click child element with parent title: {0} and child selector: {1}")
+    public static void clickChildElementByTitle(String title, String childSelector) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Clicking child element with parent title: " + title + " and child selector: " + childSelector);
+            Locator parentLocator = page.getByTitle(title);
+            Locator childLocator = parentLocator.locator(childSelector);
+            childLocator.click();
+            LogUtils.info("Clicked child element with parent title: " + title + " and child selector: " + childSelector);
+            AllureManager.saveTextLog("Clicked child element with parent title: " + title + " and child selector: " + childSelector);
+            addScreenshotToReport("clickChildElementByTitle_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to click child element with parent title: " + title + " and child selector: " + childSelector + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to click child element with parent title: " + title + " and child selector: " + childSelector + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to click child element by title (title: " + title + ", child selector: " + childSelector + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+    /**
+     * Clicks the element identified by its visible text with an option for exact matching.
+     *
+     * @param text  the visible text of the element.
+     * @param exact if true, performs an exact match.
+     */
+    @Step("Click element by text: {0} with exact match: {1}")
+    public static void clickElementByText(String text, boolean exact) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Clicking element with text: " + text + " using exact match: " + exact);
+            Page.GetByTextOptions options = new Page.GetByTextOptions();
+            options.setExact(exact);
+            Locator locator = page.getByText(text, options);
+            locator.click();
+            LogUtils.info("Clicked element with text: " + text + " using exact match: " + exact);
+            AllureManager.saveTextLog("Clicked element with text: " + text + " using exact match: " + exact);
+            addScreenshotToReport("clickElementByTextExact_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            LogUtils.error("Failed to click element with text: " + text + " using exact match: " + exact + " with error: " + e.getMessage(), e);
+            AllureManager.saveTextLog("Failed to click element with text: " + text + " using exact match: " + exact + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to click element by text (text: " + text + ", exact: " + exact + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
 }
+
