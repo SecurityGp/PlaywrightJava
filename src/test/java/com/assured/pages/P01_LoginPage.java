@@ -5,7 +5,7 @@ import com.assured.helpers.ExcelHelpers;
 import com.assured.services.PageActions;
 import com.assured.model.SignInModel;
 import com.assured.utils.LogUtils;
-import com.assured.pages.test;
+import com.mailosaur.MailosaurException;
 
 import java.util.Hashtable;
 
@@ -91,10 +91,16 @@ public class P01_LoginPage extends CommonPageCRM {
         String expectedSubject = "Onboarding Invite";
 
         // Retrieve URL from email
-        String mailUrl = PageActions.getMailUrl(domain, mailbox, expectedFrom, expectedSubject);
+        String mailUrl = null;
+        try {
+            mailUrl = PageActions.getMailUrl( expectedFrom, expectedSubject);
+        } catch (MailosaurException e) {
+            throw new RuntimeException(e);
+        }
 
+        String finalMailUrl = mailUrl;
         PageActions.openNewBrowserAndPerformAction(() -> {
-            navigate(mailUrl);
+            navigate(finalMailUrl);
             setText(inputNewPassword, "123456");
             setText(inputConfirmPassword, "123456");
             clickElement(buttonCreateAccountSelector);

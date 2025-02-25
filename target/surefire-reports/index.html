@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">2 suites</span>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regression_Tests_" class="navigator-link">
-              <span class="suite-name border-passed">Regression Tests </span>
+              <span class="suite-name border-failed">Regression Tests </span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  1 skipped,  10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Tests_" class="hide-methods failed suite-Regression_Tests_"> (hide)</a> <!-- hide-methods failed suite-Regression_Tests_ -->
+                      <a href="#" panel-name="suite-Regression_Tests_" class="show-methods failed suite-Regression_Tests_"> (show)</a> <!-- show-methods failed suite-Regression_Tests_ -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Tests_">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="urlTest">urlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Tests_ -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Regression_Tests_" class="hide-methods skipped suite-Regression_Tests_"> (hide)</a> <!-- hide-methods skipped suite-Regression_Tests_ -->
+                      <a href="#" panel-name="suite-Regression_Tests_" class="show-methods skipped suite-Regression_Tests_"> (show)</a> <!-- show-methods skipped suite-Regression_Tests_ -->
+                    </span>
+                    <div class="method-list-content skipped suite-Regression_Tests_">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="urlTest">urlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Regression_Tests_ -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,17 +136,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithInValidCredentials({EMAIL=abc@abc.com, PASSWORD=12Bcd})">loginWithInValidCredentials({EMAIL=abc@abc.com, PASSWORD=12Bcd})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,12 +146,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})">loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -148,12 +171,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})">loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="urlTest">urlTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Tests_" title="com.assured.tests.T01_LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression_Tests_ -->
@@ -168,6 +191,66 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression_Tests_" class="panel Regression_Tests_">
+          <div class="suite-Regression_Tests_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.assured.tests.T01_LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="urlTest">
+                  </a> <!-- urlTest -->
+                  <span class="method-name">urlTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+	at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:98)
+	at com.assured.tests.T01_LoginTest.urlTest(T01_LoginTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+	at com.mailosaur.MailosaurClient.request(MailosaurClient.java:193)
+	at com.mailosaur.Messages.search(Messages.java:317)
+	at com.mailosaur.Messages.get(Messages.java:56)
+	at com.assured.services.PageActions.getMailUrl(PageActions.java:1005)
+	at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:96)
+	... 34 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC03_urlTest)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Tests_-class-failed -->
+          <div class="suite-Regression_Tests_-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.assured.tests.T01_LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="urlTest">
+                  </a> <!-- urlTest -->
+                  <span class="method-name">urlTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+	at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:98)
+	at com.assured.tests.T01_LoginTest.urlTest(T01_LoginTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+	at com.mailosaur.MailosaurClient.request(MailosaurClient.java:193)
+	at com.mailosaur.Messages.search(Messages.java:317)
+	at com.mailosaur.Messages.get(Messages.java:56)
+	at com.assured.services.PageActions.getMailUrl(PageActions.java:1005)
+	at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:96)
+	... 34 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC03_urlTest)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Tests_-class-skipped -->
           <div class="suite-Regression_Tests_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -186,30 +269,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">
-                  </a> <!-- loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}) -->
-                  <span class="method-name">loginWithInValidCredentials</span>
-                  <span class="parameters">({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</span>
-                  <em>
-(TC02_signInWithDataProvider)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginWithInValidCredentials({EMAIL=abc@abc.com, PASSWORD=12Bcd})">
                   </a> <!-- loginWithInValidCredentials({EMAIL=abc@abc.com, PASSWORD=12Bcd}) -->
                   <span class="method-name">loginWithInValidCredentials</span>
                   <span class="parameters">({EMAIL=abc@abc.com, PASSWORD=12Bcd})</span>
-                  <em>
-(TC02_signInWithDataProvider)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">
-                  </a> <!-- loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght}) -->
-                  <span class="method-name">loginWithInValidCredentials</span>
-                  <span class="parameters">({EMAIL=bbcd@lk.com, PASSWORD=789ght})</span>
                   <em>
 (TC02_signInWithDataProvider)                  </em>
                 </div> <!-- method-content -->
@@ -226,20 +289,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">
-                  </a> <!-- loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght}) -->
-                  <span class="method-name">loginWithValidCredentials</span>
+                  <a name="loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">
+                  </a> <!-- loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght}) -->
+                  <span class="method-name">loginWithInValidCredentials</span>
                   <span class="parameters">({EMAIL=bbcd@lk.com, PASSWORD=789ght})</span>
                   <em>
-(TC01_signInWithDataProvider)                  </em>
+(TC02_signInWithDataProvider)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">
-                  </a> <!-- loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}) -->
-                  <span class="method-name">loginWithValidCredentials</span>
+                  <a name="loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">
+                  </a> <!-- loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}) -->
+                  <span class="method-name">loginWithInValidCredentials</span>
                   <span class="parameters">({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</span>
+                  <em>
+(TC02_signInWithDataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})">
+                  </a> <!-- loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231}) -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                  <span class="parameters">({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})</span>
                   <em>
 (TC01_signInWithDataProvider)                  </em>
                 </div> <!-- method-content -->
@@ -266,21 +339,22 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})">
-                  </a> <!-- loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231}) -->
+                  <a name="loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})">
+                  </a> <!-- loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}) -->
                   <span class="method-name">loginWithValidCredentials</span>
-                  <span class="parameters">({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})</span>
+                  <span class="parameters">({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</span>
                   <em>
 (TC01_signInWithDataProvider)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="urlTest">
-                  </a> <!-- urlTest -->
-                  <span class="method-name">urlTest</span>
+                  <a name="loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})">
+                  </a> <!-- loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght}) -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                  <span class="parameters">({EMAIL=bbcd@lk.com, PASSWORD=789ght})</span>
                   <em>
-(TC03_urlTest)                  </em>
+(TC01_signInWithDataProvider)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -376,51 +450,55 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'urlTest')
 data.setCell(0, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(0, 3, 40139);
+data.setCell(0, 3, 13568);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginWithValidCredentials')
 data.setCell(1, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(1, 3, 6981);
+data.setCell(1, 3, 13456);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginWithValidCredentials')
 data.setCell(2, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(2, 3, 6721);
+data.setCell(2, 3, 11134);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginWithValidCredentials')
+data.setCell(3, 1, 'loginWithInValidCredentials')
 data.setCell(3, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(3, 3, 5936);
+data.setCell(3, 3, 10999);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginWithInValidCredentials')
+data.setCell(4, 1, 'loginWithValidCredentials')
 data.setCell(4, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(4, 3, 5522);
+data.setCell(4, 3, 10977);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginWithValidCredentials')
 data.setCell(5, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(5, 3, 5496);
+data.setCell(5, 3, 10720);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginWithInValidCredentials')
+data.setCell(6, 1, 'urlTest')
 data.setCell(6, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(6, 3, 5437);
+data.setCell(6, 3, 10535);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'loginWithValidCredentials')
 data.setCell(7, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(7, 3, 5320);
+data.setCell(7, 3, 9552);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'loginWithInValidCredentials')
 data.setCell(8, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(8, 3, 4912);
+data.setCell(8, 3, 7768);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'loginWithInValidCredentials')
 data.setCell(9, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(9, 3, 4876);
+data.setCell(9, 3, 6380);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'loginWithInValidCredentials')
 data.setCell(10, 2, 'com.assured.tests.T01_LoginTest')
-data.setCell(10, 3, 4612);
+data.setCell(10, 3, 4079);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginWithInValidCredentials')
+data.setCell(11, 2, 'com.assured.tests.T01_LoginTest')
+data.setCell(11, 3, 4052);
 window.suiteTableData['Regression_Tests_']= { tableData: data, tableDiv: 'times-div-Regression_Tests_'}
 return data;
 }
@@ -497,175 +575,193 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">createDriver(chrome)</span>
                 <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})</span>
+                <span class="method-start">40481 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">loginWithValidCredentials({EMAIL=abc@abc.com, PASSWORD=12Bcd})</span>
-                <span class="method-start">14485 ms</span>
+                <span class="method-start">41580 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentials({EMAIL=qazdqsd@lk.com, PASSWORD=abc32})</span>
+                <span class="method-start">48128 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</span>
-                <span class="method-start">16149 ms</span>
+                <span class="method-start">51076 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})</span>
-                <span class="method-start">18853 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">22028 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredentials({EMAIL=qazdqsd@lk.com, PASSWORD=abc32})</span>
-                <span class="method-start">22959 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">24066 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})</span>
-                <span class="method-start">24687 ms</span>
+                <span class="method-start">51249 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">27449 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">29599 ms</span>
+                <span class="method-start">51701 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">30192 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">31300 ms</span>
+                <span class="method-start">58795 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">31520 ms</span>
+                <span class="method-start">62135 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">31649 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33043 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33400 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">33455 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">33455 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">33456 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">33457 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">33458 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})</span>
-                <span class="method-start">38243 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithInValidCredentials({EMAIL=qazdqsd@lk.com, PASSWORD=abc32})</span>
-                <span class="method-start">40073 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</span>
-                <span class="method-start">43530 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">44622 ms</span>
+                <span class="method-start">62613 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">62872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63107 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64910 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66293 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66573 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createDriver(chrome)</span>
+                <span class="method-start">66615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createDriver(chrome)</span>
+                <span class="method-start">66615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createDriver(chrome)</span>
+                <span class="method-start">66615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createDriver(chrome)</span>
+                <span class="method-start">66616 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createDriver(chrome)</span>
+                <span class="method-start">66616 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidCredentials({EMAIL=abc@abc.com, PASSWORD=12Bcd})</span>
-                <span class="method-start">46511 ms</span>
+                <span class="method-start">71661 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">47075 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidCredentials({EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231})</span>
-                <span class="method-start">47852 ms</span>
+                <span class="method-start">73711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithInValidCredentials({EMAIL=bbcd@lk.com, PASSWORD=789ght})</span>
+                <span class="method-start">78596 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">50069 ms</span>
+                <span class="method-start">78883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginWithInValidCredentials({EMAIL=qazdqsd@lk.com, PASSWORD=abc32})</span>
+                <span class="method-start">85179 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">85614 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginWithInValidCredentials({EMAIL=cashierngan023@gmail.com, PASSWORD=abc12})</span>
+                <span class="method-start">87265 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">87619 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">88229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">88274 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">52412 ms</span>
+                <span class="method-start">90276 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53438 ms</span>
+                <span class="method-start">90853 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">53498 ms</span>
+                <span class="method-start">91784 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53534 ms</span>
+                <span class="method-start">92360 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53613 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">54576 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">55155 ms</span>
+                <span class="method-start">95979 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">createDriver(chrome)</span>
-                <span class="method-start">55160 ms</span>
+                <span class="method-start">95983 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">urlTest</span>
-                <span class="method-start">58790 ms</span>
+                <span class="method-start">98766 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">99284 ms</span>
+                <span class="method-start">112497 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">99310 ms</span>
+                <span class="method-start">113342 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createDriver(chrome)</span>
+                <span class="method-start">113346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">urlTest</span>
+                <span class="method-start">118229 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">128961 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">132573 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

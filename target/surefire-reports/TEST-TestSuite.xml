@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="104.597" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="135.543" tests="12" errors="0" skipped="1" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\test-classes;C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\classes;C:\Users\Gnana\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\Gnana\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Gnana\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Gnana\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Gnana\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gnana\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gnana\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gnana\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Gnana\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Gnana\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Gnana\.m2\repository\com\manybrain\mailinator-client\1.5\mailinator-client-1.5.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\core\jersey-client\2.29.1\jersey-client-2.29.1.jar;C:\Users\Gnana\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.29.1\jersey-media-json-jackson-2.29.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.29.1\jersey-entity-filtering-2.29.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.29.1\jersey-hk2-2.29.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\javassist\javassist\3.22.0-CR2\javassist-3.22.0-CR2.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\core\jersey-common\2.29.1\jersey-common-2.29.1.jar;C:\Users\Gnana\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\Gnana\.m2\repository\com\sun\activation\jakarta.activation\1.2.1\jakarta.activation-1.2.1.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Gnana\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gnana\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gnana\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Gnana\.m2\repository\org\json\json\20250107\json-20250107.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\Gnana\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Gnana\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Gnana\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Gnana\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Gnana\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\playwright\1.50.0\playwright-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\Gnana\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver\1.50.0\driver-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver-bundle\1.50.0\driver-bundle-1.50.0.jar;C:\Users\Gnana\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Gnana\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gnana\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Gnana\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Gnana\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\Gnana\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Gnana\.m2\repository\org\zeroturnaround\zt-zip\1.17\zt-zip-1.17.jar;C:\Users\Gnana\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gnana\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Gnana\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gnana\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\Gnana\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\Gnana\.m2\repository\net\datafaker\datafaker\2.4.2\datafaker-2.4.2.jar;C:\Users\Gnana\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\Gnana\.m2\repository\com\github\curious-odd-man\rgxgen\2.0\rgxgen-2.0.jar;C:\Users\Gnana\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.13.50\libphonenumber-8.13.50.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-plugin-api\2.32.0\allure-plugin-api-2.32.0.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.18.1\jackson-module-jaxb-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Gnana\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\Gnana\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Gnana\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\jetbrains\annotations\15.0\annotations-15.0.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-attachments\2.29.0\allure-attachments-2.29.0.jar;C:\Users\Gnana\.m2\repository\com\github\automatedowl\allure-environment-writer\1.0.0\allure-environment-writer-1.0.0.jar;C:\Users\Gnana\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Gnana\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gnana\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gnana\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Gnana\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;"/>
+    <property name="java.class.path" value="C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\test-classes;C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\classes;C:\Users\Gnana\.m2\repository\com\mailosaur\mailosaur-java\8.3.0\mailosaur-java-8.3.0.jar;C:\Users\Gnana\.m2\repository\com\google\http-client\google-http-client\1.46.2\google-http-client-1.46.2.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Gnana\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gnana\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Gnana\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Gnana\.m2\repository\io\grpc\grpc-context\1.70.0\grpc-context-1.70.0.jar;C:\Users\Gnana\.m2\repository\io\grpc\grpc-api\1.70.0\grpc-api-1.70.0.jar;C:\Users\Gnana\.m2\repository\io\opencensus\opencensus-api\0.31.1\opencensus-api-0.31.1.jar;C:\Users\Gnana\.m2\repository\io\opencensus\opencensus-contrib-http-util\0.31.1\opencensus-contrib-http-util-0.31.1.jar;C:\Users\Gnana\.m2\repository\com\google\http-client\google-http-client-gson\1.46.2\google-http-client-gson-1.46.2.jar;C:\Users\Gnana\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\Gnana\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Gnana\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gnana\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gnana\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gnana\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gnana\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Gnana\.m2\repository\org\json\json\20250107\json-20250107.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\Gnana\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Gnana\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Gnana\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Gnana\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Gnana\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\playwright\1.50.0\playwright-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\Gnana\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver\1.50.0\driver-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver-bundle\1.50.0\driver-bundle-1.50.0.jar;C:\Users\Gnana\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Gnana\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gnana\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Gnana\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Gnana\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\Gnana\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Gnana\.m2\repository\org\zeroturnaround\zt-zip\1.17\zt-zip-1.17.jar;C:\Users\Gnana\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gnana\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Gnana\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gnana\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\Gnana\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\Gnana\.m2\repository\net\datafaker\datafaker\2.4.2\datafaker-2.4.2.jar;C:\Users\Gnana\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\Gnana\.m2\repository\com\github\curious-odd-man\rgxgen\2.0\rgxgen-2.0.jar;C:\Users\Gnana\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.13.50\libphonenumber-8.13.50.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-plugin-api\2.32.0\allure-plugin-api-2.32.0.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.18.1\jackson-module-jaxb-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Gnana\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\Gnana\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Gnana\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\jetbrains\annotations\15.0\annotations-15.0.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-attachments\2.29.0\allure-attachments-2.29.0.jar;C:\Users\Gnana\.m2\repository\com\github\automatedowl\allure-environment-writer\1.0.0\allure-environment-writer-1.0.0.jar;C:\Users\Gnana\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Gnana\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gnana\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gnana\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Gnana\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Gnana\AppData\Local\Temp\surefire696395057742868553\surefirebooter-20250222205634880_3.jar C:\Users\Gnana\AppData\Local\Temp\surefire696395057742868553 2025-02-22T20-56-34_527-jvmRun1 surefire-20250222205634880_1tmp surefire_0-20250222205634880_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Gnana\AppData\Local\Temp\surefire5786023650421208617\surefirebooter-20250225092243907_3.jar C:\Users\Gnana\AppData\Local\Temp\surefire5786023650421208617 2025-02-25T09-22-43_700-jvmRun1 surefire-20250225092243907_1tmp surefire_0-20250225092243907_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\test-classes;C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\classes;C:\Users\Gnana\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\Gnana\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Gnana\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Gnana\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Gnana\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Gnana\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gnana\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gnana\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Gnana\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Gnana\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Gnana\.m2\repository\com\manybrain\mailinator-client\1.5\mailinator-client-1.5.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\core\jersey-client\2.29.1\jersey-client-2.29.1.jar;C:\Users\Gnana\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\media\jersey-media-json-jackson\2.29.1\jersey-media-json-jackson-2.29.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\2.29.1\jersey-entity-filtering-2.29.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.29.1\jersey-hk2-2.29.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\Gnana\.m2\repository\org\javassist\javassist\3.22.0-CR2\javassist-3.22.0-CR2.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jersey\core\jersey-common\2.29.1\jersey-common-2.29.1.jar;C:\Users\Gnana\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Gnana\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\Gnana\.m2\repository\com\sun\activation\jakarta.activation\1.2.1\jakarta.activation-1.2.1.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Gnana\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gnana\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gnana\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Gnana\.m2\repository\org\json\json\20250107\json-20250107.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\Gnana\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Gnana\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Gnana\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Gnana\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Gnana\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\playwright\1.50.0\playwright-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\Gnana\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver\1.50.0\driver-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver-bundle\1.50.0\driver-bundle-1.50.0.jar;C:\Users\Gnana\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Gnana\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gnana\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Gnana\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Gnana\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\Gnana\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Gnana\.m2\repository\org\zeroturnaround\zt-zip\1.17\zt-zip-1.17.jar;C:\Users\Gnana\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gnana\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Gnana\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gnana\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\Gnana\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\Gnana\.m2\repository\net\datafaker\datafaker\2.4.2\datafaker-2.4.2.jar;C:\Users\Gnana\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\Gnana\.m2\repository\com\github\curious-odd-man\rgxgen\2.0\rgxgen-2.0.jar;C:\Users\Gnana\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.13.50\libphonenumber-8.13.50.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-plugin-api\2.32.0\allure-plugin-api-2.32.0.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.18.1\jackson-module-jaxb-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Gnana\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\Gnana\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Gnana\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\jetbrains\annotations\15.0\annotations-15.0.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-attachments\2.29.0\allure-attachments-2.29.0.jar;C:\Users\Gnana\.m2\repository\com\github\automatedowl\allure-environment-writer\1.0.0\allure-environment-writer-1.0.0.jar;C:\Users\Gnana\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Gnana\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gnana\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gnana\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Gnana\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\test-classes;C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\classes;C:\Users\Gnana\.m2\repository\com\mailosaur\mailosaur-java\8.3.0\mailosaur-java-8.3.0.jar;C:\Users\Gnana\.m2\repository\com\google\http-client\google-http-client\1.46.2\google-http-client-1.46.2.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Gnana\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Gnana\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Gnana\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Gnana\.m2\repository\io\grpc\grpc-context\1.70.0\grpc-context-1.70.0.jar;C:\Users\Gnana\.m2\repository\io\grpc\grpc-api\1.70.0\grpc-api-1.70.0.jar;C:\Users\Gnana\.m2\repository\io\opencensus\opencensus-api\0.31.1\opencensus-api-0.31.1.jar;C:\Users\Gnana\.m2\repository\io\opencensus\opencensus-contrib-http-util\0.31.1\opencensus-contrib-http-util-0.31.1.jar;C:\Users\Gnana\.m2\repository\com\google\http-client\google-http-client-gson\1.46.2\google-http-client-gson-1.46.2.jar;C:\Users\Gnana\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\Gnana\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Gnana\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Gnana\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Gnana\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Gnana\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Gnana\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Gnana\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Gnana\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Gnana\.m2\repository\org\json\json\20250107\json-20250107.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\Gnana\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Gnana\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Gnana\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Gnana\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Gnana\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Gnana\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\playwright\1.50.0\playwright-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\Gnana\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver\1.50.0\driver-1.50.0.jar;C:\Users\Gnana\.m2\repository\com\microsoft\playwright\driver-bundle\1.50.0\driver-bundle-1.50.0.jar;C:\Users\Gnana\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Gnana\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Gnana\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Gnana\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Gnana\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Gnana\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\Gnana\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Gnana\.m2\repository\org\zeroturnaround\zt-zip\1.17\zt-zip-1.17.jar;C:\Users\Gnana\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Gnana\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Gnana\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Gnana\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Gnana\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\Gnana\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\Gnana\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\Gnana\.m2\repository\net\datafaker\datafaker\2.4.2\datafaker-2.4.2.jar;C:\Users\Gnana\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\Gnana\.m2\repository\com\github\curious-odd-man\rgxgen\2.0\rgxgen-2.0.jar;C:\Users\Gnana\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.13.50\libphonenumber-8.13.50.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-plugin-api\2.32.0\allure-plugin-api-2.32.0.jar;C:\Users\Gnana\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.18.1\jackson-module-jaxb-annotations-2.18.1.jar;C:\Users\Gnana\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Gnana\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\Gnana\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\Gnana\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Gnana\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\jetbrains\annotations\15.0\annotations-15.0.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar;C:\Users\Gnana\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar;C:\Users\Gnana\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\Gnana\.m2\repository\io\qameta\allure\allure-attachments\2.29.0\allure-attachments-2.29.0.jar;C:\Users\Gnana\.m2\repository\com\github\automatedowl\allure-environment-writer\1.0.0\allure-environment-writer-1.0.0.jar;C:\Users\Gnana\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Gnana\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Gnana\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Gnana\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Gnana\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;"/>
     <property name="allure.results.directory" value="target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Gnana"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Gnana\AppData\Local\Temp\surefire696395057742868553\surefirebooter-20250222205634880_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Gnana\AppData\Local\Temp\surefire5786023650421208617\surefirebooter-20250225092243907_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,461 +57,448 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="loginWithValidCredentials[{EMAIL=abc@abc.com, PASSWORD=12Bcd}](1)" classname="com.assured.tests.T01_LoginTest" time="3.172">
-    <system-out><![CDATA[2025-02-22T15:26:37.930126400Z main INFO Starting configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@274872f8...
-2025-02-22T15:26:37.935067Z main INFO Start watching for changes to C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\classes\log4j2.properties every 0 seconds
-2025-02-22T15:26:37.935067Z main INFO Configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@274872f8 started.
-2025-02-22T15:26:37.938105900Z main INFO Stopping configuration org.apache.logging.log4j.core.config.DefaultConfiguration@5023bb8b...
-2025-02-22T15:26:37.939099900Z main INFO Configuration org.apache.logging.log4j.core.config.DefaultConfiguration@5023bb8b stopped.
-[INFO] 22-02-2025 20:56:37 [LogUtils] - ********** RUN STARTED **********
-[INFO] 22-02-2025 20:56:37 [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
-[INFO] 22-02-2025 20:56:37 [LogUtils] - Warning !! Can not Load All File.
-[INFO] 22-02-2025 20:56:37 [LogUtils] - Warning !! Can not Load All File.
+  <testcase name="loginWithValidCredentials[{EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231}](1)" classname="com.assured.tests.T01_LoginTest" time="0.446">
+    <system-out><![CDATA[2025-02-25T03:52:45.465642200Z main INFO Starting configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@675d8c96...
+2025-02-25T03:52:45.467639300Z main INFO Start watching for changes to C:\Users\Gnana\IdeaProjects\PlaywrightJava\target\classes\log4j2.properties every 0 seconds
+2025-02-25T03:52:45.467639300Z main INFO Configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@675d8c96 started.
+2025-02-25T03:52:45.469678600Z main INFO Stopping configuration org.apache.logging.log4j.core.config.DefaultConfiguration@1852a3ff...
+2025-02-25T03:52:45.469678600Z main INFO Configuration org.apache.logging.log4j.core.config.DefaultConfiguration@1852a3ff stopped.
+[INFO] 25-02-2025 09:22:45 [LogUtils] - ********** RUN STARTED **********
+[INFO] 25-02-2025 09:22:45 [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 25-02-2025 09:22:45 [LogUtils] - Warning !! Can not Load All File.
+[INFO] 25-02-2025 09:22:45 [LogUtils] - Warning !! Can not Load All File.
 Allure environment data saved.
 Allure Reports is installed.
-[INFO] 22-02-2025 20:56:38 [LogUtils] - OVERRIDE EXTENT REPORTS = no
-[INFO] 22-02-2025 20:56:38 [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\22_02_2025_20_56_38_ExtentReports.html
-[INFO] 22-02-2025 20:56:38 [LogUtils] - Extent Reports is installed.
-[INFO] 22-02-2025 20:56:38 [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
-[INFO] 22-02-2025 20:56:38 [LogUtils] - =====> Starting Suite: Regression Tests 
-[INFO] 22-02-2025 20:56:38 [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:56:38 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:56:39 [LogUtils] - Row: 10 - Column: 2
-[INFO] 22-02-2025 20:56:39 [LogUtils] - StartRow: 2 - EndRow: 6
-getSignInData: [[Ljava.lang.Object;@1317b708
-[INFO] 22-02-2025 20:56:40 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:56:40 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:56:40 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:56:40 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:56:40 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@72f7651d
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Test case: loginWithValidCredentials is starting...
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Created test: loginWithValidCredentials
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:56:54 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@31c7c1f7
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Test case: loginWithValidCredentials is starting...
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Created test: loginWithValidCredentials
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[ERROR] 22-02-2025 20:56:56 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:56:56.png
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Filling in email: abc@abc.com
-[INFO] 22-02-2025 20:56:56 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@abc.com
-[ERROR] 22-02-2025 20:56:58 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:56:58.png
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Filling in email: cashierngan023@gmail.com
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: cashierngan023@gmail.com
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@f813695
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Test case: loginWithValidCredentials is starting...
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Created test: loginWithValidCredentials
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@abc.com
-[ERROR] 22-02-2025 20:56:58 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:56:58.png
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:56:58 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 12Bcd
-[INFO] 22-02-2025 20:56:59 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:56:59 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:56:59 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 12Bcd
-[ERROR] 22-02-2025 20:56:59 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:56:59.png
-[INFO] 22-02-2025 20:56:59 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[INFO] 22-02-2025 20:57:00 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:00 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:00.png
-[INFO] 22-02-2025 20:57:00 [LogUtils] - Test case: loginWithValidCredentials passed.
-[INFO] 22-02-2025 20:57:00 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
-[INFO] 22-02-2025 20:57:01 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740238020745
-[INFO] 22-02-2025 20:57:01 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
-[INFO] 22-02-2025 20:57:01 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashierngan023@gmail.com
-[ERROR] 22-02-2025 20:57:01 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:01.png
-[INFO] 22-02-2025 20:57:01 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:01 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc12
-[ERROR] 22-02-2025 20:57:01 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:01.png
-[INFO] 22-02-2025 20:57:01 [LogUtils] - Filling in email: hjkl@ik.com
-[INFO] 22-02-2025 20:57:01 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: hjkl@ik.com
-[INFO] 22-02-2025 20:57:02 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc12
-[ERROR] 22-02-2025 20:57:02 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:02.png
-[INFO] 22-02-2025 20:57:02 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:22:45 [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 25-02-2025 09:22:45 [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\PlaywrightJava\reports/ExtentReports\ExtentReports.html
+[INFO] 25-02-2025 09:22:45 [LogUtils] - Extent Reports is installed.
+[INFO] 25-02-2025 09:22:45 [LogUtils] - ========= CONFIGURATION DATA INSTALLED =========
+[INFO] 25-02-2025 09:22:45 [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 25-02-2025 09:22:45 [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:22:45 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:22:46 [LogUtils] - Row: 10 - Column: 2
+[INFO] 25-02-2025 09:22:46 [LogUtils] - StartRow: 2 - EndRow: 6
+getSignInData: [[Ljava.lang.Object;@2b8bd798
+[INFO] 25-02-2025 09:22:46 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:22:46 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:22:46 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:22:46 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:22:46 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:23:26 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@1f61e552
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:27 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@6e1864d8
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:28 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 25-02-2025 09:23:29 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:23:29.png
+[INFO] 25-02-2025 09:23:29 [LogUtils] - Filling in email: hjkl@ik.com
+[INFO] 25-02-2025 09:23:29 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: hjkl@ik.com
+[ERROR] 25-02-2025 09:23:30 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:23:30.png
+[INFO] 25-02-2025 09:23:30 [LogUtils] - Filling in email: abc@abc.com
+[INFO] 25-02-2025 09:23:30 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@abc.com
+[INFO] 25-02-2025 09:23:32 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: hjkl@ik.com
+[ERROR] 25-02-2025 09:23:32 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:32.png
+[INFO] 25-02-2025 09:23:32 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:23:32 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: sdkjf1231
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: sdkjf1231
+[ERROR] 25-02-2025 09:23:34 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:34.png
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@4ee5f8da
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:23:34 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:23:35 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:35 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:36 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:23:36 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:23:36.png
+[INFO] 25-02-2025 09:23:36 [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@44ae39ba
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@f8f0a0c
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Created test: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:37 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740455617708
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithValidCredentials[{EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}](2)" classname="com.assured.tests.T01_LoginTest" time="1.105">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:02 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:02 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:02 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:02.png
-[INFO] 22-02-2025 20:57:02 [LogUtils] - Test case: loginWithValidCredentials passed.
-[INFO] 22-02-2025 20:57:02 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@a88fb70
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Test case: loginWithValidCredentials is starting...
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Created test: loginWithValidCredentials
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740238023467
-[INFO] 22-02-2025 20:57:03 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+  <testcase name="loginWithValidCredentials[{EMAIL=abc@abc.com, PASSWORD=12Bcd}](2)" classname="com.assured.tests.T01_LoginTest" time="7.543">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:23:38 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@abc.com
+[ERROR] 25-02-2025 09:23:38 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:38.png
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 12Bcd
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 12Bcd
+[ERROR] 25-02-2025 09:23:38 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:38.png
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:23:38 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:23:38.png
+[INFO] 25-02-2025 09:23:38 [LogUtils] - Test case: loginWithValidCredentials passed.
+[ERROR] 25-02-2025 09:23:39 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:23:39.png
+[INFO] 25-02-2025 09:23:39 [LogUtils] - Filling in email: qazdqsd@lk.com
+[INFO] 25-02-2025 09:23:39 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: qazdqsd@lk.com
+[ERROR] 25-02-2025 09:23:40 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:23:40.png
+[INFO] 25-02-2025 09:23:40 [LogUtils] - Filling in email: bbcd@lk.com
+[INFO] 25-02-2025 09:23:40 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: bbcd@lk.com
+[INFO] 25-02-2025 09:23:40 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:43 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740455620428
+[INFO] 25-02-2025 09:23:43 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[ERROR] 25-02-2025 09:23:43 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:23:43.png
+[INFO] 25-02-2025 09:23:43 [LogUtils] - Filling in email: cashierngan023@gmail.com
+[INFO] 25-02-2025 09:23:43 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: cashierngan023@gmail.com
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithValidCredentials[{EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231}](3)" classname="com.assured.tests.T01_LoginTest" time="2.76">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:04 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@24856bf8
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Test case: loginWithValidCredentials is starting...
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Created test: loginWithValidCredentials
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: hjkl@ik.com
-[ERROR] 22-02-2025 20:57:04 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:04.png
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:04 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: sdkjf1231
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: sdkjf1231
-[ERROR] 22-02-2025 20:57:05 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:05.png
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:05 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:05.png
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Filling in email: qazdqsd@lk.com
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: qazdqsd@lk.com
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:05 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:05.png
-[INFO] 22-02-2025 20:57:05 [LogUtils] - Test case: loginWithValidCredentials passed.
-[INFO] 22-02-2025 20:57:06 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
-[INFO] 22-02-2025 20:57:07 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740238026843
-[INFO] 22-02-2025 20:57:07 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
-[ERROR] 22-02-2025 20:57:07 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:07.png
-[INFO] 22-02-2025 20:57:07 [LogUtils] - Filling in email: bbcd@lk.com
-[INFO] 22-02-2025 20:57:07 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: bbcd@lk.com
+  <testcase name="loginWithValidCredentials[{EMAIL=qazdqsd@lk.com, PASSWORD=abc32}](4)" classname="com.assured.tests.T01_LoginTest" time="10.883">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:23:45 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:23:46 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: qazdqsd@lk.com
+[ERROR] 25-02-2025 09:23:46 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:46.png
+[INFO] 25-02-2025 09:23:46 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:23:46 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc32
+[INFO] 25-02-2025 09:23:47 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[ERROR] 25-02-2025 09:23:47 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:47.png
+[INFO] 25-02-2025 09:23:47 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:23:48 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:23:48.png
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashierngan023@gmail.com
+[ERROR] 25-02-2025 09:23:48 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:48.png
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc12
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc12
+[ERROR] 25-02-2025 09:23:48 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:48.png
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: bbcd@lk.com
+[ERROR] 25-02-2025 09:23:48 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:48.png
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 789ght
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740455628429
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 789ght
+[ERROR] 25-02-2025 09:23:48 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:23:48.png
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:23:48 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:23:48.png
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Test case: loginWithValidCredentials passed.
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithValidCredentials[{EMAIL=qazdqsd@lk.com, PASSWORD=abc32}](5)" classname="com.assured.tests.T01_LoginTest" time="5.503">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:07 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:08 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: qazdqsd@lk.com
-[ERROR] 22-02-2025 20:57:08 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:08.png
-[INFO] 22-02-2025 20:57:08 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:08 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc32
-[INFO] 22-02-2025 20:57:08 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
-[ERROR] 22-02-2025 20:57:08 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:08.png
-[INFO] 22-02-2025 20:57:08 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[INFO] 22-02-2025 20:57:08 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:08 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:08.png
-[INFO] 22-02-2025 20:57:08 [LogUtils] - Test case: loginWithValidCredentials passed.
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: bbcd@lk.com
-[ERROR] 22-02-2025 20:57:09 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:09.png
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 789ght
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 789ght
-[ERROR] 22-02-2025 20:57:09 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:09.png
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740238029440
-[INFO] 22-02-2025 20:57:09 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
-[INFO] 22-02-2025 20:57:10 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:10 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:10.png
-[INFO] 22-02-2025 20:57:10 [LogUtils] - Test case: loginWithValidCredentials passed.
+  <testcase name="loginWithValidCredentials[{EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}](5)" classname="com.assured.tests.T01_LoginTest" time="11.359">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:23:48 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:23:48 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:23:48.png
+[INFO] 25-02-2025 09:23:48 [LogUtils] - Test case: loginWithValidCredentials passed.
+[INFO] 25-02-2025 09:23:49 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740455628899
+[INFO] 25-02-2025 09:23:49 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+[INFO] 25-02-2025 09:23:49 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithValidCredentials[{EMAIL=bbcd@lk.com, PASSWORD=789ght}](5)" classname="com.assured.tests.T01_LoginTest" time="6.834">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:10 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:10 [LogUtils] - Screenshot captured and saved for: loginWithValidCredentials
-[INFO] 22-02-2025 20:57:11 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740238030808
-[INFO] 22-02-2025 20:57:11 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
+  <testcase name="loginWithValidCredentials[{EMAIL=bbcd@lk.com, PASSWORD=789ght}](5)" classname="com.assured.tests.T01_LoginTest" time="11.62">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:23:49 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:23:49 [LogUtils] - Screenshot added with status: Pass | Name: loginWithValidCredentials - 1740455629105
+[INFO] 25-02-2025 09:23:49 [LogUtils] - Log message with status Pass: Test case: loginWithValidCredentials passed.
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithInValidCredentials[{EMAIL=bbcd@lk.com, PASSWORD=789ght}](1)" classname="com.assured.tests.T01_LoginTest" time="1.09">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:11 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Row: 10 - Column: 2
-[INFO] 22-02-2025 20:57:13 [LogUtils] - StartRow: 2 - EndRow: 6
-getSignInData: [[Ljava.lang.Object;@14b7786
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:57:13 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@6f62c972
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Test case: loginWithInValidCredentials is starting...
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Created test: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:18 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@2d1f888f
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Test case: loginWithInValidCredentials is starting...
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Created test: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:20 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[ERROR] 22-02-2025 20:57:21 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:21.png
-[INFO] 22-02-2025 20:57:21 [LogUtils] - Filling in email: bbcd@lk.com
-[INFO] 22-02-2025 20:57:21 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: bbcd@lk.com
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: bbcd@lk.com
-[ERROR] 22-02-2025 20:57:22 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:22.png
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 789ght
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 789ght
-[ERROR] 22-02-2025 20:57:22 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:22.png
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:22 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:22.png
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Filling in email: qazdqsd@lk.com
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: qazdqsd@lk.com
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:22 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:22.png
-[INFO] 22-02-2025 20:57:22 [LogUtils] - Test case: loginWithInValidCredentials passed.
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@39687fe3
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Test case: loginWithInValidCredentials is starting...
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Created test: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:23 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:24 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740238043834
-[INFO] 22-02-2025 20:57:24 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+  <testcase name="loginWithInValidCredentials[{EMAIL=abc@abc.com, PASSWORD=12Bcd}](1)" classname="com.assured.tests.T01_LoginTest" time="0.285">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:23:49 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\PlaywrightJava\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Row: 10 - Column: 2
+[INFO] 25-02-2025 09:23:53 [LogUtils] - StartRow: 2 - EndRow: 6
+getSignInData: [[Ljava.lang.Object;@5c7668ba
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:23:53 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@27f46345
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:23:58 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 25-02-2025 09:23:59 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:23:59.png
+[INFO] 25-02-2025 09:23:59 [LogUtils] - Filling in email: abc@abc.com
+[INFO] 25-02-2025 09:23:59 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@abc.com
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@54363c81
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:00 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:01 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@abc.com
+[ERROR] 25-02-2025 09:24:01 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:01.png
+[INFO] 25-02-2025 09:24:01 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:24:01 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 12Bcd
+[ERROR] 25-02-2025 09:24:02 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:24:02.png
+[INFO] 25-02-2025 09:24:02 [LogUtils] - Filling in email: hjkl@ik.com
+[INFO] 25-02-2025 09:24:02 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: hjkl@ik.com
+[INFO] 25-02-2025 09:24:03 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 12Bcd
+[ERROR] 25-02-2025 09:24:04 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:04.png
+[INFO] 25-02-2025 09:24:04 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:24:04 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:24:04 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:24:04.png
+[INFO] 25-02-2025 09:24:04 [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 25-02-2025 09:24:04 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740455644984
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@6501ad94
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:05 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithInValidCredentials[{EMAIL=qazdqsd@lk.com, PASSWORD=abc32}](2)" classname="com.assured.tests.T01_LoginTest" time="0.558">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:24 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:24 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: qazdqsd@lk.com
-[ERROR] 22-02-2025 20:57:24 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:24.png
-[INFO] 22-02-2025 20:57:24 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:24 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc32
-[INFO] 22-02-2025 20:57:25 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
-[ERROR] 22-02-2025 20:57:25 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:25.png
-[INFO] 22-02-2025 20:57:25 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[INFO] 22-02-2025 20:57:25 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:25 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:25.png
-[INFO] 22-02-2025 20:57:25 [LogUtils] - Test case: loginWithInValidCredentials passed.
-[ERROR] 22-02-2025 20:57:25 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:25.png
-[INFO] 22-02-2025 20:57:25 [LogUtils] - Filling in email: cashierngan023@gmail.com
-[INFO] 22-02-2025 20:57:25 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: cashierngan023@gmail.com
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@3617024b
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Test case: loginWithInValidCredentials is starting...
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Created test: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740238046615
-[INFO] 22-02-2025 20:57:26 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+  <testcase name="loginWithInValidCredentials[{EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231}](2)" classname="com.assured.tests.T01_LoginTest" time="0.433">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:24:05 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:24:08 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: hjkl@ik.com
+[ERROR] 25-02-2025 09:24:08 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:08.png
+[INFO] 25-02-2025 09:24:08 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:24:08 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: sdkjf1231
+[INFO] 25-02-2025 09:24:08 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: sdkjf1231
+[ERROR] 25-02-2025 09:24:08 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:08.png
+[INFO] 25-02-2025 09:24:08 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:24:10 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:24:10.png
+[INFO] 25-02-2025 09:24:10 [LogUtils] - Filling in email: bbcd@lk.com
+[INFO] 25-02-2025 09:24:10 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: bbcd@lk.com
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:24:11 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:24:11.png
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@7d96f946
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:11 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740455651894
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithInValidCredentials[{EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}](3)" classname="com.assured.tests.T01_LoginTest" time="2.216">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:27 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@3bee6497
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Test case: loginWithInValidCredentials is starting...
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Created test: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Assigned author: Gnanapandithan
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Assigned category: REGRESSION
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
-[INFO] 22-02-2025 20:57:27 [LogUtils] - Sheet Name: SignIn
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashierngan023@gmail.com
-[ERROR] 22-02-2025 20:57:28 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:28.png
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc12
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc12
-[ERROR] 22-02-2025 20:57:28 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:28.png
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:28 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:28.png
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Filling in email: abc@abc.com
-[INFO] 22-02-2025 20:57:28 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@abc.com
-[INFO] 22-02-2025 20:57:29 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:29 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:29.png
-[INFO] 22-02-2025 20:57:29 [LogUtils] - Test case: loginWithInValidCredentials passed.
-[INFO] 22-02-2025 20:57:29 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:29 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740238049467
-[INFO] 22-02-2025 20:57:29 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+  <testcase name="loginWithInValidCredentials[{EMAIL=bbcd@lk.com, PASSWORD=789ght}](3)" classname="com.assured.tests.T01_LoginTest" time="0.352">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:24:12 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: bbcd@lk.com
+[ERROR] 25-02-2025 09:24:12 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:12.png
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 789ght
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 789ght
+[ERROR] 25-02-2025 09:24:12 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:12.png
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:24:12 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:24:12.png
+[INFO] 25-02-2025 09:24:12 [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@5b58a6a7
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Test case: loginWithInValidCredentials is starting...
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Created test: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Assigned author: Gnanapandithan
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Assigned category: REGRESSION
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Sheet Name: SignIn
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740455653536
+[INFO] 25-02-2025 09:24:13 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithInValidCredentials[{EMAIL=abc@abc.com, PASSWORD=12Bcd}](4)" classname="com.assured.tests.T01_LoginTest" time="4.564">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:30 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:30 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@abc.com
-[ERROR] 22-02-2025 20:57:30 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:30.png
-[INFO] 22-02-2025 20:57:30 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:30 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: 12Bcd
-[INFO] 22-02-2025 20:57:31 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: 12Bcd
-[ERROR] 22-02-2025 20:57:31 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:31.png
-[INFO] 22-02-2025 20:57:31 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:31 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:31.png
-[INFO] 22-02-2025 20:57:31 [LogUtils] - Filling in email: hjkl@ik.com
-[INFO] 22-02-2025 20:57:31 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: hjkl@ik.com
-[INFO] 22-02-2025 20:57:31 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:31 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:31.png
-[INFO] 22-02-2025 20:57:31 [LogUtils] - Test case: loginWithInValidCredentials passed.
-[INFO] 22-02-2025 20:57:31 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: hjkl@ik.com
-[ERROR] 22-02-2025 20:57:32 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:32.png
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: sdkjf1231
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740238051926
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: sdkjf1231
-[ERROR] 22-02-2025 20:57:32 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:32.png
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+  <testcase name="loginWithInValidCredentials[{EMAIL=qazdqsd@lk.com, PASSWORD=abc32}](4)" classname="com.assured.tests.T01_LoginTest" time="2.995">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:24:14 [LogUtils] - Closing browser and cleaning up...
+[ERROR] 25-02-2025 09:24:14 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:24:14.png
+[INFO] 25-02-2025 09:24:14 [LogUtils] - Filling in email: qazdqsd@lk.com
+[INFO] 25-02-2025 09:24:14 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: qazdqsd@lk.com
+[INFO] 25-02-2025 09:24:15 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: qazdqsd@lk.com
+[ERROR] 25-02-2025 09:24:15 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:15.png
+[INFO] 25-02-2025 09:24:15 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:24:15 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc32
+[INFO] 25-02-2025 09:24:15 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc32
+[ERROR] 25-02-2025 09:24:15 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:15.png
+[INFO] 25-02-2025 09:24:15 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:24:15 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:24:15 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:24:15.png
+[INFO] 25-02-2025 09:24:15 [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 25-02-2025 09:24:16 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:16 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740455656090
+[INFO] 25-02-2025 09:24:16 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+[ERROR] 25-02-2025 09:24:16 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:24:16.png
+[INFO] 25-02-2025 09:24:16 [LogUtils] - Filling in email: cashierngan023@gmail.com
+[INFO] 25-02-2025 09:24:16 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: cashierngan023@gmail.com
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithInValidCredentials[{EMAIL=hjkl@ik.com, PASSWORD=sdkjf1231}](5)" classname="com.assured.tests.T01_LoginTest" time="5.645">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:32 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
-[ERROR] 22-02-2025 20:57:32 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:57:32.png
-[INFO] 22-02-2025 20:57:32 [LogUtils] - Test case: loginWithInValidCredentials passed.
-[INFO] 22-02-2025 20:57:33 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
-[INFO] 22-02-2025 20:57:33 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740238053096
-[INFO] 22-02-2025 20:57:33 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
+  <testcase name="loginWithInValidCredentials[{EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}](5)" classname="com.assured.tests.T01_LoginTest" time="4.517">
+    <system-out><![CDATA[[INFO] 25-02-2025 09:24:16 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:24:17 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: cashierngan023@gmail.com
+[ERROR] 25-02-2025 09:24:17 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:17.png
+[INFO] 25-02-2025 09:24:17 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:24:17 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc12
+[INFO] 25-02-2025 09:24:17 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc12
+[ERROR] 25-02-2025 09:24:17 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:17.png
+[INFO] 25-02-2025 09:24:17 [LogUtils] - Test info: Clicking element with selector: //button[@type='submit']/span
+[INFO] 25-02-2025 09:24:17 [LogUtils] - Clicked element with selector: //button[@type='submit']/span
+[ERROR] 25-02-2025 09:24:17 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_25/02/2025 09:24:17.png
+[INFO] 25-02-2025 09:24:17 [LogUtils] - Test case: loginWithInValidCredentials passed.
+[INFO] 25-02-2025 09:24:18 [LogUtils] - Screenshot captured and saved for: loginWithInValidCredentials
+[INFO] 25-02-2025 09:24:18 [LogUtils] - Screenshot added with status: Pass | Name: loginWithInValidCredentials - 1740455658070
+[INFO] 25-02-2025 09:24:18 [LogUtils] - Log message with status Pass: Test case: loginWithInValidCredentials passed.
 ]]></system-out>
   </testcase>
-  <testcase name="urlTest" classname="com.assured.tests.T01_LoginTest" time="40.493">
-    <system-out><![CDATA[[INFO] 22-02-2025 20:57:33 [LogUtils] - Closing browser and cleaning up...
-[INFO] 22-02-2025 20:57:35 [LogUtils] - Creating Playwright instance using factory method...
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@468dda3e
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Test case: urlTest is starting...
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Created test: urlTest
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Assigned default author: Gp
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Assigned default category: REGRESSION
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Assigned device info: CHROME
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Test info: Windows 10
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
-[INFO] 22-02-2025 20:57:38 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
-[ERROR] 22-02-2025 20:57:41 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:57:41.png
-[INFO] 22-02-2025 20:57:41 [LogUtils] - Filling in email: 
-[INFO] 22-02-2025 20:57:41 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@gmail.com
-[INFO] 22-02-2025 20:57:41 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@gmail.com
-[ERROR] 22-02-2025 20:57:41 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:41.png
-[INFO] 22-02-2025 20:57:41 [LogUtils] - Filling in password.
-[INFO] 22-02-2025 20:57:41 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc
-[INFO] 22-02-2025 20:57:41 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc
-[ERROR] 22-02-2025 20:57:41 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:57:41.png
-[INFO] 22-02-2025 20:57:49 [LogUtils] - Test info: Retrieving mail URL for domain: private, mailbox: abc1, expectedFrom: no-reply@withassured.com, expectedSubject: Onboarding Invite
-[INFO] 22-02-2025 20:57:49 [LogUtils] - Requesting inbox for domain: private
-[INFO] 22-02-2025 20:57:52 [LogUtils] - Inbox received with 3 messages
-[INFO] 22-02-2025 20:57:52 [LogUtils] - Matched message -> ID: abc-1740222182-09715539105903, From: no-reply@withassured.com, Subject: Onboarding Invite
-[INFO] 22-02-2025 20:57:52 [LogUtils] - Test info: Matched message details -> ID: abc-1740222182-09715539105903, From: no-reply@withassured.com, Subject: Onboarding Invite
-[WARN] 22-02-2025 20:57:52 [LogUtils] - No URL found in subject. Trying links API for message id: abc-1740222182-09715539105903
-[INFO] 22-02-2025 20:57:52 [LogUtils] - Test info: No URL in subject, checking links API...
-[INFO] 22-02-2025 20:57:52 [LogUtils] - Retrieved URL from links API: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
-[INFO] 22-02-2025 20:57:52 [LogUtils] - Test info: Mail invite URL retrieved from links API: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
-[INFO] 22-02-2025 20:57:52 [LogUtils] - Test info: Opening a new browser instance to perform additional actions
-[INFO] 22-02-2025 20:57:56 [LogUtils] - Opened new browser instance for additional actions.
-[ERROR] 22-02-2025 20:57:56 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 42: screenshots\newBrowserOpened_22/02/2025 20:57:56.png
-[INFO] 22-02-2025 20:57:56 [LogUtils] - Navigating to URL: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
-[INFO] 22-02-2025 20:57:56 [LogUtils] - Test info: Navigating to URL: https://u24054449.ct.sendgrid.net/ls/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B3ryqUwBVSrhYASYjj5cFtKoSPMdDhyJR-2FjiWep-2Fpn1-2Bg-3D-3D
-[ERROR] 22-02-2025 20:58:01 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_22/02/2025 20:58:01.png
-[INFO] 22-02-2025 20:58:01 [LogUtils] - Test info: Filling text into element with selector: input[placeholder="New Password"] | Value: 123456
-[INFO] 22-02-2025 20:58:01 [LogUtils] - Filled element with selector: input[placeholder="New Password"] with text: 123456
-[ERROR] 22-02-2025 20:58:01 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:58:01.png
-[INFO] 22-02-2025 20:58:01 [LogUtils] - Test info: Filling text into element with selector: input[placeholder="Confirm Password"] | Value: 123456
-[INFO] 22-02-2025 20:58:01 [LogUtils] - Filled element with selector: input[placeholder="Confirm Password"] with text: 123456
-[ERROR] 22-02-2025 20:58:01 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_22/02/2025 20:58:01.png
-[INFO] 22-02-2025 20:58:01 [LogUtils] - Test info: Clicking element with selector: #createAdminAccountForm > button > span
-[INFO] 22-02-2025 20:58:01 [LogUtils] - Clicked element with selector: #createAdminAccountForm > button > span
-[ERROR] 22-02-2025 20:58:01 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 38: screenshots\clickElement_22/02/2025 20:58:01.png
-[ERROR] 22-02-2025 20:58:09 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 54: screenshots\actionsPerformedInNewBrowser_22/02/2025 20:58:09.png
-[INFO] 22-02-2025 20:58:10 [LogUtils] - Returned to original browser instance.
-[INFO] 22-02-2025 20:58:10 [LogUtils] - Test info: Returned to original browser instance.
-[ERROR] 22-02-2025 20:58:10 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 51: screenshots\returnedToOriginalBrowser_22/02/2025 20:58:10.png
-[INFO] 22-02-2025 20:58:18 [LogUtils] - Test case: urlTest passed.
-[INFO] 22-02-2025 20:58:19 [LogUtils] - Screenshot captured and saved for: urlTest
-[INFO] 22-02-2025 20:58:19 [LogUtils] - Screenshot added with status: Pass | Name: urlTest - 1740238099118
-[INFO] 22-02-2025 20:58:19 [LogUtils] - Log message with status Pass: Test case: urlTest passed.
+  <testcase name="urlTest" classname="com.assured.tests.T01_LoginTest" time="0.0">
+    <skipped message="com.mailosaur.MailosaurException: Authentication failed, check your API key."/>
+    <system-out><![CDATA[[INFO] 25-02-2025 09:24:18 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:24:22 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@684b31de
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Test case: urlTest is starting...
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Created test: urlTest
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Assigned default author: Gp
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Assigned default category: REGRESSION
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:25 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 25-02-2025 09:24:27 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:24:27.png
+[INFO] 25-02-2025 09:24:27 [LogUtils] - Filling in email: 
+[INFO] 25-02-2025 09:24:27 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@gmail.com
+[INFO] 25-02-2025 09:24:29 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@gmail.com
+[ERROR] 25-02-2025 09:24:29 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:29.png
+[INFO] 25-02-2025 09:24:29 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:24:29 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc
+[INFO] 25-02-2025 09:24:29 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc
+[ERROR] 25-02-2025 09:24:29 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:29.png
+[WARN] 25-02-2025 09:24:38 [LogUtils] - WARNING: Test case: urlTest is skipped.
+[INFO] 25-02-2025 09:24:38 [LogUtils] - Screenshot captured and saved for: urlTest
+[INFO] 25-02-2025 09:24:38 [LogUtils] - Log message with status Skip: Test case: urlTest is skipped.
 ]]></system-out>
-    <system-err><![CDATA[Feb 22, 2025 8:57:50 PM org.glassfish.jersey.logging.LoggingInterceptor log
-SEVERE: 1 * Sending client request on thread main
-1 > GET https://api.mailinator.com/v2/domains/private/inboxes/
-1 > Accept: application/json
-1 > Authorization: 947fc29e9d3b4c4b80be0e65f27fd8db
-
-Feb 22, 2025 8:57:52 PM org.glassfish.jersey.logging.LoggingInterceptor log
-SEVERE: 1 * Client response received on thread main
-1 < 200
-1 < access-control-allow-origin: *
-1 < Cache-Control: private
-1 < cf-cache-status: DYNAMIC
-1 < CF-RAY: 916000a419147faf-MAA
-1 < Connection: keep-alive
-1 < Content-Length: 772
-1 < Content-Type: application/json
-1 < Date: Sat, 22 Feb 2025 15:27:51 GMT
-1 < expect-ct: max-age=86400, enforce
-1 < expires: Thu, 01 Jan 1970 00:00:00 GMT
-1 < referrer-policy: same-origin
-1 < Server: cloudflare
-1 < Set-Cookie: SERVERID=s2; path=/; HttpOnly,JSESSIONID=node01azka8rzliwhjiquazwe04r6540318.node0;Path=/;Secure;HttpOnly
-1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
-1 < x-content-type-options: nosniff
-1 < x-frame-options: SAMEORIGIN
-1 < x-xss-protection: 1; mode=block
-{"msgs":[{"subject":"Onboarding Invite","domain":"qacyber.testinator.com","origfrom":"no-reply@withassured.com","from":"no-reply@withassured.com","id":"abc-1740222182-09715539105903","source":"EMAIL","to":"abc","time":1740222182000,"seconds_ago":15889},{"subject":"Onboarding Invite","domain":"qacyber.testinator.com","origfrom":"no-reply@withassured.com","from":"no-reply@withassured.com","id":"abc1-1739950473-096790445903","source":"EMAIL","to":"abc1","time":1739950473000,"seconds_ago":287598},{"subject":"Onboarding Invite","domain":"qacyber.testinator.com","origfrom":"no-reply@withassured.com","from":"no-reply@withassured.com","id":"abc-1738505275-0961552951903","source":"EMAIL","to":"abc","time":17
-
-Feb 22, 2025 8:57:52 PM org.glassfish.jersey.logging.LoggingInterceptor log
-SEVERE: 2 * Sending client request on thread main
-2 > GET https://api.mailinator.com/v2/domains/private/inboxes/abc1/messages/abc-1740222182-09715539105903/links
-2 > Accept: application/json
-2 > Authorization: 947fc29e9d3b4c4b80be0e65f27fd8db
-
-Feb 22, 2025 8:57:52 PM org.glassfish.jersey.logging.LoggingInterceptor log
-SEVERE: 2 * Client response received on thread main
-2 < 200
-2 < access-control-allow-origin: *
-2 < Cache-Control: private
-2 < cf-cache-status: DYNAMIC
-2 < CF-RAY: 916000abbab07faf-MAA
-2 < Connection: keep-alive
-2 < Content-Length: 765
-2 < Content-Type: application/json
-2 < Date: Sat, 22 Feb 2025 15:27:51 GMT
-2 < expect-ct: max-age=86400, enforce
-2 < expires: Thu, 01 Jan 1970 00:00:00 GMT
-2 < referrer-policy: same-origin
-2 < Server: cloudflare
-2 < Set-Cookie: SERVERID=s3; path=/; HttpOnly,JSESSIONID=node012iu6rsxe0x4l161o5y418a5yi482320.node0;Path=/;Secure;HttpOnly
-2 < Strict-Transport-Security: max-age=15552000; includeSubDomains
-2 < x-content-type-options: nosniff
-2 < x-frame-options: SAMEORIGIN
-2 < x-xss-protection: 1; mode=block
-{"links":["https:\/\/u24054449.ct.sendgrid.net\/ls\/click?upn=u001.uKTWfX-2BO7Cb7TshAM6sZKbEPm9EMqm9C4ZEtr6uuLun9WzqgtnF82p3mwtRkl8l6HmV8ei5eSFuKreSOAIBNUleu6JrLi1KKqVIj527UJtl8SOPrrN9sUWEvQnR7k8T9uZVo6ZTPaA9Ts0AP97aHNmeWEdRD9Tz0wKCzFT-2F5s2Z-2FCMCLF-2BUY-2F7yvAy1Spavmy5rOfhdtgC48AqGUNZ69IxIbcgCo36Osr8PnVQtNxKk-3Dck5X_wpqQ2WcS-2FTzgSrvxM8UHDetjfCFgHfuIxVzML9eO2lwIPoEyH273FaJ0jkibRH-2Fhp4JWwSnIOL8-2FTbIemxt55kUwl06ZTgHbRATHDru0zgcTAhuIg1a0MJs6gRjsO3fBiBnzT5aIvsI-2B4gQjxht-2FHAuyKODpj3uwZWQeYp60J2g80ZTYu65dUPZtIomjwu-2B-2F3bqqrN6BQ5YSA6XZmOASr1phc5-2FShsj5gT6qbeSePOl43MxjsVUo9JKUcosau-2FKD3mNBY4MHs-2B4kIxPUG0M4xmH7CpWdPjOpgphvFa13IaLIMA6CeFZ35nXodHn5-2BDGEsgwDBeTXT1knmUxPiw85ut0InJFGs-2FMakqwJCFta1B
-
-]]></system-err>
+  </testcase>
+  <testcase name="urlTest" classname="com.assured.tests.T01_LoginTest" time="10.732">
+    <failure message="com.mailosaur.MailosaurException: Authentication failed, check your API key." type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+	at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:98)
+	at com.assured.tests.T01_LoginTest.urlTest(T01_LoginTest.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+	at com.mailosaur.MailosaurClient.request(MailosaurClient.java:193)
+	at com.mailosaur.Messages.search(Messages.java:317)
+	at com.mailosaur.Messages.get(Messages.java:56)
+	at com.assured.services.PageActions.getMailUrl(PageActions.java:1005)
+	at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:96)
+	... 34 more
+]]></failure>
+    <system-out><![CDATA[[INFO] 25-02-2025 09:24:39 [LogUtils] - Closing browser and cleaning up...
+[INFO] 25-02-2025 09:24:39 [LogUtils] - Creating Playwright instance using factory method...
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Page instance created: com.microsoft.playwright.impl.PageImpl@767599a7
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Test case: urlTest is starting...
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Created test: urlTest
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Assigned default author: Gp
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Assigned default category: REGRESSION
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Assigned device info: CHROME
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Test info: Windows 10
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Navigating to URL: https://staging.withassured.com/sign-in
+[INFO] 25-02-2025 09:24:44 [LogUtils] - Test info: Navigating to URL: https://staging.withassured.com/sign-in
+[ERROR] 25-02-2025 09:24:46 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 34: screenshots\navigate_25/02/2025 09:24:46.png
+[INFO] 25-02-2025 09:24:46 [LogUtils] - Filling in email: 
+[INFO] 25-02-2025 09:24:46 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_email'] | Value: abc@gmail.com
+[INFO] 25-02-2025 09:24:46 [LogUtils] - Filled element with selector: //*[@id='normal_login_email'] with text: abc@gmail.com
+[ERROR] 25-02-2025 09:24:46 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:46.png
+[INFO] 25-02-2025 09:24:46 [LogUtils] - Filling in password.
+[INFO] 25-02-2025 09:24:46 [LogUtils] - Test info: Filling text into element with selector: //*[@id='normal_login_password'] | Value: abc
+[INFO] 25-02-2025 09:24:46 [LogUtils] - Filled element with selector: //*[@id='normal_login_password'] with text: abc
+[ERROR] 25-02-2025 09:24:46 [LogUtils] - Failed to capture screenshot: Illegal char <:> at index 33: screenshots\setText_25/02/2025 09:24:46.png
+[ERROR] 25-02-2025 09:24:55 [LogUtils] - FAILED: Test case urlTest failed.
+[ERROR] 25-02-2025 09:24:55 [LogUtils] - java.lang.RuntimeException: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+[INFO] 25-02-2025 09:24:55 [LogUtils] - Screenshot captured and saved for: urlTest
+[INFO] 25-02-2025 09:24:55 [LogUtils] - Screenshot added with status: Fail | Name: urlTest - 1740455695405
+[INFO] 25-02-2025 09:24:55 [LogUtils] - Log message with status Fail: java.lang.RuntimeException: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+]]></system-out>
   </testcase>
 </testsuite>

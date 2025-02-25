@@ -22,4 +22,3 @@ com\assured\tests\T07_TaxEntitiesAndPractice.class
 com\assured\listeners\AllureListener.class
 com\assured\common\ApiCleanupHelper.class
 com\assured\common\BaseTest.class
-com\assured\pages\test.class

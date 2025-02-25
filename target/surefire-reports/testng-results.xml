@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="13" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-22T20:56:38 IST" name="Regression Tests " finished-at="2025-02-22T20:58:19 IST" duration-ms="100804">
+  <suite started-at="2025-02-25T09:22:45 IST" name="Regression Tests " finished-at="2025-02-25T09:24:59 IST" duration-ms="133331">
     <groups>
     </groups>
-    <test started-at="2025-02-22T20:56:38 IST" name="SignIn Test" finished-at="2025-02-22T20:58:19 IST" duration-ms="100804">
+    <test started-at="2025-02-25T09:22:45 IST" name="SignIn Test" finished-at="2025-02-25T09:24:59 IST" duration-ms="133331">
       <class name="com.assured.tests.T01_LoginTest">
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:40 IST" name="createDriver" finished-at="2025-02-22T20:56:56 IST" duration-ms="16144" status="PASS">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:22:46 IST" name="createDriver" finished-at="2025-02-25T09:23:37 IST" duration-ms="51246" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:40 IST" name="createDriver" finished-at="2025-02-22T20:56:58 IST" duration-ms="18850" status="PASS">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:22:46 IST" name="createDriver" finished-at="2025-02-25T09:23:34 IST" duration-ms="48124" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:40 IST" name="createDriver" finished-at="2025-02-22T20:57:02 IST" duration-ms="22955" status="PASS">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:22:46 IST" name="createDriver" finished-at="2025-02-25T09:23:28 IST" duration-ms="41577" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:40 IST" name="createDriver" finished-at="2025-02-22T20:56:54 IST" duration-ms="14226" status="PASS">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:22:46 IST" name="createDriver" finished-at="2025-02-25T09:23:37 IST" duration-ms="51073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:40 IST" name="createDriver" finished-at="2025-02-22T20:57:04 IST" duration-ms="24677" status="PASS">
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:22:46 IST" name="createDriver" finished-at="2025-02-25T09:23:26 IST" duration-ms="40309" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,29 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:54 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:00 IST" duration-ms="5496" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{EMAIL=abc@abc.com, PASSWORD=12Bcd}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:56 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:02 IST" duration-ms="6721" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:56:58 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:05 IST" duration-ms="6981" status="PASS">
+        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:27 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:23:36 IST" duration-ms="9552" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,11 +73,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:02 IST" name="closeDriver" finished-at="2025-02-22T20:57:09 IST" duration-ms="7565" status="PASS">
+        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:28 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:23:38 IST" duration-ms="10720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{EMAIL=abc@abc.com, PASSWORD=12Bcd}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:02 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:08 IST" duration-ms="5936" status="PASS">
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:34 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:23:48 IST" duration-ms="13456" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,131 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:04 IST" name="closeDriver" finished-at="2025-02-22T20:57:11 IST" duration-ms="7229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:04 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:10 IST" duration-ms="5320" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{EMAIL=bbcd@lk.com, PASSWORD=789ght}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:07 IST" name="closeDriver" finished-at="2025-02-22T20:57:11 IST" duration-ms="4196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:09 IST" name="tearDown" finished-at="2025-02-22T20:57:09 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:10 IST" name="closeDriver" finished-at="2025-02-22T20:57:13 IST" duration-ms="2845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:11 IST" name="tearDown" finished-at="2025-02-22T20:57:11 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:11 IST" name="closeDriver" finished-at="2025-02-22T20:57:13 IST" duration-ms="1878" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:11 IST" name="tearDown" finished-at="2025-02-22T20:57:11 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:13 IST" name="tearDown" finished-at="2025-02-22T20:57:13 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:13 IST" name="tearDown" finished-at="2025-02-22T20:57:13 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:13 IST" name="createDriver" finished-at="2025-02-22T20:57:26 IST" duration-ms="13047" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:13 IST" name="createDriver" finished-at="2025-02-22T20:57:23 IST" duration-ms="10072" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:13 IST" name="createDriver" finished-at="2025-02-22T20:57:27 IST" duration-ms="14392" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:13 IST" name="createDriver" finished-at="2025-02-22T20:57:18 IST" duration-ms="4767" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDriver -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:13 IST" name="createDriver" finished-at="2025-02-22T20:57:20 IST" duration-ms="6609" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDriver -->
-        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:18 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:22 IST" duration-ms="4612" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{EMAIL=bbcd@lk.com, PASSWORD=789ght}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInValidCredentials -->
-        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:20 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:25 IST" duration-ms="5522" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{EMAIL=qazdqsd@lk.com, PASSWORD=abc32}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInValidCredentials -->
-        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:23 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:29 IST" duration-ms="5437" status="PASS">
+        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:37 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:23:48 IST" duration-ms="10977" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -244,12 +105,114 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInValidCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:24 IST" name="closeDriver" finished-at="2025-02-22T20:57:33 IST" duration-ms="8813" status="PASS">
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="loginWithValidCredentials(java.util.Hashtable)[pri:1, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:37 IST" name="loginWithValidCredentials" description="TC01_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:23:48 IST" duration-ms="11134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{EMAIL=bbcd@lk.com, PASSWORD=789ght}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:38 IST" name="closeDriver" finished-at="2025-02-25T09:23:49 IST" duration-ms="11375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:26 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:31 IST" duration-ms="4876" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:45 IST" name="closeDriver" finished-at="2025-02-25T09:23:49 IST" duration-ms="4311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:48 IST" name="closeDriver" finished-at="2025-02-25T09:23:51 IST" duration-ms="2754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:49 IST" name="closeDriver" finished-at="2025-02-25T09:23:52 IST" duration-ms="3678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:49 IST" name="closeDriver" finished-at="2025-02-25T09:23:53 IST" duration-ms="3699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:49 IST" name="tearDown" finished-at="2025-02-25T09:23:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:49 IST" name="tearDown" finished-at="2025-02-25T09:23:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:51 IST" name="tearDown" finished-at="2025-02-25T09:23:51 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:52 IST" name="tearDown" finished-at="2025-02-25T09:23:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:53 IST" name="tearDown" finished-at="2025-02-25T09:23:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:53 IST" name="createDriver" finished-at="2025-02-25T09:23:58 IST" duration-ms="5032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:53 IST" name="createDriver" finished-at="2025-02-25T09:24:13 IST" duration-ms="20647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:53 IST" name="createDriver" finished-at="2025-02-25T09:24:05 IST" duration-ms="11978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:53 IST" name="createDriver" finished-at="2025-02-25T09:24:11 IST" duration-ms="18562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:53 IST" name="createDriver" finished-at="2025-02-25T09:24:00 IST" duration-ms="7092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:23:58 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:24:04 IST" duration-ms="6380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,11 +223,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:27 IST" name="closeDriver" finished-at="2025-02-22T20:57:33 IST" duration-ms="6535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:27 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-22T20:57:32 IST" duration-ms="4912" status="PASS">
+        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:00 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:24:11 IST" duration-ms="10999" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -275,39 +234,80 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidCredentials -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:30 IST" name="closeDriver" finished-at="2025-02-22T20:57:33 IST" duration-ms="3461" status="PASS">
+        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:05 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:24:12 IST" duration-ms="7768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{EMAIL=bbcd@lk.com, PASSWORD=789ght}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInValidCredentials -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:05 IST" name="closeDriver" finished-at="2025-02-25T09:24:14 IST" duration-ms="9343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:32 IST" name="closeDriver" finished-at="2025-02-22T20:57:34 IST" duration-ms="2162" status="PASS">
+        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:11 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:24:15 IST" duration-ms="4079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{EMAIL=qazdqsd@lk.com, PASSWORD=abc32}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInValidCredentials -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:12 IST" name="closeDriver" finished-at="2025-02-25T09:24:14 IST" duration-ms="2657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:33 IST" name="tearDown" finished-at="2025-02-22T20:57:33 IST" duration-ms="0" status="PASS">
+        <test-method signature="loginWithInValidCredentials(java.util.Hashtable)[pri:2, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:13 IST" name="loginWithInValidCredentials" description="TC02_signInWithDataProvider" data-provider="getSignInDataHashTable" finished-at="2025-02-25T09:24:17 IST" duration-ms="4052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{EMAIL=cashierngan023@gmail.com, PASSWORD=abc12}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:33 IST" name="closeDriver" finished-at="2025-02-22T20:57:35 IST" duration-ms="1655" status="PASS">
+        </test-method> <!-- loginWithInValidCredentials -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:14 IST" name="closeDriver" finished-at="2025-02-25T09:24:17 IST" duration-ms="3232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:33 IST" name="tearDown" finished-at="2025-02-22T20:57:33 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:14 IST" name="tearDown" finished-at="2025-02-25T09:24:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:33 IST" name="tearDown" finished-at="2025-02-22T20:57:33 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:14 IST" name="tearDown" finished-at="2025-02-25T09:24:14 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:34 IST" name="tearDown" finished-at="2025-02-22T20:57:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:16 IST" name="closeDriver" finished-at="2025-02-25T09:24:18 IST" duration-ms="2082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:17 IST" name="tearDown" finished-at="2025-02-25T09:24:17 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:35 IST" name="tearDown" finished-at="2025-02-22T20:57:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:18 IST" name="closeDriver" finished-at="2025-02-25T09:24:22 IST" duration-ms="4194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:18 IST" name="tearDown" finished-at="2025-02-25T09:24:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:35 IST" name="createDriver" finished-at="2025-02-22T20:57:38 IST" duration-ms="3628" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:22 IST" name="tearDown" finished-at="2025-02-25T09:24:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:22 IST" name="createDriver" finished-at="2025-02-25T09:24:25 IST" duration-ms="2781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -318,22 +318,147 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="urlTest()[pri:3, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:57:38 IST" name="urlTest" description="TC03_urlTest" finished-at="2025-02-22T20:58:18 IST" duration-ms="40139" status="PASS">
+        <test-method retried="true" signature="urlTest()[pri:3, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:25 IST" name="urlTest" description="TC03_urlTest" finished-at="2025-02-25T09:24:38 IST" duration-ms="13568" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[com.mailosaur.MailosaurException: Authentication failed, check your API key.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:98)
+at com.assured.tests.T01_LoginTest.urlTest(T01_LoginTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+at com.mailosaur.MailosaurClient.request(MailosaurClient.java:193)
+at com.mailosaur.Messages.search(Messages.java:317)
+at com.mailosaur.Messages.get(Messages.java:56)
+at com.assured.services.PageActions.getMailUrl(PageActions.java:1005)
+at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:96)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlTest -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:58:19 IST" name="closeDriver" finished-at="2025-02-22T20:58:19 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:39 IST" name="closeDriver" finished-at="2025-02-25T09:24:39 IST" duration-ms="844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@30f842ca]" started-at="2025-02-22T20:58:19 IST" name="tearDown" finished-at="2025-02-22T20:58:19 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:39 IST" name="tearDown" finished-at="2025-02-25T09:24:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="createDriver(java.lang.String)[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:39 IST" name="createDriver" finished-at="2025-02-25T09:24:44 IST" duration-ms="4882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="urlTest()[pri:3, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:44 IST" name="urlTest" description="TC03_urlTest" finished-at="2025-02-25T09:24:55 IST" duration-ms="10535" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[com.mailosaur.MailosaurException: Authentication failed, check your API key.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:98)
+at com.assured.tests.T01_LoginTest.urlTest(T01_LoginTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.mailosaur.MailosaurException: Authentication failed, check your API key.
+at com.mailosaur.MailosaurClient.request(MailosaurClient.java:193)
+at com.mailosaur.Messages.search(Messages.java:317)
+at com.mailosaur.Messages.get(Messages.java:56)
+at com.assured.services.PageActions.getMailUrl(PageActions.java:1005)
+at com.assured.pages.P01_LoginPage.login(P01_LoginPage.java:96)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlTest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:55 IST" name="closeDriver" finished-at="2025-02-25T09:24:59 IST" duration-ms="3611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assured.tests.T01_LoginTest@72c8e7b]" started-at="2025-02-25T09:24:59 IST" name="tearDown" finished-at="2025-02-25T09:24:59 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.assured.tests.T01_LoginTest -->
     </test> <!-- SignIn Test -->
   </suite> <!-- Regression Tests  -->
-  <suite started-at="2025-02-22T20:58:20 IST" name="Regression Test1" finished-at="2025-02-22T20:58:20 IST" duration-ms="0">
+  <suite started-at="2025-02-25T09:24:59 IST" name="Regression Test1" finished-at="2025-02-25T09:24:59 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- Regression Test1 -->

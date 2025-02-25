@@ -48,19 +48,23 @@
   </properties>
 
   <dependencies>
-    <!-- Guice for DI -->
-    <dependency>
-      <groupId>com.google.inject</groupId>
-      <artifactId>guice</artifactId>
-      <version>7.0.0</version>
-    </dependency>
 
-    <!-- Mailinator Client -->
+    <!-- mailosaur Client -->
+  <!-- https://mvnrepository.com/artifact/com.mailosaur/mailosaur-java -->
+  <dependency>
+    <groupId>com.mailosaur</groupId>
+    <artifactId>mailosaur-java</artifactId>
+    <version>8.3.0</version>
+  </dependency>
+
+<!--
+    &lt;!&ndash; Mailinator Client &ndash;&gt;
     <dependency>
       <groupId>com.manybrain</groupId>
       <artifactId>mailinator-client</artifactId>
       <version>1.5</version>
     </dependency>
+-->
 
     <!-- Rest-Assured for API Testing (Test Scope) -->
     <dependency>

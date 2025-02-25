@@ -8,12 +8,17 @@ import com.assured.report.AllureManager;
 import com.assured.report.ExtentReportManager;
 import com.assured.utils.DateUtils;
 import com.assured.utils.LogUtils;
-import com.manybrain.mailinator.client.MailinatorClient;
+/*import com.manybrain.mailinator.client.MailinatorClient;
 import com.manybrain.mailinator.client.message.GetInboxRequest;
 import com.manybrain.mailinator.client.message.GetLinksRequest;
 import com.manybrain.mailinator.client.message.Inbox;
 import com.manybrain.mailinator.client.message.Links;
-import com.manybrain.mailinator.client.message.Message;
+import com.manybrain.mailinator.client.message.Message;*/
+import com.mailosaur.MailosaurClient;
+import com.mailosaur.MailosaurException;
+import com.mailosaur.models.Message;
+import com.mailosaur.models.MessageSearchParams;
+import com.mailosaur.models.SearchCriteria;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
@@ -24,6 +29,7 @@ import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -620,7 +626,7 @@ public class PageActions {
         }
     }
 
-    /**
+   /* *//**
      * Retrieves the URL from a matching message in the specified Mailinator inbox.
      * It looks for a message whose "From" address and "Subject" match the expected values.
      * If found, it attempts to extract the invite URL from the subject or the links API.
@@ -630,7 +636,7 @@ public class PageActions {
      * @param expectedFrom    The expected sender email address (e.g., "no-reply@withassured.com").
      * @param expectedSubject The expected subject or subject substring (e.g., "Onboarding Invite").
      * @return The extracted URL, or null if not found.
-     */
+     *//*
     @Step("Retrieve mail URL for domain: {0}, mailbox: {1}, expectedFrom: {2}, expectedSubject: {3}")
     public static String getMailUrl(String domain, String mailbox, String expectedFrom, String expectedSubject) {
         String url = null;
@@ -735,7 +741,7 @@ public class PageActions {
             throw e;
         }
         return url;
-    }
+    }*/
 
     /**
      * Helper method to extract the first URL found in the subject string.
@@ -967,6 +973,54 @@ public class PageActions {
             ExtentReportManager.fail("Failed to click element by text (text: " + text + ", exact: " + exact + ") | Error: " + e.getMessage());
             throw e;
         }
+    }
+    /**
+     * Retrieves the URL from a matching Mailosaur email message.
+     * It creates a MailosaurClient with the provided API key, searches for an email sent to the specified address,
+     * and verifies that the subject matches the expected value. If found, it extracts and returns the first link from the email's HTML content.
+
+     * @param emailAddress    The email address to search for.
+     * @param expectedSubject The expected subject of the email.
+     * @return The extracted URL.
+     * @throws MailosaurException If no matching email or URL is found.
+     */
+    public static String getMailUrl(String emailAddress, String expectedSubject)
+            throws MailosaurException {
+        String apiKey = "947fc29e9d3b4c4b80be0e65f27fd8db";
+        String serverId = "tbfvzeuw";
+        // Instantiate Mailosaur client with the provided API key
+        MailosaurClient mailosaur = new MailosaurClient(apiKey);
+
+        // Define search parameters using the server id
+        MessageSearchParams params = new MessageSearchParams();
+        params.withServer(serverId);
+
+        // Define criteria to search for the specific email recipient
+        SearchCriteria criteria = new SearchCriteria();
+        criteria.withSentTo(emailAddress);
+
+        // Retrieve the email message matching the criteria
+        Message message = null;
+        try {
+            message = mailosaur.messages().get(params, criteria);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        if (message == null) {
+            throw new MailosaurException(new Exception("No email found for address: " + emailAddress));
+        }
+
+        // Verify the email's subject matches the expected subject
+        if (!expectedSubject.equals(message.subject())) {
+            throw new MailosaurException(new Exception("Email subject mismatch. Expected: \"" + expectedSubject
+                    + "\", but found: \"" + message.subject() + "\""));
+        }
+
+        // Extract the first URL from the email's HTML links
+        if (message.html() == null || message.html().links() == null || message.html().links().isEmpty()) {
+            throw new MailosaurException(new Exception("No URL found in the email for address: " + emailAddress));
+        }
+        return message.html().links().get(0).href();
     }
 
 }
