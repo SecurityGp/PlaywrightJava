@@ -1022,6 +1022,111 @@ public class PageActions {
         }
         return message.html().links().get(0).href();
     }
+    @Step("Wait for element to be visible: {0}")
+    public static void waitForElementVisible(String selector, FailureHandling flowControl) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Waiting for element to be visible: " + selector);
+            Locator locator = page.locator(selector);
+            // Wait until the element is visible.
+            locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+            ExtentReportManager.pass("Element is visible: " + selector);
+            LogUtils.info("Element is visible: " + selector);
+            addScreenshotToReport("waitForElementVisible_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            ExtentReportManager.fail("Exception in waitForElementVisible: " + e.getMessage());
+            LogUtils.error("Exception in waitForElementVisible: " + e.getMessage());
+            AllureManager.saveTextLog("Exception in waitForElementVisible: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    @Step("Wait for element to be enabled: {0}")
+    public static void waitForElementEnabled(String selector, FailureHandling flowControl) throws InterruptedException {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Waiting for element to be enabled: " + selector);
+            Locator locator = page.locator(selector);
+            // Wait for element visibility first.
+            locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+
+            // Poll for enabled state.
+            boolean isEnabled = false;
+            int attempts = 0;
+            while (attempts < 10) {
+                if (locator.isEnabled()) {
+                    isEnabled = true;
+                    break;
+                }
+                Thread.sleep(500); // pause between checks
+                attempts++;
+            }
+
+            if (isEnabled) {
+                ExtentReportManager.pass("Element is enabled: " + selector);
+                LogUtils.info("Element is enabled: " + selector);
+            } else {
+                ExtentReportManager.fail("Element is NOT enabled: " + selector);
+                LogUtils.error("❌ Element is not enabled: " + selector);
+                if (flowControl.equals(FailureHandling.STOP_ON_FAILURE)) {
+                    Assert.assertTrue(isEnabled, "❌ Element with selector '" + selector + "' is not enabled.");
+                } else if (flowControl.equals(FailureHandling.CONTINUE_ON_FAILURE)) {
+                    softAssert.assertTrue(isEnabled, "❌ Element with selector '" + selector + "' is not enabled.");
+                    AllureManager.saveTextLog("Wait for element enabled - " + isEnabled);
+                }
+            }
+            addScreenshotToReport("waitForElementEnabled_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            ExtentReportManager.fail("Exception in waitForElementEnabled: " + e.getMessage());
+            LogUtils.error("Exception in waitForElementEnabled: " + e.getMessage());
+            AllureManager.saveTextLog("Exception in waitForElementEnabled: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    @Step("Wait for element to be clickable: {0}")
+    public static void waitForElementClickable(String selector, FailureHandling flowControl) throws InterruptedException {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Waiting for element to be clickable: " + selector);
+            Locator locator = page.locator(selector);
+            // First, wait for the element to be visible.
+            locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+
+            // Poll for clickable state (visible and enabled).
+            boolean isClickable = false;
+            int attempts = 0;
+            while (attempts < 10) {
+                if (locator.isVisible() && locator.isEnabled()) {
+                    isClickable = true;
+                    break;
+                }
+                Thread.sleep(500);
+                attempts++;
+            }
+
+            if (isClickable) {
+                ExtentReportManager.pass("Element is clickable: " + selector);
+                LogUtils.info("Element is clickable: " + selector);
+            } else {
+                ExtentReportManager.fail("Element is NOT clickable: " + selector);
+                LogUtils.error("❌ Element is not clickable: " + selector);
+                if (flowControl.equals(FailureHandling.STOP_ON_FAILURE)) {
+                    Assert.assertTrue(isClickable, "❌ Element with selector '" + selector + "' is not clickable.");
+                } else if (flowControl.equals(FailureHandling.CONTINUE_ON_FAILURE)) {
+                    softAssert.assertTrue(isClickable, "❌ Element with selector '" + selector + "' is not clickable.");
+                    AllureManager.saveTextLog("Wait for element clickable - " + isClickable);
+                }
+            }
+            addScreenshotToReport("waitForElementClickable_" + DateUtils.getCurrentDateTime());
+        } catch (Exception e) {
+            ExtentReportManager.fail("Exception in waitForElementClickable: " + e.getMessage());
+            LogUtils.error("Exception in waitForElementClickable: " + e.getMessage());
+            AllureManager.saveTextLog("Exception in waitForElementClickable: " + e.getMessage());
+            throw e;
+        }
+    }
+
 
 }
 
