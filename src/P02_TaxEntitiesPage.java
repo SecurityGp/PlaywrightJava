@@ -53,8 +53,11 @@ public class P02_TaxEntitiesPage {
     String contactEmail = DataGenerateUtils.randomString(3) + "@gp.com";
     String contactPhone = DataGenerateUtils.randomPhoneNumber();
     String faxNumber = DataGenerateUtils.randomFaxNumber();
-    final String dataFilePath = SystemHelpers.getCurrentDir() + "src\\test\\resources\\testdata\\Common\\docRef.pdf";
+//    final String dataFilePath = SystemHelpers.getCurrentDir() + "src\\test\\resources\\testdata\\Common\\docRef.pdf";
+final String dataFilePath = Paths.get(SystemHelpers.getCurrentDir(),
+        "src", "test", "resources", "testdata", "Common", "docRef.pdf").toString();
     String verifyTextUpdatedMsg="updated";
+
     String verifyTextAddedMsg="added";
     String verifyTextSavedMsg="saved";
 
