@@ -1126,6 +1126,31 @@ public class PageActions {
             throw e;
         }
     }
+    @Step("Upload file using selector: {0} with file: {1}")
+    public static void uploadFiles(String selector2, String selector1, String filePath) {
+        Page page = getPage();
+        try {
+            ExtentReportManager.info("Uploading file to selector: " + selector1 + " | filePath: " + filePath);
+
+            // Locate the hidden input field and upload file directly
+            Locator fileInput = page.locator(selector2);
+            fileInput.setInputFiles(Paths.get(filePath));
+
+            LogUtils.info("File uploaded successfully: " + filePath);
+            AllureManager.saveTextLog("File uploaded successfully: " + filePath);
+            addScreenshotToReport("uploadFile_" + DateUtils.getCurrentDateTime());
+
+            // If clicking upload is required after setting the file, do this:
+            //          page.locator(selector1).click();
+
+        } catch (Exception e) {
+            LogUtils.error("Failed to upload file using selector: " + selector1 + " with error: " + e.getMessage());
+            AllureManager.saveTextLog("Failed to upload file using selector: " + selector1 + " with error: " + e.getMessage());
+            ExtentReportManager.fail("Failed to upload file (selector: " + selector1 + ") | Error: " + e.getMessage());
+            throw e;
+        }
+    }
+
 
 
 }
